@@ -1,0 +1,18 @@
+[
+  {
+    "id": "cornwall",
+    "name": "Cornwall",
+    "country": "UK",
+    "coordinates": [50.2660, -5.0527],
+    "zoom_level": 9,
+    "recipe_ids": ["cornish-pasty"]
+  },
+  {
+    "id": "scotland",
+    "name": "Scotland",
+    "country": "UK",
+    "coordinates": [56.4907, -4.2026],
+    "zoom_level": 7,
+    "recipe_ids": ["haggis"]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cornish-pasty",
+    "name": "Cornish Pasty",
+    "region": "cornwall",
+    "country": "UK",
+    "coordinates": [50.2660, -5.0527],
+    "short_description": "A crimped pastry filled with beef, potato, swede and onion — Cornwall's iconic miners' lunch.",
+    "history": "The Cornish pasty dates back to the 13th century and was the staple meal of tin and copper miners in Cornwall. The thick crimped crust acted as a handle so miners could eat with dirty hands and then discard it. The pasty was robust enough to survive being dropped down a mine shaft. In 2011 it was awarded Protected Geographical Indication (PGI) status by the EU, meaning only pasties made in Cornwall to the traditional recipe can be called 'Cornish'.",
+    "ingredients": [
+      { "amount": "450", "unit": "g", "item": "strong plain flour" },
+      { "amount": "110", "unit": "g", "item": "lard or shortening" },
+      { "amount": "110", "unit": "g", "item": "butter" },
+      { "amount": "175", "unit": "g", "item": "skirt beef, diced small" },
+      { "amount": "175", "unit": "g", "item": "potato, peeled and sliced thin" },
+      { "amount": "100", "unit": "g", "item": "swede, peeled and sliced thin" },
+      { "amount": "1", "unit": "medium", "item": "onion, finely sliced" },
+      { "amount": "1", "unit": null, "item": "egg, beaten (for glaze)" },
+      { "amount": "to taste", "unit": null, "item": "salt and black pepper" }
+    ],
+    "steps": [
+      { "step": 1, "instruction": "Make the pastry: rub fats into flour with a pinch of salt until breadcrumb-like, then add cold water a little at a time until it just comes together. Rest in the fridge for 30 minutes." },
+      { "step": 2, "instruction": "Preheat oven to 180 °C (fan). Divide pastry into 4 balls and roll each into a circle roughly 25 cm across." },
+      { "step": 3, "instruction": "Layer swede, potato and onion on one half of each circle, then top with beef. Season well." },
+      { "step": 4, "instruction": "Fold the pastry over and crimp the edge firmly along the top (not the side — the Cornish way)." },
+      { "step": 5, "instruction": "Brush with beaten egg and bake for 45–55 minutes until golden. Rest 10 minutes before eating." }
+    ],
+    "prep_time_mins": 45,
+    "cook_time_mins": 55,
+    "serves": 4,
+    "image_url": null,
+    "tags": ["pastry", "beef", "baked", "traditional", "cornwall"]
+  },
+  {
+    "id": "haggis",
+    "name": "Haggis",
+    "region": "scotland",
+    "country": "UK",
+    "coordinates": [56.4907, -4.2026],
+    "short_description": "Scotland's national dish — sheep offal cooked with oatmeal, onion and spices in a sheep's stomach.",
+    "history": "Haggis has been Scotland's national dish since at least the 15th century, though its exact origins are debated. Robert Burns immortalised it in his 1787 poem 'Address to a Haggis', and Burns Night on 25 January celebrates both the poet and the dish every year. Traditionally encased in a sheep's stomach, modern versions often use artificial casings. It is traditionally served with neeps (turnip) and tatties (mashed potato), accompanied by a dram of Scotch whisky.",
+    "ingredients": [
+      { "amount": "1", "unit": null, "item": "sheep's stomach (or artificial casing)" },
+      { "amount": "450", "unit": "g", "item": "lamb's offal (heart, liver, lungs), minced" },
+      { "amount": "225", "unit": "g", "item": "pinhead oatmeal, toasted" },
+      { "amount": "2", "unit": "medium", "item": "onions, finely chopped" },
+      { "amount": "225", "unit": "g", "item": "suet" },
+      { "amount": "1", "unit": "tsp", "item": "ground black pepper" },
+      { "amount": "1", "unit": "tsp", "item": "ground allspice" },
+      { "amount": "0.5", "unit": "tsp", "item": "ground nutmeg" },
+      { "amount": "to taste", "unit": null, "item": "salt" }
+    ],
+    "steps": [
+      { "step": 1, "instruction": "Simmer the offal in salted water for 2 hours. Reserve the stock. Allow to cool, then mince finely." },
+      { "step": 2, "instruction": "Mix minced offal with toasted oatmeal, suet, onions and spices. Moisten with reserved stock until the mixture has a soft, dropping consistency." },
+      { "step": 3, "instruction": "Pack loosely into the cleaned stomach (or casing), leaving room for the oatmeal to expand. Tie securely." },
+      { "step": 4, "instruction": "Place in a large pot of boiling water, prick once to prevent bursting, and simmer gently for 3 hours." },
+      { "step": 5, "instruction": "Serve immediately with neeps and tatties, and a tot of whisky poured over if desired." }
+    ],
+    "prep_time_mins": 30,
+    "cook_time_mins": 180,
+    "serves": 6,
+    "image_url": null,
+    "tags": ["offal", "oats", "traditional", "scotland", "burns-night"]
+  }
+]

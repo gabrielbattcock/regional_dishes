@@ -1,0 +1,33 @@
+.sidebar {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.35s ease;
+  background: #fdfaf6;
+  border-left: 1px solid #e0d6c8;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar--open {
+  width: 420px;
+  min-width: 320px;
+  overflow-y: auto;
+}
+
+.sidebar-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #8a7a6a;
+  font-size: 1rem;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sidebar-placeholder__icon {
+  font-size: 3rem;
+}
