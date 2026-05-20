@@ -11,8 +11,120 @@
     "id": "scotland",
     "name": "Scotland",
     "country": "UK",
-    "coordinates": [56.4907, -4.2026],
+    "coordinates": [56.8000, -4.2026],
     "zoom_level": 7,
-    "recipe_ids": ["haggis"]
+    "recipe_ids": ["haggis", "scotch-broth", "crannachan"]
+  },
+  {
+    "id": "yorkshire",
+    "name": "Yorkshire",
+    "country": "UK",
+    "coordinates": [53.9590, -1.0815],
+    "zoom_level": 8,
+    "recipe_ids": ["yorkshire-pudding", "fish-and-chips"]
+  },
+  {
+    "id": "wales",
+    "name": "Wales",
+    "country": "UK",
+    "coordinates": [52.1307, -3.7837],
+    "zoom_level": 8,
+    "recipe_ids": ["welsh-rarebit", "welsh-cawl"]
+  },
+  {
+    "id": "lancashire",
+    "name": "Lancashire",
+    "country": "UK",
+    "coordinates": [53.7632, -2.7044],
+    "zoom_level": 9,
+    "recipe_ids": ["lancashire-hotpot", "black-pudding"]
+  },
+  {
+    "id": "cumbria",
+    "name": "Cumbria",
+    "country": "UK",
+    "coordinates": [54.5772, -2.7975],
+    "zoom_level": 9,
+    "recipe_ids": ["cumberland-sausage"]
+  },
+  {
+    "id": "derbyshire",
+    "name": "Derbyshire",
+    "country": "UK",
+    "coordinates": [53.2165, -1.6745],
+    "zoom_level": 9,
+    "recipe_ids": ["bakewell-tart"]
+  },
+  {
+    "id": "berkshire",
+    "name": "Berkshire",
+    "country": "UK",
+    "coordinates": [51.4897, -0.9785],
+    "zoom_level": 9,
+    "recipe_ids": ["eton-mess"]
+  },
+  {
+    "id": "campania",
+    "name": "Campania",
+    "country": "Italy",
+    "coordinates": [40.8518, 14.2681],
+    "zoom_level": 8,
+    "recipe_ids": ["pizza-margherita"]
+  },
+  {
+    "id": "emilia-romagna",
+    "name": "Emilia-Romagna",
+    "country": "Italy",
+    "coordinates": [44.4949, 11.3426],
+    "zoom_level": 8,
+    "recipe_ids": ["ragu-bolognese"]
+  },
+  {
+    "id": "lombardy",
+    "name": "Lombardy",
+    "country": "Italy",
+    "coordinates": [45.4654, 9.1866],
+    "zoom_level": 8,
+    "recipe_ids": ["risotto-alla-milanese", "osso-buco"]
+  },
+  {
+    "id": "sicily",
+    "name": "Sicily",
+    "country": "Italy",
+    "coordinates": [37.5999, 14.0154],
+    "zoom_level": 8,
+    "recipe_ids": ["arancini", "cannoli-siciliani"]
+  },
+  {
+    "id": "tuscany",
+    "name": "Tuscany",
+    "country": "Italy",
+    "coordinates": [43.7711, 11.2486],
+    "zoom_level": 8,
+    "recipe_ids": ["ribollita", "bistecca-fiorentina", "panzanella"]
+  },
+  {
+    "id": "lazio",
+    "name": "Lazio",
+    "country": "Italy",
+    "coordinates": [41.9028, 12.4964],
+    "zoom_level": 8,
+    "recipe_ids": ["cacio-e-pepe", "carbonara"]
+  },
+  {
+    "id": "liguria",
+    "name": "Liguria",
+    "country": "Italy",
+    "coordinates": [44.4056, 8.9463],
+    "zoom_level": 9,
+    "recipe_ids": ["pesto-genovese", "focaccia-genovese"]
+  },
+  {
+    "id": "veneto",
+    "name": "Veneto",
+    "country": "Italy",
+    "coordinates": [45.4408, 12.3155],
+    "zoom_level": 8,
+    "recipe_ids": ["tiramisu"]
   }
 ]

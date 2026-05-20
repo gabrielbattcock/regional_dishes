@@ -1,0 +1,639 @@
+{
+  "meta": {
+    "n_dishes": 27,
+    "n_clusters": 6,
+    "algorithm": "KMeans",
+    "features": "TF-IDF ingredients (0.7) + one-hot cooking method (0.3)",
+    "layout": "t-SNE 2D (normalised to [-1,1])"
+  },
+  "clusters": [
+    {
+      "id": 0,
+      "label": "Flour \u00b7 Baked \u00b7 Traditional",
+      "dish_ids": [
+        "cornish-pasty",
+        "yorkshire-pudding",
+        "bakewell-tart",
+        "eton-mess",
+        "pizza-margherita",
+        "focaccia-genovese"
+      ],
+      "size": 6
+    },
+    {
+      "id": 1,
+      "label": "Diced \u00b7 Lamb \u00b7 Onion,",
+      "dish_ids": [
+        "lancashire-hotpot",
+        "welsh-cawl",
+        "scotch-broth",
+        "ragu-bolognese",
+        "risotto-alla-milanese",
+        "ribollita",
+        "osso-buco"
+      ],
+      "size": 7
+    },
+    {
+      "id": 2,
+      "label": "Pasta \u00b7 Cream \u00b7 Oats",
+      "dish_ids": [
+        "crannachan",
+        "pesto-genovese",
+        "tiramisu",
+        "panzanella"
+      ],
+      "size": 4
+    },
+    {
+      "id": 3,
+      "label": "Finely \u00b7 Pasta \u00b7 Oats",
+      "dish_ids": [
+        "haggis",
+        "black-pudding",
+        "cacio-e-pepe",
+        "carbonara"
+      ],
+      "size": 4
+    },
+    {
+      "id": 4,
+      "label": "Fried \u00b7 Traditional \u00b7 Fish",
+      "dish_ids": [
+        "fish-and-chips",
+        "arancini",
+        "cannoli-siciliani"
+      ],
+      "size": 3
+    },
+    {
+      "id": 5,
+      "label": "Grilled \u00b7 Traditional \u00b7 Alcohol",
+      "dish_ids": [
+        "welsh-rarebit",
+        "cumberland-sausage",
+        "bistecca-fiorentina"
+      ],
+      "size": 3
+    }
+  ],
+  "dishes": [
+    {
+      "id": "cornish-pasty",
+      "name": "Cornish Pasty",
+      "country": "UK",
+      "region": "cornwall",
+      "cooking_method": "baked",
+      "cluster": 0,
+      "tsne_x": 0.58106,
+      "tsne_y": 0.18481
+    },
+    {
+      "id": "haggis",
+      "name": "Haggis",
+      "country": "UK",
+      "region": "scotland",
+      "cooking_method": "boiled",
+      "cluster": 3,
+      "tsne_x": 0.10226,
+      "tsne_y": -1.0
+    },
+    {
+      "id": "yorkshire-pudding",
+      "name": "Yorkshire Pudding",
+      "country": "UK",
+      "region": "yorkshire",
+      "cooking_method": "baked",
+      "cluster": 0,
+      "tsne_x": 0.87895,
+      "tsne_y": 0.36753
+    },
+    {
+      "id": "welsh-rarebit",
+      "name": "Welsh Rarebit",
+      "country": "UK",
+      "region": "wales",
+      "cooking_method": "grilled",
+      "cluster": 5,
+      "tsne_x": -0.68195,
+      "tsne_y": 0.51151
+    },
+    {
+      "id": "lancashire-hotpot",
+      "name": "Lancashire Hotpot",
+      "country": "UK",
+      "region": "lancashire",
+      "cooking_method": "braised",
+      "cluster": 1,
+      "tsne_x": 0.3537,
+      "tsne_y": -0.09278
+    },
+    {
+      "id": "welsh-cawl",
+      "name": "Welsh Cawl",
+      "country": "UK",
+      "region": "wales",
+      "cooking_method": "simmered",
+      "cluster": 1,
+      "tsne_x": -0.30529,
+      "tsne_y": -0.37841
+    },
+    {
+      "id": "cumberland-sausage",
+      "name": "Cumberland Sausage",
+      "country": "UK",
+      "region": "cumbria",
+      "cooking_method": "grilled",
+      "cluster": 5,
+      "tsne_x": -0.60954,
+      "tsne_y": 0.37703
+    },
+    {
+      "id": "bakewell-tart",
+      "name": "Bakewell Tart",
+      "country": "UK",
+      "region": "derbyshire",
+      "cooking_method": "baked",
+      "cluster": 0,
+      "tsne_x": 0.59997,
+      "tsne_y": 0.32895
+    },
+    {
+      "id": "fish-and-chips",
+      "name": "Fish and Chips",
+      "country": "UK",
+      "region": "yorkshire",
+      "cooking_method": "deep-fried",
+      "cluster": 4,
+      "tsne_x": -1.0,
+      "tsne_y": -0.475
+    },
+    {
+      "id": "scotch-broth",
+      "name": "Scotch Broth",
+      "country": "UK",
+      "region": "scotland",
+      "cooking_method": "simmered",
+      "cluster": 1,
+      "tsne_x": -0.23207,
+      "tsne_y": -0.27903
+    },
+    {
+      "id": "eton-mess",
+      "name": "Eton Mess",
+      "country": "UK",
+      "region": "berkshire",
+      "cooking_method": "baked",
+      "cluster": 0,
+      "tsne_x": 0.64332,
+      "tsne_y": 0.5156
+    },
+    {
+      "id": "black-pudding",
+      "name": "Black Pudding",
+      "country": "UK",
+      "region": "lancashire",
+      "cooking_method": "boiled",
+      "cluster": 3,
+      "tsne_x": 0.06684,
+      "tsne_y": -0.88053
+    },
+    {
+      "id": "crannachan",
+      "name": "Cranachan",
+      "country": "UK",
+      "region": "scotland",
+      "cooking_method": "no-cook",
+      "cluster": 2,
+      "tsne_x": 0.34563,
+      "tsne_y": 0.91816
+    },
+    {
+      "id": "pizza-margherita",
+      "name": "Pizza Margherita",
+      "country": "Italy",
+      "region": "campania",
+      "cooking_method": "baked",
+      "cluster": 0,
+      "tsne_x": 1.0,
+      "tsne_y": 0.18095
+    },
+    {
+      "id": "ragu-bolognese",
+      "name": "Rag\u00f9 Bolognese",
+      "country": "Italy",
+      "region": "emilia-romagna",
+      "cooking_method": "braised",
+      "cluster": 1,
+      "tsne_x": 0.31601,
+      "tsne_y": -0.37052
+    },
+    {
+      "id": "risotto-alla-milanese",
+      "name": "Risotto alla Milanese",
+      "country": "Italy",
+      "region": "lombardy",
+      "cooking_method": "simmered",
+      "cluster": 1,
+      "tsne_x": -0.60607,
+      "tsne_y": -0.41175
+    },
+    {
+      "id": "arancini",
+      "name": "Arancini",
+      "country": "Italy",
+      "region": "sicily",
+      "cooking_method": "deep-fried",
+      "cluster": 4,
+      "tsne_x": -0.81207,
+      "tsne_y": -0.50861
+    },
+    {
+      "id": "ribollita",
+      "name": "Ribollita",
+      "country": "Italy",
+      "region": "tuscany",
+      "cooking_method": "simmered",
+      "cluster": 1,
+      "tsne_x": -0.44705,
+      "tsne_y": -0.23035
+    },
+    {
+      "id": "cacio-e-pepe",
+      "name": "Cacio e Pepe",
+      "country": "Italy",
+      "region": "lazio",
+      "cooking_method": "boiled",
+      "cluster": 3,
+      "tsne_x": 0.46084,
+      "tsne_y": -0.87508
+    },
+    {
+      "id": "bistecca-fiorentina",
+      "name": "Bistecca alla Fiorentina",
+      "country": "Italy",
+      "region": "tuscany",
+      "cooking_method": "grilled",
+      "cluster": 5,
+      "tsne_x": -0.52017,
+      "tsne_y": 0.51718
+    },
+    {
+      "id": "pesto-genovese",
+      "name": "Pesto alla Genovese",
+      "country": "Italy",
+      "region": "liguria",
+      "cooking_method": "no-cook",
+      "cluster": 2,
+      "tsne_x": 0.12217,
+      "tsne_y": 0.74406
+    },
+    {
+      "id": "osso-buco",
+      "name": "Osso Buco alla Milanese",
+      "country": "Italy",
+      "region": "lombardy",
+      "cooking_method": "braised",
+      "cluster": 1,
+      "tsne_x": 0.27377,
+      "tsne_y": -0.23809
+    },
+    {
+      "id": "tiramisu",
+      "name": "Tiramis\u00f9",
+      "country": "Italy",
+      "region": "veneto",
+      "cooking_method": "no-cook",
+      "cluster": 2,
+      "tsne_x": 0.22668,
+      "tsne_y": 1.0
+    },
+    {
+      "id": "cannoli-siciliani",
+      "name": "Cannoli Siciliani",
+      "country": "Italy",
+      "region": "sicily",
+      "cooking_method": "deep-fried",
+      "cluster": 4,
+      "tsne_x": -0.91465,
+      "tsne_y": -0.62822
+    },
+    {
+      "id": "carbonara",
+      "name": "Spaghetti alla Carbonara",
+      "country": "Italy",
+      "region": "lazio",
+      "cooking_method": "boiled",
+      "cluster": 3,
+      "tsne_x": 0.4056,
+      "tsne_y": -0.76525
+    },
+    {
+      "id": "focaccia-genovese",
+      "name": "Focaccia Genovese",
+      "country": "Italy",
+      "region": "liguria",
+      "cooking_method": "baked",
+      "cluster": 0,
+      "tsne_x": 0.87021,
+      "tsne_y": 0.16537
+    },
+    {
+      "id": "panzanella",
+      "name": "Panzanella",
+      "country": "Italy",
+      "region": "tuscany",
+      "cooking_method": "no-cook",
+      "cluster": 2,
+      "tsne_x": 0.05533,
+      "tsne_y": 0.86374
+    }
+  ],
+  "connections": [
+    {
+      "source": "cacio-e-pepe",
+      "target": "carbonara",
+      "similarity": 0.5017
+    },
+    {
+      "source": "welsh-cawl",
+      "target": "scotch-broth",
+      "similarity": 0.4302
+    },
+    {
+      "source": "haggis",
+      "target": "black-pudding",
+      "similarity": 0.3395
+    },
+    {
+      "source": "pizza-margherita",
+      "target": "focaccia-genovese",
+      "similarity": 0.3248
+    },
+    {
+      "source": "ragu-bolognese",
+      "target": "osso-buco",
+      "similarity": 0.2861
+    },
+    {
+      "source": "lancashire-hotpot",
+      "target": "osso-buco",
+      "similarity": 0.26
+    },
+    {
+      "source": "cornish-pasty",
+      "target": "bakewell-tart",
+      "similarity": 0.253
+    },
+    {
+      "source": "welsh-cawl",
+      "target": "ribollita",
+      "similarity": 0.2363
+    },
+    {
+      "source": "cornish-pasty",
+      "target": "lancashire-hotpot",
+      "similarity": 0.2356
+    },
+    {
+      "source": "scotch-broth",
+      "target": "ribollita",
+      "similarity": 0.2293
+    },
+    {
+      "source": "welsh-rarebit",
+      "target": "cumberland-sausage",
+      "similarity": 0.2183
+    },
+    {
+      "source": "cornish-pasty",
+      "target": "focaccia-genovese",
+      "similarity": 0.217
+    },
+    {
+      "source": "arancini",
+      "target": "cannoli-siciliani",
+      "similarity": 0.2158
+    },
+    {
+      "source": "welsh-rarebit",
+      "target": "bistecca-fiorentina",
+      "similarity": 0.215
+    },
+    {
+      "source": "ragu-bolognese",
+      "target": "carbonara",
+      "similarity": 0.2137
+    },
+    {
+      "source": "yorkshire-pudding",
+      "target": "focaccia-genovese",
+      "similarity": 0.2122
+    },
+    {
+      "source": "cumberland-sausage",
+      "target": "bistecca-fiorentina",
+      "similarity": 0.2111
+    },
+    {
+      "source": "black-pudding",
+      "target": "carbonara",
+      "similarity": 0.2097
+    },
+    {
+      "source": "yorkshire-pudding",
+      "target": "pizza-margherita",
+      "similarity": 0.2091
+    },
+    {
+      "source": "lancashire-hotpot",
+      "target": "ragu-bolognese",
+      "similarity": 0.2091
+    },
+    {
+      "source": "cornish-pasty",
+      "target": "yorkshire-pudding",
+      "similarity": 0.2074
+    },
+    {
+      "source": "risotto-alla-milanese",
+      "target": "arancini",
+      "similarity": 0.2064
+    },
+    {
+      "source": "crannachan",
+      "target": "tiramisu",
+      "similarity": 0.2036
+    },
+    {
+      "source": "haggis",
+      "target": "cacio-e-pepe",
+      "similarity": 0.1988
+    },
+    {
+      "source": "bakewell-tart",
+      "target": "eton-mess",
+      "similarity": 0.1966
+    },
+    {
+      "source": "pesto-genovese",
+      "target": "panzanella",
+      "similarity": 0.1966
+    },
+    {
+      "source": "risotto-alla-milanese",
+      "target": "ribollita",
+      "similarity": 0.1965
+    },
+    {
+      "source": "fish-and-chips",
+      "target": "arancini",
+      "similarity": 0.1961
+    },
+    {
+      "source": "yorkshire-pudding",
+      "target": "bakewell-tart",
+      "similarity": 0.1919
+    },
+    {
+      "source": "pizza-margherita",
+      "target": "cornish-pasty",
+      "similarity": 0.1918
+    },
+    {
+      "source": "welsh-cawl",
+      "target": "risotto-alla-milanese",
+      "similarity": 0.1897
+    },
+    {
+      "source": "haggis",
+      "target": "carbonara",
+      "similarity": 0.1893
+    },
+    {
+      "source": "fish-and-chips",
+      "target": "cannoli-siciliani",
+      "similarity": 0.1869
+    },
+    {
+      "source": "scotch-broth",
+      "target": "risotto-alla-milanese",
+      "similarity": 0.1847
+    },
+    {
+      "source": "eton-mess",
+      "target": "focaccia-genovese",
+      "similarity": 0.1816
+    },
+    {
+      "source": "lancashire-hotpot",
+      "target": "welsh-cawl",
+      "similarity": 0.1798
+    },
+    {
+      "source": "bakewell-tart",
+      "target": "focaccia-genovese",
+      "similarity": 0.1779
+    },
+    {
+      "source": "eton-mess",
+      "target": "cornish-pasty",
+      "similarity": 0.1775
+    },
+    {
+      "source": "pizza-margherita",
+      "target": "bakewell-tart",
+      "similarity": 0.1767
+    },
+    {
+      "source": "black-pudding",
+      "target": "cacio-e-pepe",
+      "similarity": 0.1739
+    },
+    {
+      "source": "tiramisu",
+      "target": "panzanella",
+      "similarity": 0.1686
+    },
+    {
+      "source": "eton-mess",
+      "target": "yorkshire-pudding",
+      "similarity": 0.1662
+    },
+    {
+      "source": "crannachan",
+      "target": "eton-mess",
+      "similarity": 0.1603
+    },
+    {
+      "source": "crannachan",
+      "target": "pesto-genovese",
+      "similarity": 0.159
+    },
+    {
+      "source": "scotch-broth",
+      "target": "lancashire-hotpot",
+      "similarity": 0.1589
+    },
+    {
+      "source": "pesto-genovese",
+      "target": "tiramisu",
+      "similarity": 0.158
+    },
+    {
+      "source": "fish-and-chips",
+      "target": "yorkshire-pudding",
+      "similarity": 0.1569
+    },
+    {
+      "source": "pesto-genovese",
+      "target": "focaccia-genovese",
+      "similarity": 0.1554
+    },
+    {
+      "source": "crannachan",
+      "target": "panzanella",
+      "similarity": 0.1552
+    },
+    {
+      "source": "ribollita",
+      "target": "panzanella",
+      "similarity": 0.1542
+    },
+    {
+      "source": "cumberland-sausage",
+      "target": "black-pudding",
+      "similarity": 0.146
+    },
+    {
+      "source": "bistecca-fiorentina",
+      "target": "focaccia-genovese",
+      "similarity": 0.145
+    },
+    {
+      "source": "cacio-e-pepe",
+      "target": "pesto-genovese",
+      "similarity": 0.1449
+    },
+    {
+      "source": "haggis",
+      "target": "cumberland-sausage",
+      "similarity": 0.1416
+    },
+    {
+      "source": "ragu-bolognese",
+      "target": "risotto-alla-milanese",
+      "similarity": 0.1405
+    },
+    {
+      "source": "bistecca-fiorentina",
+      "target": "pesto-genovese",
+      "similarity": 0.1394
+    },
+    {
+      "source": "osso-buco",
+      "target": "risotto-alla-milanese",
+      "similarity": 0.1307
+    }
+  ]
+}
