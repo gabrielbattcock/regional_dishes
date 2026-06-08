@@ -1,0 +1,2361 @@
+[
+  {
+    "id": "cornish-pasty",
+    "name": "Cornish Pasty",
+    "region": "cornwall",
+    "country": "UK",
+    "coordinates": [
+      50.266,
+      -5.0527
+    ],
+    "short_description": "A crimped pastry filled with beef, potato, swede and onion — Cornwall's iconic miners' lunch.",
+    "history": "The Cornish pasty dates back to the 13th century and was the staple meal of tin and copper miners in Cornwall. The thick crimped crust acted as a handle so miners could eat with dirty hands and then discard it. The pasty was robust enough to survive being dropped down a mine shaft. In 2011 it was awarded Protected Geographical Indication (PGI) status by the EU, meaning only pasties made in Cornwall to the traditional recipe can be called 'Cornish'.",
+    "ingredients": [
+      {
+        "amount": "450",
+        "unit": "g",
+        "item": "strong plain flour"
+      },
+      {
+        "amount": "110",
+        "unit": "g",
+        "item": "lard or shortening"
+      },
+      {
+        "amount": "110",
+        "unit": "g",
+        "item": "butter"
+      },
+      {
+        "amount": "175",
+        "unit": "g",
+        "item": "skirt beef, diced small"
+      },
+      {
+        "amount": "175",
+        "unit": "g",
+        "item": "potato, peeled and sliced thin"
+      },
+      {
+        "amount": "100",
+        "unit": "g",
+        "item": "swede, peeled and sliced thin"
+      },
+      {
+        "amount": "1",
+        "unit": "medium",
+        "item": "onion, finely sliced"
+      },
+      {
+        "amount": "1",
+        "unit": null,
+        "item": "egg, beaten (for glaze)"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt and black pepper"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Make the pastry: rub fats into flour with a pinch of salt until breadcrumb-like, then add cold water a little at a time until it just comes together. Rest in the fridge for 30 minutes."
+      },
+      {
+        "step": 2,
+        "instruction": "Preheat oven to 180 °C (fan). Divide pastry into 4 balls and roll each into a circle roughly 25 cm across."
+      },
+      {
+        "step": 3,
+        "instruction": "Layer swede, potato and onion on one half of each circle, then top with beef. Season well."
+      },
+      {
+        "step": 4,
+        "instruction": "Fold the pastry over and crimp the edge firmly along the top (not the side — the Cornish way)."
+      },
+      {
+        "step": 5,
+        "instruction": "Brush with beaten egg and bake for 45–55 minutes until golden. Rest 10 minutes before eating."
+      }
+    ],
+    "prep_time_mins": 45,
+    "cook_time_mins": 55,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "pastry",
+      "beef",
+      "baked",
+      "traditional",
+      "cornwall"
+    ],
+    "cooking_method": "baked"
+  },
+  {
+    "id": "haggis",
+    "name": "Haggis",
+    "region": "scotland",
+    "country": "UK",
+    "coordinates": [
+      56.4907,
+      -4.2026
+    ],
+    "short_description": "Scotland's national dish — sheep offal cooked with oatmeal, onion and spices in a sheep's stomach.",
+    "history": "Haggis has been Scotland's national dish since at least the 15th century, though its exact origins are debated. Robert Burns immortalised it in his 1787 poem 'Address to a Haggis', and Burns Night on 25 January celebrates both the poet and the dish every year. Traditionally encased in a sheep's stomach, modern versions often use artificial casings. It is traditionally served with neeps (turnip) and tatties (mashed potato), accompanied by a dram of Scotch whisky.",
+    "ingredients": [
+      {
+        "amount": "1",
+        "unit": null,
+        "item": "sheep's stomach (or artificial casing)"
+      },
+      {
+        "amount": "450",
+        "unit": "g",
+        "item": "lamb offal (heart, liver, lungs), minced"
+      },
+      {
+        "amount": "225",
+        "unit": "g",
+        "item": "pinhead oatmeal, toasted"
+      },
+      {
+        "amount": "2",
+        "unit": "medium",
+        "item": "onions, finely chopped"
+      },
+      {
+        "amount": "225",
+        "unit": "g",
+        "item": "suet"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "ground black pepper"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "ground allspice"
+      },
+      {
+        "amount": "0.5",
+        "unit": "tsp",
+        "item": "ground nutmeg"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Simmer the offal in salted water for 2 hours. Reserve the stock. Allow to cool, then mince finely."
+      },
+      {
+        "step": 2,
+        "instruction": "Mix minced offal with toasted oatmeal, suet, onions and spices. Moisten with reserved stock until the mixture has a soft, dropping consistency."
+      },
+      {
+        "step": 3,
+        "instruction": "Pack loosely into the cleaned stomach (or casing), leaving room for the oatmeal to expand. Tie securely."
+      },
+      {
+        "step": 4,
+        "instruction": "Place in a large pot of boiling water, prick once to prevent bursting, and simmer gently for 3 hours."
+      },
+      {
+        "step": 5,
+        "instruction": "Serve immediately with neeps and tatties, and a tot of whisky poured over if desired."
+      }
+    ],
+    "prep_time_mins": 30,
+    "cook_time_mins": 180,
+    "serves": 6,
+    "image_url": null,
+    "tags": [
+      "offal",
+      "oats",
+      "traditional",
+      "scotland",
+      "burns-night"
+    ],
+    "cooking_method": "boiled"
+  },
+  {
+    "id": "yorkshire-pudding",
+    "name": "Yorkshire Pudding",
+    "region": "yorkshire",
+    "country": "UK",
+    "coordinates": [
+      53.959,
+      -1.0815
+    ],
+    "short_description": "Light, crispy batter puffs baked in hot dripping — the essential companion to a British roast dinner.",
+    "history": "Yorkshire pudding was first recorded in print in 1737 in 'The Whole Duty of a Woman'. Originally cooked beneath a spit-roasted joint to catch the dripping fat, it was served as a first course with gravy to dull the appetite before the expensive meat arrived. The dish became synonymous with Yorkshire and Sunday roast culture across Britain. The Royal Society of Chemistry once ruled that a Yorkshire pudding is not a proper one unless it rises above four inches.",
+    "ingredients": [
+      {
+        "amount": "140",
+        "unit": "g",
+        "item": "plain flour"
+      },
+      {
+        "amount": "4",
+        "unit": "large",
+        "item": "eggs"
+      },
+      {
+        "amount": "200",
+        "unit": "ml",
+        "item": "whole milk"
+      },
+      {
+        "amount": "3",
+        "unit": "tbsp",
+        "item": "beef dripping or sunflower oil"
+      },
+      {
+        "amount": "0.5",
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Whisk flour, eggs, milk and salt into a smooth, lump-free batter. Rest for at least 30 minutes (or overnight in the fridge)."
+      },
+      {
+        "step": 2,
+        "instruction": "Preheat oven to 230 °C. Add a teaspoon of dripping to each hole of a 12-hole muffin tin and heat in the oven until smoking hot."
+      },
+      {
+        "step": 3,
+        "instruction": "Quickly pour batter into each hole, filling no more than a third full. Return to the oven immediately."
+      },
+      {
+        "step": 4,
+        "instruction": "Bake for 20–25 minutes without opening the oven door until risen, deeply golden and crisp."
+      }
+    ],
+    "prep_time_mins": 10,
+    "cook_time_mins": 25,
+    "serves": 12,
+    "image_url": null,
+    "tags": [
+      "batter",
+      "baked",
+      "traditional",
+      "yorkshire",
+      "sunday-roast"
+    ],
+    "cooking_method": "baked"
+  },
+  {
+    "id": "welsh-rarebit",
+    "name": "Welsh Rarebit",
+    "region": "wales",
+    "country": "UK",
+    "coordinates": [
+      51.4816,
+      -3.1791
+    ],
+    "short_description": "Molten spiced cheese sauce over thick toast — Wales's beloved savoury classic.",
+    "history": "Welsh Rarebit (originally 'Welsh Rabbit') appears in cookbooks as early as 1725, though the name's origin is debated. One theory is that it was a jibe at the Welsh, suggesting they were too poor to afford real rabbit. The dish was elevated over centuries from simple melted cheese on toast to a rich sauce made with ale, mustard and Worcestershire sauce. Glamorgan sausages, another Welsh staple, share the same cheese-led tradition.",
+    "ingredients": [
+      {
+        "amount": "250",
+        "unit": "g",
+        "item": "mature Cheddar, grated"
+      },
+      {
+        "amount": "100",
+        "unit": "ml",
+        "item": "dark ale or stout"
+      },
+      {
+        "amount": "1",
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "amount": "1",
+        "unit": "tbsp",
+        "item": "plain flour"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "English mustard"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "amount": "4",
+        "unit": "thick slices",
+        "item": "bread, toasted"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "black pepper"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Melt butter in a small saucepan, stir in flour and cook for 1 minute to make a roux."
+      },
+      {
+        "step": 2,
+        "instruction": "Gradually add ale, stirring constantly until smooth. Add mustard and Worcestershire sauce."
+      },
+      {
+        "step": 3,
+        "instruction": "Remove from heat and stir in grated Cheddar until melted and glossy. Season with pepper."
+      },
+      {
+        "step": 4,
+        "instruction": "Spread generously over toast slices and grill under a hot broiler for 2–3 minutes until bubbling and golden."
+      }
+    ],
+    "prep_time_mins": 10,
+    "cook_time_mins": 15,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "cheese",
+      "toast",
+      "grilled",
+      "traditional",
+      "wales"
+    ],
+    "cooking_method": "grilled"
+  },
+  {
+    "id": "lancashire-hotpot",
+    "name": "Lancashire Hotpot",
+    "region": "lancashire",
+    "country": "UK",
+    "coordinates": [
+      53.7632,
+      -2.7044
+    ],
+    "short_description": "Slow-braised lamb and onions under a crown of golden overlapping potato slices.",
+    "history": "Lancashire Hotpot emerged in the 19th century as the working-class staple of the cotton mill towns around Preston, Burnley and Bolton. It could be put on in the morning, left in a low oven all day, and be ready when mill workers returned home. The tall, straight-sided pot it was traditionally cooked in gave the dish its name. Oysters were sometimes added in Victorian times when they were cheap — a practice now mostly abandoned.",
+    "ingredients": [
+      {
+        "amount": "800",
+        "unit": "g",
+        "item": "lamb neck chops or diced lamb shoulder"
+      },
+      {
+        "amount": "3",
+        "unit": "large",
+        "item": "onions, sliced"
+      },
+      {
+        "amount": "2",
+        "unit": "medium",
+        "item": "carrots, sliced"
+      },
+      {
+        "amount": "900",
+        "unit": "g",
+        "item": "floury potatoes, peeled and thinly sliced"
+      },
+      {
+        "amount": "400",
+        "unit": "ml",
+        "item": "lamb or chicken stock"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "plain flour"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "butter, melted"
+      },
+      {
+        "amount": "2",
+        "unit": "sprigs",
+        "item": "fresh thyme"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt and black pepper"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Preheat oven to 160 °C. Toss lamb in flour and season. Brown in batches in a flameproof casserole, then set aside."
+      },
+      {
+        "step": 2,
+        "instruction": "Cook onions and carrots in the same pot until softened. Return lamb, add stock and thyme. Bring to a simmer."
+      },
+      {
+        "step": 3,
+        "instruction": "Arrange overlapping potato slices on top, brush with melted butter and season."
+      },
+      {
+        "step": 4,
+        "instruction": "Cover and bake for 1.5 hours, then uncover and bake a further 30 minutes until potatoes are golden and crisp."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 120,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "lamb",
+      "potato",
+      "braised",
+      "traditional",
+      "lancashire"
+    ],
+    "cooking_method": "braised"
+  },
+  {
+    "id": "welsh-cawl",
+    "name": "Welsh Cawl",
+    "region": "wales",
+    "country": "UK",
+    "coordinates": [
+      52.1307,
+      -3.7837
+    ],
+    "short_description": "Wales's ancient one-pot broth of lamb, leeks and root vegetables — hearty comfort in a bowl.",
+    "history": "Cawl is considered the national dish of Wales, with references stretching back to the 14th century. Its name simply means 'broth' or 'soup' in Welsh. Recipes vary by region and family but always centre on lamb and leeks — both iconic Welsh ingredients. It was traditionally a two-stage meal: the broth eaten first with bread, and the meat and vegetables served separately. Cawl is still ceremonially eaten on St David's Day (1 March).",
+    "ingredients": [
+      {
+        "amount": "900",
+        "unit": "g",
+        "item": "lamb on the bone (scrag or neck)"
+      },
+      {
+        "amount": "3",
+        "unit": "large",
+        "item": "leeks, sliced"
+      },
+      {
+        "amount": "3",
+        "unit": "medium",
+        "item": "potatoes, peeled and diced"
+      },
+      {
+        "amount": "2",
+        "unit": "medium",
+        "item": "parsnips, diced"
+      },
+      {
+        "amount": "2",
+        "unit": "medium",
+        "item": "carrots, diced"
+      },
+      {
+        "amount": "1",
+        "unit": "medium",
+        "item": "swede, diced"
+      },
+      {
+        "amount": "1",
+        "unit": "large",
+        "item": "onion, chopped"
+      },
+      {
+        "amount": "1.5",
+        "unit": "litres",
+        "item": "water or light stock"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt, pepper and fresh parsley"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Place lamb in a large pot, cover with cold water and bring to the boil. Skim off foam, then add onion, carrots, parsnips and swede. Simmer for 1.5 hours."
+      },
+      {
+        "step": 2,
+        "instruction": "Remove lamb, strip meat from the bone and return meat to the pot. Discard bones."
+      },
+      {
+        "step": 3,
+        "instruction": "Add potatoes and leeks and cook for a further 30 minutes."
+      },
+      {
+        "step": 4,
+        "instruction": "Season to taste, scatter over fresh parsley and serve as broth first, then meat and vegetables."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 120,
+    "serves": 6,
+    "image_url": null,
+    "tags": [
+      "lamb",
+      "leek",
+      "soup",
+      "traditional",
+      "wales",
+      "st-davids-day"
+    ],
+    "cooking_method": "simmered"
+  },
+  {
+    "id": "cumberland-sausage",
+    "name": "Cumberland Sausage",
+    "region": "cumbria",
+    "country": "UK",
+    "coordinates": [
+      54.5772,
+      -2.7975
+    ],
+    "short_description": "A coiled pork sausage packed with black pepper and spices — the pride of Cumbria.",
+    "history": "Cumberland sausage has been made in what is now Cumbria for around 500 years. Distinctively, it is sold by length rather than by the individual link, and is traditionally coiled in a spiral. Its coarse texture and bold black pepper flavour set it apart from other British sausages. The spice blend likely reflects old trade routes through the port of Whitehaven. It was awarded PGI status in 2011, meaning only sausages made in the traditional Cumbrian area can carry the name.",
+    "ingredients": [
+      {
+        "amount": "900",
+        "unit": "g",
+        "item": "coarsely ground pork shoulder"
+      },
+      {
+        "amount": "100",
+        "unit": "g",
+        "item": "breadcrumbs"
+      },
+      {
+        "amount": "2",
+        "unit": "tsp",
+        "item": "coarsely ground black pepper"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "ground mace"
+      },
+      {
+        "amount": "0.5",
+        "unit": "tsp",
+        "item": "ground nutmeg"
+      },
+      {
+        "amount": "0.5",
+        "unit": "tsp",
+        "item": "dried thyme"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "cold water"
+      },
+      {
+        "amount": "natural",
+        "unit": null,
+        "item": "hog casings, soaked"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Mix pork mince with breadcrumbs, spices, salt and cold water until well combined. Keep cold."
+      },
+      {
+        "step": 2,
+        "instruction": "Feed the mixture into soaked hog casings using a sausage stuffer, forming one long continuous sausage."
+      },
+      {
+        "step": 3,
+        "instruction": "Coil into a spiral and secure with two skewers to hold the shape."
+      },
+      {
+        "step": 4,
+        "instruction": "Grill or fry over medium heat for 15–20 minutes, turning halfway, until cooked through and golden."
+      }
+    ],
+    "prep_time_mins": 40,
+    "cook_time_mins": 20,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "pork",
+      "sausage",
+      "grilled",
+      "traditional",
+      "cumbria"
+    ],
+    "cooking_method": "grilled"
+  },
+  {
+    "id": "bakewell-tart",
+    "name": "Bakewell Tart",
+    "region": "derbyshire",
+    "country": "UK",
+    "coordinates": [
+      53.2165,
+      -1.6745
+    ],
+    "short_description": "A crisp pastry shell filled with raspberry jam and almond frangipane — the jewel of Derbyshire.",
+    "history": "The Bakewell Tart (or Bakewell Pudding in its original form) hails from the market town of Bakewell in the Peak District. According to local legend, it was created by accident in the 1820s when a cook at the White Horse Inn misunderstood instructions and spread the egg-and-almond mixture on top of the jam instead of mixing it in. The town still has competing claims on the 'authentic' recipe. Today the iced version with a glacé cherry is a British teatime institution.",
+    "ingredients": [
+      {
+        "amount": "200",
+        "unit": "g",
+        "item": "shortcrust pastry"
+      },
+      {
+        "amount": "3",
+        "unit": "tbsp",
+        "item": "raspberry jam"
+      },
+      {
+        "amount": "125",
+        "unit": "g",
+        "item": "butter, softened"
+      },
+      {
+        "amount": "125",
+        "unit": "g",
+        "item": "caster sugar"
+      },
+      {
+        "amount": "2",
+        "unit": "large",
+        "item": "eggs"
+      },
+      {
+        "amount": "125",
+        "unit": "g",
+        "item": "ground almonds"
+      },
+      {
+        "amount": "25",
+        "unit": "g",
+        "item": "plain flour"
+      },
+      {
+        "amount": "0.5",
+        "unit": "tsp",
+        "item": "almond extract"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "flaked almonds"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Line a 23 cm tart tin with pastry, prick the base and blind bake at 190 °C for 15 minutes."
+      },
+      {
+        "step": 2,
+        "instruction": "Spread jam over the pastry base."
+      },
+      {
+        "step": 3,
+        "instruction": "Beat butter and sugar until pale, then beat in eggs one at a time. Fold in ground almonds, flour and almond extract."
+      },
+      {
+        "step": 4,
+        "instruction": "Spoon frangipane over jam and scatter with flaked almonds. Bake for 25–30 minutes until golden and just set."
+      }
+    ],
+    "prep_time_mins": 25,
+    "cook_time_mins": 45,
+    "serves": 8,
+    "image_url": null,
+    "tags": [
+      "pastry",
+      "almond",
+      "jam",
+      "baked",
+      "dessert",
+      "derbyshire"
+    ],
+    "cooking_method": "baked"
+  },
+  {
+    "id": "fish-and-chips",
+    "name": "Fish and Chips",
+    "region": "yorkshire",
+    "country": "UK",
+    "coordinates": [
+      54.2866,
+      -0.4069
+    ],
+    "short_description": "Crispy beer-battered cod and chunky chips — Britain's most beloved takeaway, born on the Yorkshire coast.",
+    "history": "Fish and chips as a pairing emerged in Britain in the 1860s. The first fish and chip shop is claimed by both Oldham and London, but the dish became most embedded in the culture of seaside Yorkshire towns like Scarborough and Whitby. By 1910 there were around 25,000 chip shops in Britain. During both World Wars, fish and chips was one of the few foods not rationed by the British government, recognising its importance as affordable nutrition for the working class. Today Whitby fish and chips is considered some of the finest in England.",
+    "ingredients": [
+      {
+        "amount": "4",
+        "unit": "fillets",
+        "item": "thick cod or haddock, skinless"
+      },
+      {
+        "amount": "175",
+        "unit": "g",
+        "item": "plain flour"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "baking powder"
+      },
+      {
+        "amount": "200",
+        "unit": "ml",
+        "item": "cold beer or sparkling water"
+      },
+      {
+        "amount": "1",
+        "unit": "kg",
+        "item": "Maris Piper potatoes, peeled"
+      },
+      {
+        "amount": "1",
+        "unit": "litre",
+        "item": "vegetable or beef dripping (for frying)"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt, malt vinegar"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Cut potatoes into thick chips. Parboil for 5 minutes, drain and leave to steam dry."
+      },
+      {
+        "step": 2,
+        "instruction": "Heat oil to 130 °C. Blanch chips for 8 minutes until cooked but not coloured. Drain and set aside."
+      },
+      {
+        "step": 3,
+        "instruction": "Mix flour, baking powder and a pinch of salt. Whisk in cold beer until a smooth thick batter forms."
+      },
+      {
+        "step": 4,
+        "instruction": "Heat oil to 190 °C. Dip fish in batter and fry for 6–8 minutes until deeply golden. Drain."
+      },
+      {
+        "step": 5,
+        "instruction": "Raise oil to 190 °C and fry chips a second time for 3–4 minutes until crispy and golden. Season with salt."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 30,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "fish",
+      "potato",
+      "fried",
+      "traditional",
+      "yorkshire",
+      "seafood"
+    ],
+    "cooking_method": "deep-fried"
+  },
+  {
+    "id": "scotch-broth",
+    "name": "Scotch Broth",
+    "region": "scotland",
+    "country": "UK",
+    "coordinates": [
+      55.8642,
+      -4.2518
+    ],
+    "short_description": "A thick, warming soup of barley, root vegetables and lamb — Scotland's original comfort food.",
+    "history": "Scotch broth is one of the oldest recorded Scottish dishes, appearing in cookery books as far back as the 17th century though undoubtedly made for centuries before. It was the everyday meal of rural Scotland, stretching a small amount of lamb or mutton over a large pot of cheap vegetables and pearl barley. Samuel Johnson, not known for praising Scotland, conceded in his 1773 Scottish tour that Scotch broth was an excellent dish. The dish remains a staple of home cooking and pub menus throughout Scotland.",
+    "ingredients": [
+      {
+        "amount": "700",
+        "unit": "g",
+        "item": "lamb neck or shoulder on bone"
+      },
+      {
+        "amount": "75",
+        "unit": "g",
+        "item": "pearl barley"
+      },
+      {
+        "amount": "2",
+        "unit": "medium",
+        "item": "carrots, diced"
+      },
+      {
+        "amount": "2",
+        "unit": "medium",
+        "item": "turnips, diced"
+      },
+      {
+        "amount": "2",
+        "unit": "large",
+        "item": "leeks, sliced"
+      },
+      {
+        "amount": "1",
+        "unit": "large",
+        "item": "onion, diced"
+      },
+      {
+        "amount": "1.5",
+        "unit": "litres",
+        "item": "cold water"
+      },
+      {
+        "amount": "handful",
+        "unit": null,
+        "item": "fresh parsley, chopped"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt and pepper"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Place lamb in a large pot with cold water. Bring to the boil and skim off any foam."
+      },
+      {
+        "step": 2,
+        "instruction": "Add pearl barley, onion, carrots and turnips. Simmer for 1 hour."
+      },
+      {
+        "step": 3,
+        "instruction": "Remove lamb, strip the meat and return to pot. Discard bones."
+      },
+      {
+        "step": 4,
+        "instruction": "Add leeks and cook a further 30 minutes. Season generously and stir in parsley before serving."
+      }
+    ],
+    "prep_time_mins": 15,
+    "cook_time_mins": 90,
+    "serves": 6,
+    "image_url": null,
+    "tags": [
+      "lamb",
+      "barley",
+      "soup",
+      "traditional",
+      "scotland"
+    ],
+    "cooking_method": "simmered"
+  },
+  {
+    "id": "eton-mess",
+    "name": "Eton Mess",
+    "region": "berkshire",
+    "country": "UK",
+    "coordinates": [
+      51.4897,
+      -0.6058
+    ],
+    "short_description": "Crushed meringue, whipped cream and fresh strawberries — a glorious, carefree British summer dessert.",
+    "history": "Eton Mess takes its name from Eton College in Berkshire, where it has been served at the annual cricket match against Harrow since at least the 1930s, possibly earlier. One popular story holds that the dessert was created when a meringue and strawberry pudding was accidentally sat upon by a Labrador, and was served anyway. Whether true or not, the dish perfectly captures the British love of making something wonderful from apparent disaster. It remains the quintessential English summer pudding.",
+    "ingredients": [
+      {
+        "amount": "4",
+        "unit": "large",
+        "item": "egg whites"
+      },
+      {
+        "amount": "225",
+        "unit": "g",
+        "item": "caster sugar"
+      },
+      {
+        "amount": "500",
+        "unit": "ml",
+        "item": "double cream"
+      },
+      {
+        "amount": "500",
+        "unit": "g",
+        "item": "fresh strawberries, hulled and halved"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "icing sugar"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "vanilla extract"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Whisk egg whites to stiff peaks, then gradually whisk in caster sugar until glossy and thick. Spoon onto baking paper and bake at 120 °C for 1.5 hours. Cool completely."
+      },
+      {
+        "step": 2,
+        "instruction": "Mash a third of the strawberries with icing sugar to make a rough sauce."
+      },
+      {
+        "step": 3,
+        "instruction": "Whip double cream with vanilla to soft peaks."
+      },
+      {
+        "step": 4,
+        "instruction": "Roughly crush the meringues and fold through the cream with the strawberry sauce and remaining whole strawberries. Serve immediately."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 90,
+    "serves": 6,
+    "image_url": null,
+    "tags": [
+      "dessert",
+      "strawberry",
+      "meringue",
+      "cream",
+      "summer",
+      "berkshire"
+    ],
+    "cooking_method": "baked"
+  },
+  {
+    "id": "black-pudding",
+    "name": "Black Pudding",
+    "region": "lancashire",
+    "country": "UK",
+    "coordinates": [
+      53.6833,
+      -2.3167
+    ],
+    "short_description": "A rich, spiced blood sausage made with pork blood, oatmeal and fat — the centrepiece of a proper Northern breakfast.",
+    "history": "Black pudding is one of Britain's oldest foods, with blood sausages mentioned in ancient texts. The town of Bury in Lancashire is considered its spiritual home in England, and the Bury Black Pudding Company has been trading since the 1800s. The annual World Black Pudding Throwing Championships are held in Ramsbottom, Lancashire, where competitors throw black puddings at a stack of Yorkshire puddings atop a 20-foot plinth. It has enjoyed a culinary renaissance as a gourmet ingredient, featuring on fine-dining menus across the country.",
+    "ingredients": [
+      {
+        "amount": "500",
+        "unit": "ml",
+        "item": "fresh pig's blood"
+      },
+      {
+        "amount": "250",
+        "unit": "g",
+        "item": "pearl barley or oatmeal"
+      },
+      {
+        "amount": "250",
+        "unit": "g",
+        "item": "pork back fat, diced small"
+      },
+      {
+        "amount": "1",
+        "unit": "large",
+        "item": "onion, very finely diced"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "ground mace"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "dried marjoram"
+      },
+      {
+        "amount": "0.5",
+        "unit": "tsp",
+        "item": "ground allspice"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "item": "natural hog casings"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Cook barley in boiling water for 30 minutes until tender but still firm. Drain and cool."
+      },
+      {
+        "step": 2,
+        "instruction": "Mix blood, cooked barley, fat, onion and all spices thoroughly. Season well."
+      },
+      {
+        "step": 3,
+        "instruction": "Fill soaked hog casings loosely (mixture will expand), tying off at 20 cm intervals."
+      },
+      {
+        "step": 4,
+        "instruction": "Simmer in barely simmering water for 30–40 minutes until firm. Do not boil. Cool, then slice and fry in a little oil to serve."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 70,
+    "serves": 8,
+    "image_url": null,
+    "tags": [
+      "pork",
+      "blood",
+      "oats",
+      "sausage",
+      "lancashire",
+      "breakfast"
+    ],
+    "cooking_method": "boiled"
+  },
+  {
+    "id": "crannachan",
+    "name": "Cranachan",
+    "region": "scotland",
+    "country": "UK",
+    "coordinates": [
+      57.4778,
+      -4.2247
+    ],
+    "short_description": "Toasted oatmeal, whipped cream, whisky, honey and raspberries — Scotland's spectacular national dessert.",
+    "history": "Cranachan originated as a Midsummer celebration dish made from crowdie (a Scottish soft cheese) and cream, later evolving into the whisky-and-oatmeal dessert known today. It is traditionally served at Hogmanay (Scottish New Year) and Burns Night. Each person was given a bowl of the individual ingredients to assemble themselves at the table. The dish is a showcase of Scotland's finest ingredients: oats, raspberries, whisky and heather honey. It was famously served to celebrate the winning of the 1992 Ryder Cup by the European team in Scotland.",
+    "ingredients": [
+      {
+        "amount": "75",
+        "unit": "g",
+        "item": "pinhead oatmeal"
+      },
+      {
+        "amount": "600",
+        "unit": "ml",
+        "item": "double cream"
+      },
+      {
+        "amount": "3",
+        "unit": "tbsp",
+        "item": "Scottish heather honey"
+      },
+      {
+        "amount": "3",
+        "unit": "tbsp",
+        "item": "Scotch whisky"
+      },
+      {
+        "amount": "350",
+        "unit": "g",
+        "item": "fresh raspberries"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "vanilla extract"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Toast oatmeal in a dry frying pan until golden and nutty. Cool completely."
+      },
+      {
+        "step": 2,
+        "instruction": "Whip double cream with vanilla to soft peaks. Fold in honey and whisky."
+      },
+      {
+        "step": 3,
+        "instruction": "Reserve some raspberries for garnish. Lightly crush the rest and fold through the cream."
+      },
+      {
+        "step": 4,
+        "instruction": "Fold in most of the toasted oatmeal. Spoon into glasses, top with remaining raspberries and a sprinkle of oatmeal."
+      }
+    ],
+    "prep_time_mins": 15,
+    "cook_time_mins": 5,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "dessert",
+      "oats",
+      "whisky",
+      "cream",
+      "raspberry",
+      "scotland"
+    ],
+    "cooking_method": "no-cook"
+  },
+  {
+    "id": "pizza-margherita",
+    "name": "Pizza Margherita",
+    "region": "campania",
+    "country": "Italy",
+    "coordinates": [
+      40.8518,
+      14.2681
+    ],
+    "short_description": "Thin Neapolitan pizza with San Marzano tomatoes, fior di latte and fresh basil — the mother of all pizzas.",
+    "history": "Pizza Margherita was created in 1889 by Neapolitan pizzaiolo Raffaele Esposito in honour of Queen Margherita of Savoy, who was visiting Naples. He made three pizzas for the royal family and she most preferred the one topped with tomato, mozzarella and basil — said to represent the colours of the Italian flag. The Associazione Verace Pizza Napoletana (AVPN) now strictly regulates authentic Neapolitan pizza, specifying everything from the flour type to the 485°C wood-fired oven temperature and the 60–90 second cooking time.",
+    "ingredients": [
+      {
+        "amount": "500",
+        "unit": "g",
+        "item": "type '00' flour"
+      },
+      {
+        "amount": "325",
+        "unit": "ml",
+        "item": "cold water"
+      },
+      {
+        "amount": "10",
+        "unit": "g",
+        "item": "sea salt"
+      },
+      {
+        "amount": "3",
+        "unit": "g",
+        "item": "fresh yeast"
+      },
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "San Marzano tomatoes, crushed"
+      },
+      {
+        "amount": "250",
+        "unit": "g",
+        "item": "fior di latte or buffalo mozzarella"
+      },
+      {
+        "amount": "handful",
+        "unit": null,
+        "item": "fresh basil leaves"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "extra-virgin olive oil"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "sea salt"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Dissolve yeast in water, mix into flour and salt to form a dough. Knead for 10 minutes until smooth and elastic. Rise for 8–24 hours at room temperature."
+      },
+      {
+        "step": 2,
+        "instruction": "Divide into 250 g balls and rest for 4 hours. Stretch by hand (never roll) into a thin 30 cm disc."
+      },
+      {
+        "step": 3,
+        "instruction": "Spread crushed tomatoes thinly, tear over mozzarella and drizzle with olive oil."
+      },
+      {
+        "step": 4,
+        "instruction": "Bake on a very hot pizza stone at maximum oven temperature (250 °C+) for 8–10 minutes, or in a wood-fired oven at 485 °C for 60–90 seconds."
+      },
+      {
+        "step": 5,
+        "instruction": "Add fresh basil immediately on removal from oven. Serve at once."
+      }
+    ],
+    "prep_time_mins": 30,
+    "cook_time_mins": 10,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "pizza",
+      "tomato",
+      "cheese",
+      "baked",
+      "traditional",
+      "campania"
+    ],
+    "cooking_method": "baked"
+  },
+  {
+    "id": "ragu-bolognese",
+    "name": "Ragù Bolognese",
+    "region": "emilia-romagna",
+    "country": "Italy",
+    "coordinates": [
+      44.4949,
+      11.3426
+    ],
+    "short_description": "The slow-cooked meat sauce from Bologna — rich with beef, pork, wine and a touch of milk.",
+    "history": "The first recorded recipe for what we now call Bolognese was registered with the Bologna Chamber of Commerce in 1982 by the Accademia Italiana della Cucina — an attempt to codify and protect the authentic recipe. However, ragù in Bologna dates back centuries, evolving from a medieval dish of minced meats stewed with onions and root vegetables. The official recipe calls for beef and pork, a little tomato, white wine and whole milk, and should be simmered for a minimum of two hours. Spaghetti Bolognese, as known internationally, is considered heresy in Bologna — tagliatelle is the only acceptable pasta.",
+    "ingredients": [
+      {
+        "amount": "300",
+        "unit": "g",
+        "item": "coarse-ground beef (chuck or brisket)"
+      },
+      {
+        "amount": "150",
+        "unit": "g",
+        "item": "coarse-ground pork"
+      },
+      {
+        "amount": "100",
+        "unit": "g",
+        "item": "pancetta, finely diced"
+      },
+      {
+        "amount": "1",
+        "unit": "medium",
+        "item": "onion, finely diced"
+      },
+      {
+        "amount": "2",
+        "unit": "stalks",
+        "item": "celery, finely diced"
+      },
+      {
+        "amount": "1",
+        "unit": "medium",
+        "item": "carrot, finely diced"
+      },
+      {
+        "amount": "150",
+        "unit": "ml",
+        "item": "dry white wine"
+      },
+      {
+        "amount": "200",
+        "unit": "ml",
+        "item": "whole milk"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "tomato paste"
+      },
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "tagliatelle pasta"
+      },
+      {
+        "amount": "50",
+        "unit": "g",
+        "item": "Parmigiano-Reggiano, grated"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Render pancetta in a heavy pan, then add onion, celery and carrot (the soffritto). Cook 15 minutes until soft."
+      },
+      {
+        "step": 2,
+        "instruction": "Add beef and pork. Brown thoroughly, breaking up the meat — about 15 minutes."
+      },
+      {
+        "step": 3,
+        "instruction": "Pour in white wine and cook until completely evaporated. Stir in tomato paste."
+      },
+      {
+        "step": 4,
+        "instruction": "Add milk and simmer until absorbed. Season and reduce heat to the lowest setting. Cook uncovered for at least 2 hours, stirring occasionally and adding a splash of water if needed."
+      },
+      {
+        "step": 5,
+        "instruction": "Cook tagliatelle in well-salted water until al dente. Toss with ragù and serve with Parmigiano."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 150,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "beef",
+      "pork",
+      "pasta",
+      "braised",
+      "traditional",
+      "emilia-romagna"
+    ],
+    "cooking_method": "braised"
+  },
+  {
+    "id": "risotto-alla-milanese",
+    "name": "Risotto alla Milanese",
+    "region": "lombardy",
+    "country": "Italy",
+    "coordinates": [
+      45.4654,
+      9.1866
+    ],
+    "short_description": "Saffron-gilded risotto from Milan — creamy, golden and finished with a lavish wave of Parmigiano.",
+    "history": "Risotto alla Milanese owes its golden colour and distinctive flavour to saffron, once brought to Milan along trade routes from the East. According to legend, the dish was first served at a wedding in 1574 when a glassblower's apprentice, known for adding saffron to his paints, added it to the wedding rice as a prank. Guests were initially horrified but then delighted. The dish is considered the defining recipe of Milanese cuisine and is traditionally served alongside osso buco as a classic Lombardy pairing.",
+    "ingredients": [
+      {
+        "amount": "320",
+        "unit": "g",
+        "item": "Carnaroli or Arborio rice"
+      },
+      {
+        "amount": "1",
+        "unit": "sachet",
+        "item": "saffron threads (about 0.5 g)"
+      },
+      {
+        "amount": "1.2",
+        "unit": "litres",
+        "item": "hot beef or chicken stock"
+      },
+      {
+        "amount": "1",
+        "unit": "small",
+        "item": "onion, finely diced"
+      },
+      {
+        "amount": "100",
+        "unit": "ml",
+        "item": "dry white wine"
+      },
+      {
+        "amount": "80",
+        "unit": "g",
+        "item": "unsalted butter"
+      },
+      {
+        "amount": "60",
+        "unit": "g",
+        "item": "Parmigiano-Reggiano, grated"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "extra-virgin olive oil"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Steep saffron in a small cup of warm stock for 10 minutes."
+      },
+      {
+        "step": 2,
+        "instruction": "Soften onion in butter and oil over medium-low heat — do not colour. Add rice and toast for 2 minutes, stirring constantly."
+      },
+      {
+        "step": 3,
+        "instruction": "Add white wine and stir until absorbed. Begin adding hot stock a ladleful at a time, stirring constantly and waiting until each addition is absorbed before adding the next."
+      },
+      {
+        "step": 4,
+        "instruction": "Halfway through cooking (around 9 minutes) add the saffron stock."
+      },
+      {
+        "step": 5,
+        "instruction": "After 18 minutes, remove from heat while still slightly firm. Stir in cold butter and Parmigiano vigorously (mantecatura) until glossy and creamy. Rest 2 minutes and serve."
+      }
+    ],
+    "prep_time_mins": 10,
+    "cook_time_mins": 25,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "rice",
+      "saffron",
+      "cheese",
+      "stirred",
+      "traditional",
+      "lombardy"
+    ],
+    "cooking_method": "simmered"
+  },
+  {
+    "id": "arancini",
+    "name": "Arancini",
+    "region": "sicily",
+    "country": "Italy",
+    "coordinates": [
+      37.5999,
+      14.0154
+    ],
+    "short_description": "Golden, breadcrumbed fried rice balls filled with ragù and mozzarella — Sicily's beloved street food.",
+    "history": "Arancini ('little oranges') have been made in Sicily since at least the 10th century, their origins rooted in the Arab occupation of the island, which introduced rice cultivation, saffron and spiced meat to Sicilian cuisine. The rice was originally flavoured with saffron (giving the orange colour) and filled with slow-cooked meat. Different parts of Sicily have fiercely debated the correct shape: Palermo insists on conical arancini, while Catania favours round. In 2009, Sicily began the process of seeking EU PGI status for arancini.",
+    "ingredients": [
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "Arborio rice"
+      },
+      {
+        "amount": "1",
+        "unit": "litre",
+        "item": "chicken stock"
+      },
+      {
+        "amount": "2",
+        "unit": "sachets",
+        "item": "saffron"
+      },
+      {
+        "amount": "200",
+        "unit": "g",
+        "item": "beef or pork mince"
+      },
+      {
+        "amount": "200",
+        "unit": "g",
+        "item": "tinned tomatoes, crushed"
+      },
+      {
+        "amount": "100",
+        "unit": "g",
+        "item": "frozen peas"
+      },
+      {
+        "amount": "100",
+        "unit": "g",
+        "item": "mozzarella, diced"
+      },
+      {
+        "amount": "2",
+        "unit": "large",
+        "item": "eggs, beaten"
+      },
+      {
+        "amount": "150",
+        "unit": "g",
+        "item": "fine breadcrumbs"
+      },
+      {
+        "amount": "vegetable oil",
+        "unit": null,
+        "item": "for deep frying"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Cook rice in saffron-infused stock until dry and sticky. Spread out to cool completely."
+      },
+      {
+        "step": 2,
+        "instruction": "Brown mince with a little onion, add tomatoes and peas. Simmer 20 minutes to a thick ragù. Cool."
+      },
+      {
+        "step": 3,
+        "instruction": "With wet hands, take a cup of rice, flatten in your palm, add a spoonful of ragù and a cube of mozzarella. Enclose and form into a ball or cone."
+      },
+      {
+        "step": 4,
+        "instruction": "Dip in beaten egg, then roll in breadcrumbs. Repeat for all."
+      },
+      {
+        "step": 5,
+        "instruction": "Deep fry in batches at 180 °C for 4–5 minutes until deep golden. Drain and serve hot."
+      }
+    ],
+    "prep_time_mins": 40,
+    "cook_time_mins": 40,
+    "serves": 6,
+    "image_url": null,
+    "tags": [
+      "rice",
+      "beef",
+      "fried",
+      "street-food",
+      "traditional",
+      "sicily"
+    ],
+    "cooking_method": "deep-fried"
+  },
+  {
+    "id": "ribollita",
+    "name": "Ribollita",
+    "region": "tuscany",
+    "country": "Italy",
+    "coordinates": [
+      43.7711,
+      11.2486
+    ],
+    "short_description": "A thick, hearty Tuscan bread soup built on cannellini beans, cavolo nero and yesterday's stale bread.",
+    "history": "Ribollita means 'reboiled' in Italian, and the dish was born from peasant thrift — leftover minestrone was thickened with stale bread and reboiled the next day, and even reboiled again the day after, each time becoming richer and more flavoursome. It is inextricably linked to the cucina povera tradition of Tuscany, particularly the Florentine countryside. The cavolo nero (black kale) gives it its defining colour and bittersweet character. The dish is considered to be at its best on the third day of reboiling.",
+    "ingredients": [
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "cannellini beans, cooked (or tinned)"
+      },
+      {
+        "amount": "1",
+        "unit": "bunch",
+        "item": "cavolo nero (black kale), roughly torn"
+      },
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "tinned tomatoes"
+      },
+      {
+        "amount": "2",
+        "unit": "stalks",
+        "item": "celery, diced"
+      },
+      {
+        "amount": "2",
+        "unit": "medium",
+        "item": "carrots, diced"
+      },
+      {
+        "amount": "1",
+        "unit": "large",
+        "item": "onion, diced"
+      },
+      {
+        "amount": "3",
+        "unit": "cloves",
+        "item": "garlic, sliced"
+      },
+      {
+        "amount": "300",
+        "unit": "g",
+        "item": "stale Tuscan (unsalted) bread, torn"
+      },
+      {
+        "amount": "1.2",
+        "unit": "litres",
+        "item": "vegetable stock"
+      },
+      {
+        "amount": "4",
+        "unit": "tbsp",
+        "item": "extra-virgin olive oil"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Gently fry onion, carrot and celery in olive oil for 15 minutes. Add garlic and cook 2 more minutes."
+      },
+      {
+        "step": 2,
+        "instruction": "Add tomatoes, beans and stock. Simmer 20 minutes."
+      },
+      {
+        "step": 3,
+        "instruction": "Mash roughly a third of the beans against the side of the pot to thicken the soup."
+      },
+      {
+        "step": 4,
+        "instruction": "Add cavolo nero and stale bread, pressing the bread into the liquid. Simmer 20 more minutes until thick and porridge-like."
+      },
+      {
+        "step": 5,
+        "instruction": "Rest overnight, then reheat (ribollire — reboil) the next day. Drizzle generously with olive oil to serve."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 60,
+    "serves": 6,
+    "image_url": null,
+    "tags": [
+      "beans",
+      "bread",
+      "kale",
+      "vegetable",
+      "simmered",
+      "tuscany"
+    ],
+    "cooking_method": "simmered"
+  },
+  {
+    "id": "cacio-e-pepe",
+    "name": "Cacio e Pepe",
+    "region": "lazio",
+    "country": "Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "short_description": "Rome's three-ingredient pasta masterpiece — spaghetti with Pecorino Romano and ferocious black pepper.",
+    "history": "Cacio e pepe — 'cheese and pepper' — is one of Rome's oldest pasta dishes, believed to have originated with shepherds in the hills of Lazio who carried with them the non-perishable ingredients of aged Pecorino, dried pasta and whole peppercorns. The dish requires no butter, no cream, and no oil — only the starchy pasta water and cheese form the sauce, a technique that demands precision. In 2023, Cacio e Pepe was listed as one of Rome's most protected culinary symbols, with chefs arguing passionately about whether any addition beyond the three core ingredients constitutes sacrilege.",
+    "ingredients": [
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "tonnarelli or thick spaghetti"
+      },
+      {
+        "amount": "200",
+        "unit": "g",
+        "item": "Pecorino Romano, finely grated"
+      },
+      {
+        "amount": "50",
+        "unit": "g",
+        "item": "Parmigiano-Reggiano, finely grated"
+      },
+      {
+        "amount": "2",
+        "unit": "tsp",
+        "item": "whole black peppercorns, coarsely crushed"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt (for pasta water)"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Toast crushed peppercorns in a dry, wide pan for 1 minute until fragrant. Add a ladle of pasta water and let it reduce by half."
+      },
+      {
+        "step": 2,
+        "instruction": "Cook pasta in lightly salted boiling water (use less salt than usual, as the cheese is very salty). Reserve pasta water before draining."
+      },
+      {
+        "step": 3,
+        "instruction": "Add al dente pasta to the pan with the pepper. Toss over medium heat."
+      },
+      {
+        "step": 4,
+        "instruction": "Away from the heat, add grated cheeses with a splash of starchy water. Toss vigorously — the cheese should melt into a creamy, glossy sauce coating every strand. Add more water if it clumps."
+      }
+    ],
+    "prep_time_mins": 5,
+    "cook_time_mins": 15,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "pasta",
+      "cheese",
+      "pepper",
+      "traditional",
+      "lazio",
+      "rome"
+    ],
+    "cooking_method": "boiled"
+  },
+  {
+    "id": "bistecca-fiorentina",
+    "name": "Bistecca alla Fiorentina",
+    "region": "tuscany",
+    "country": "Italy",
+    "coordinates": [
+      43.7696,
+      11.2558
+    ],
+    "short_description": "A vast, bone-in T-bone of Chianina beef, seared over oak embers and served gloriously rare.",
+    "history": "Bistecca alla Fiorentina takes its name from Florence and from the traditional Florentine greeting of 'buon vì!' (good eat). It is made exclusively from the Chianina cattle breed, one of the oldest in the world, raised in the Val di Chiana of Tuscany. The Medici family famously served great quantities of beef at a St Lawrence Day feast in 1565, impressing visiting English traders who shouted 'beef steak!' — some claim this is how the word 'bistecca' entered Italian. The steak must be at least 3 cm thick, and in Florence, ordering it 'well done' is considered an insult.",
+    "ingredients": [
+      {
+        "amount": "1.2",
+        "unit": "kg",
+        "item": "Chianina T-bone or porterhouse steak (at least 3 cm thick)"
+      },
+      {
+        "amount": "3",
+        "unit": "tbsp",
+        "item": "extra-virgin olive oil (Tuscan)"
+      },
+      {
+        "amount": "1",
+        "unit": "sprig",
+        "item": "fresh rosemary"
+      },
+      {
+        "amount": "1",
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "coarse sea salt and black pepper"
+      },
+      {
+        "amount": "1",
+        "unit": "wedge",
+        "item": "lemon (to serve)"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Bring the steak to room temperature for at least 1 hour. Season generously with salt and pepper."
+      },
+      {
+        "step": 2,
+        "instruction": "Get a charcoal or wood fire blazingly hot. Place steak directly on the grill. Cook 5 minutes without moving."
+      },
+      {
+        "step": 3,
+        "instruction": "Flip once only. Cook 5 more minutes for rare. The internal temperature should be 52–54 °C."
+      },
+      {
+        "step": 4,
+        "instruction": "Rest upright on the bone for 5 minutes. Drizzle with excellent olive oil and serve with lemon."
+      }
+    ],
+    "prep_time_mins": 5,
+    "cook_time_mins": 10,
+    "serves": 2,
+    "image_url": null,
+    "tags": [
+      "beef",
+      "grilled",
+      "traditional",
+      "tuscany",
+      "meat"
+    ],
+    "cooking_method": "grilled"
+  },
+  {
+    "id": "pesto-genovese",
+    "name": "Pesto alla Genovese",
+    "region": "liguria",
+    "country": "Italy",
+    "coordinates": [
+      44.4056,
+      8.9463
+    ],
+    "short_description": "The original pesto — crushed Ligurian basil, pine nuts, Parmigiano and extra-virgin olive oil.",
+    "history": "Pesto Genovese originates from Genoa, the capital of Liguria, and its history stretches back to at least the ancient Roman condiment moretum — a crushed paste of herbs, garlic, cheese and oil. The modern pesto was first documented in the mid-19th century. It is protected by PGI status and the World Pesto Championship is held in Genoa every two years, with strict rules: the basil must be Ligurian DOP, the grinding must be done in a marble mortar with a wooden pestle, and no blender is permitted. Trofie or trenette pasta are traditional pairings; never spaghetti.",
+    "ingredients": [
+      {
+        "amount": "50",
+        "unit": "g",
+        "item": "fresh Genovese basil leaves (DOP)"
+      },
+      {
+        "amount": "50",
+        "unit": "g",
+        "item": "Parmigiano-Reggiano, grated"
+      },
+      {
+        "amount": "30",
+        "unit": "g",
+        "item": "Pecorino Sardo, grated"
+      },
+      {
+        "amount": "30",
+        "unit": "g",
+        "item": "pine nuts"
+      },
+      {
+        "amount": "1",
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "amount": "100",
+        "unit": "ml",
+        "item": "extra-virgin Ligurian olive oil"
+      },
+      {
+        "amount": "pinch",
+        "unit": null,
+        "item": "coarse sea salt"
+      },
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "trofie or trenette pasta (to serve)"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Pound garlic with salt in a large marble mortar until a paste. Add pine nuts and pound to a rough paste."
+      },
+      {
+        "step": 2,
+        "instruction": "Add basil leaves in batches, grinding with a circular motion (not pounding) to release the oil without bruising."
+      },
+      {
+        "step": 3,
+        "instruction": "Work in the cheeses, then drizzle in olive oil, stirring to emulsify. The result should be fragrant, vivid green and creamy."
+      },
+      {
+        "step": 4,
+        "instruction": "Cook pasta al dente in well-salted water. Reserve a cup of pasta water, then toss with pesto, loosening with water as needed."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 10,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "pasta",
+      "basil",
+      "cheese",
+      "pine-nuts",
+      "traditional",
+      "liguria"
+    ],
+    "cooking_method": "no-cook"
+  },
+  {
+    "id": "osso-buco",
+    "name": "Osso Buco alla Milanese",
+    "region": "lombardy",
+    "country": "Italy",
+    "coordinates": [
+      45.4654,
+      9.1866
+    ],
+    "short_description": "Slow-braised veal shanks with white wine and gremolata — Milan's magnificent main course.",
+    "history": "Osso buco — meaning 'bone with a hole' in Milanese dialect — refers to the marrow-filled hollow in the cross-cut veal shank. The dish has been made in Milan since at least the 18th century, though early versions lacked tomatoes (introduced later from the Americas). The modern version was codified in the 19th century and is always served with Risotto alla Milanese, forming one of the great classic pairings in Italian cuisine. The gremolata — lemon zest, garlic and parsley — is the finishing touch that cuts through the richness. Diners traditionally use a small spoon to scoop out the marrow from the bone.",
+    "ingredients": [
+      {
+        "amount": "4",
+        "unit": "pieces",
+        "item": "veal shanks, cross-cut (about 4 cm thick)"
+      },
+      {
+        "amount": "1",
+        "unit": "medium",
+        "item": "onion, diced"
+      },
+      {
+        "amount": "2",
+        "unit": "stalks",
+        "item": "celery, diced"
+      },
+      {
+        "amount": "1",
+        "unit": "medium",
+        "item": "carrot, diced"
+      },
+      {
+        "amount": "200",
+        "unit": "ml",
+        "item": "dry white wine"
+      },
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "tinned tomatoes"
+      },
+      {
+        "amount": "300",
+        "unit": "ml",
+        "item": "veal or chicken stock"
+      },
+      {
+        "amount": "zest of 1",
+        "unit": null,
+        "item": "lemon"
+      },
+      {
+        "amount": "1",
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "amount": "handful",
+        "unit": null,
+        "item": "fresh flat-leaf parsley, chopped"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Tie the veal shanks with string to keep their shape. Season and dredge in flour. Brown all over in butter and oil in a wide casserole."
+      },
+      {
+        "step": 2,
+        "instruction": "Remove meat. Cook onion, celery and carrot in the same pan until soft. Add wine and reduce by half."
+      },
+      {
+        "step": 3,
+        "instruction": "Add tomatoes and stock. Return shanks, cover and braise at 160 °C for 1.5–2 hours until very tender."
+      },
+      {
+        "step": 4,
+        "instruction": "Make gremolata: mix lemon zest, garlic and parsley."
+      },
+      {
+        "step": 5,
+        "instruction": "Serve shanks over risotto Milanese, scattered with gremolata."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 120,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "veal",
+      "braised",
+      "traditional",
+      "lombardy",
+      "wine"
+    ],
+    "cooking_method": "braised"
+  },
+  {
+    "id": "tiramisu",
+    "name": "Tiramisù",
+    "region": "veneto",
+    "country": "Italy",
+    "coordinates": [
+      45.4408,
+      12.3155
+    ],
+    "short_description": "Espresso-soaked savoiardi, mascarpone cream and a dusting of cocoa — Italy's most famous dessert.",
+    "history": "Tiramisù — 'pick me up' in Italian — is a relatively modern creation, invented in the 1960s or 1970s. The most widely accepted origin story points to the restaurant Le Beccherie in Treviso, Veneto, where pastry chef Roberto Linguanotto created it circa 1969. However, several restaurants in Friuli-Venezia Giulia and across northern Italy claim equal credit, and the dish's origins remain hotly contested. Regardless, tiramisù became an international phenomenon with remarkable speed, appearing on restaurant menus globally by the 1980s. Its combination of coffee, cream and alcohol captures the essence of Italian indulgence.",
+    "ingredients": [
+      {
+        "amount": "500",
+        "unit": "g",
+        "item": "mascarpone cheese"
+      },
+      {
+        "amount": "5",
+        "unit": "large",
+        "item": "eggs, separated"
+      },
+      {
+        "amount": "100",
+        "unit": "g",
+        "item": "caster sugar"
+      },
+      {
+        "amount": "300",
+        "unit": "ml",
+        "item": "strong espresso, cooled"
+      },
+      {
+        "amount": "60",
+        "unit": "ml",
+        "item": "Marsala wine or coffee liqueur"
+      },
+      {
+        "amount": "24",
+        "unit": null,
+        "item": "savoiardi (ladyfinger biscuits)"
+      },
+      {
+        "amount": "2",
+        "unit": "tbsp",
+        "item": "unsweetened cocoa powder"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Beat egg yolks and sugar until pale and thick. Fold in mascarpone until smooth."
+      },
+      {
+        "step": 2,
+        "instruction": "Whisk egg whites to stiff peaks and fold gently into the mascarpone mixture in thirds."
+      },
+      {
+        "step": 3,
+        "instruction": "Mix espresso and Marsala. Briefly dip each savoiardo (one second per side — not soggy) and lay in a single layer in a dish."
+      },
+      {
+        "step": 4,
+        "instruction": "Spread half the cream mixture over the biscuit layer. Repeat with another layer of dipped biscuits and remaining cream."
+      },
+      {
+        "step": 5,
+        "instruction": "Dust generously with cocoa. Cover and refrigerate for at least 4 hours, ideally overnight."
+      }
+    ],
+    "prep_time_mins": 30,
+    "cook_time_mins": 0,
+    "serves": 8,
+    "image_url": null,
+    "tags": [
+      "dessert",
+      "coffee",
+      "mascarpone",
+      "cream",
+      "veneto",
+      "no-bake"
+    ],
+    "cooking_method": "no-cook"
+  },
+  {
+    "id": "cannoli-siciliani",
+    "name": "Cannoli Siciliani",
+    "region": "sicily",
+    "country": "Italy",
+    "coordinates": [
+      37.6015,
+      13.5765
+    ],
+    "short_description": "Crispy fried pastry tubes stuffed with sweetened ricotta and candied fruit — Sicily's most celebrated sweet.",
+    "history": "Cannoli originated in Sicily during the Arab rule of the island (9th–11th centuries), with some historians tracing them to the Palermo area. The name comes from the cane (canna) tubes originally used for shaping the shells. They were once made only during Carnival season, but their popularity led to year-round production. Authentic cannoli shells are fried in lard and filled to order to maintain crispness — the Sicilian belief is that a cannolo should be filled only at the moment of eating. They were introduced to American culture by Sicilian immigrants, and the phrase 'Leave the gun, take the cannoli' from The Godfather has become iconic.",
+    "ingredients": [
+      {
+        "amount": "250",
+        "unit": "g",
+        "item": "plain flour"
+      },
+      {
+        "amount": "30",
+        "unit": "g",
+        "item": "caster sugar"
+      },
+      {
+        "amount": "30",
+        "unit": "g",
+        "item": "lard or butter"
+      },
+      {
+        "amount": "1",
+        "unit": "large",
+        "item": "egg"
+      },
+      {
+        "amount": "60",
+        "unit": "ml",
+        "item": "Marsala wine"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "cinnamon"
+      },
+      {
+        "amount": "500",
+        "unit": "g",
+        "item": "sheep's milk ricotta, drained overnight"
+      },
+      {
+        "amount": "150",
+        "unit": "g",
+        "item": "icing sugar"
+      },
+      {
+        "amount": "50",
+        "unit": "g",
+        "item": "candied orange peel, chopped"
+      },
+      {
+        "amount": "50",
+        "unit": "g",
+        "item": "dark chocolate chips"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Mix flour, sugar, cinnamon, lard, egg and Marsala into a smooth dough. Rest for 30 minutes."
+      },
+      {
+        "step": 2,
+        "instruction": "Roll out very thinly and cut into 10 cm circles. Wrap around cannoli tubes and seal edges with egg white."
+      },
+      {
+        "step": 3,
+        "instruction": "Deep fry at 180 °C until golden and blistered. Slide off tubes while hot and cool on a rack."
+      },
+      {
+        "step": 4,
+        "instruction": "Beat ricotta with icing sugar until smooth. Fold in candied peel and chocolate chips."
+      },
+      {
+        "step": 5,
+        "instruction": "Fill shells with ricotta at the last moment using a piping bag. Dust with icing sugar and serve immediately."
+      }
+    ],
+    "prep_time_mins": 45,
+    "cook_time_mins": 15,
+    "serves": 12,
+    "image_url": null,
+    "tags": [
+      "pastry",
+      "ricotta",
+      "fried",
+      "dessert",
+      "traditional",
+      "sicily"
+    ],
+    "cooking_method": "deep-fried"
+  },
+  {
+    "id": "carbonara",
+    "name": "Spaghetti alla Carbonara",
+    "region": "lazio",
+    "country": "Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "short_description": "Guanciale, egg yolks and Pecorino Romano create a silky, intensely savoury Roman pasta — no cream, ever.",
+    "history": "Carbonara is one of Rome's four iconic pasta sauces, alongside Cacio e Pepe, Amatriciana and Gricia. Its exact origins are debated — one popular theory holds it was popularised after American troops brought bacon and eggs to Rome during World War II; another claims it derives from ancient Roman charcoal workers (carbonari). The first written recipe appeared in 1952. Italian culinary tradition is unambiguous: there is no cream in carbonara. The creaminess comes entirely from emulsifying egg yolk with starchy pasta water and the rendered fat of the guanciale.",
+    "ingredients": [
+      {
+        "amount": "400",
+        "unit": "g",
+        "item": "spaghetti or rigatoni"
+      },
+      {
+        "amount": "150",
+        "unit": "g",
+        "item": "guanciale (cured pork cheek), diced"
+      },
+      {
+        "amount": "4",
+        "unit": "large",
+        "item": "egg yolks"
+      },
+      {
+        "amount": "1",
+        "unit": "whole",
+        "item": "egg"
+      },
+      {
+        "amount": "80",
+        "unit": "g",
+        "item": "Pecorino Romano, finely grated"
+      },
+      {
+        "amount": "50",
+        "unit": "g",
+        "item": "Parmigiano-Reggiano, finely grated"
+      },
+      {
+        "amount": "1.5",
+        "unit": "tsp",
+        "item": "coarsely ground black pepper"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Render guanciale in a cold pan over medium heat until crispy and the fat runs clear. Reserve all the fat."
+      },
+      {
+        "step": 2,
+        "instruction": "Whisk egg yolks, whole egg, cheeses and half the pepper into a smooth cream."
+      },
+      {
+        "step": 3,
+        "instruction": "Cook pasta in well-salted water to just-al-dente. Reserve at least a cup of starchy water."
+      },
+      {
+        "step": 4,
+        "instruction": "Off the heat, toss pasta with guanciale and its fat. Add egg mixture and toss vigorously, adding pasta water a splash at a time until a glossy, coating sauce forms. The eggs must not scramble — heat from pasta alone is sufficient."
+      }
+    ],
+    "prep_time_mins": 10,
+    "cook_time_mins": 20,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "pasta",
+      "pork",
+      "egg",
+      "cheese",
+      "traditional",
+      "lazio",
+      "rome"
+    ],
+    "cooking_method": "boiled"
+  },
+  {
+    "id": "focaccia-genovese",
+    "name": "Focaccia Genovese",
+    "region": "liguria",
+    "country": "Italy",
+    "coordinates": [
+      44.4056,
+      8.9463
+    ],
+    "short_description": "Ligurian flatbread — dimpled, drenched in olive oil and sprinkled with coarse salt, crisp outside and pillowy within.",
+    "history": "Focaccia Genovese (fugassa in Ligurian dialect) has roots in ancient Phoenician and Greek flatbreads, later adopted by the Romans. It became central to Ligurian culture and is the traditional breakfast of Genoa, eaten warm with cappuccino. Bakeries open before dawn and queues form for the first hot sheet of the day. Genovese focaccia must be at least 2 cm thick and has a dimpled surface formed by pressing fingers deep into the dough before the final rise. An olive oil and brine solution is poured into the dimples before baking. It has PGI protection as Focaccia di Recco (a thinner stuffed version from the town of Recco).",
+    "ingredients": [
+      {
+        "amount": "500",
+        "unit": "g",
+        "item": "strong bread flour"
+      },
+      {
+        "amount": "325",
+        "unit": "ml",
+        "item": "warm water"
+      },
+      {
+        "amount": "7",
+        "unit": "g",
+        "item": "instant dried yeast"
+      },
+      {
+        "amount": "10",
+        "unit": "g",
+        "item": "salt"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "item": "honey or malt extract"
+      },
+      {
+        "amount": "80",
+        "unit": "ml",
+        "item": "extra-virgin olive oil"
+      },
+      {
+        "amount": "to top",
+        "unit": null,
+        "item": "coarse sea salt and rosemary"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Mix flour, yeast, honey, salt and 50 ml oil with water. Knead 8 minutes until smooth. Prove 1 hour until doubled."
+      },
+      {
+        "step": 2,
+        "instruction": "Oil a large baking tray generously. Stretch dough to fill the tray and rest 20 minutes."
+      },
+      {
+        "step": 3,
+        "instruction": "Mix remaining oil with 2 tbsp of water and pour over the dough. Press deep finger-holes all over the surface."
+      },
+      {
+        "step": 4,
+        "instruction": "Prove 30 more minutes. Sprinkle with coarse salt and rosemary."
+      },
+      {
+        "step": 5,
+        "instruction": "Bake at 220 °C for 20–25 minutes until deeply golden. Eat warm."
+      }
+    ],
+    "prep_time_mins": 20,
+    "cook_time_mins": 25,
+    "serves": 8,
+    "image_url": null,
+    "tags": [
+      "bread",
+      "olive-oil",
+      "baked",
+      "traditional",
+      "liguria"
+    ],
+    "cooking_method": "baked"
+  },
+  {
+    "id": "panzanella",
+    "name": "Panzanella",
+    "region": "tuscany",
+    "country": "Italy",
+    "coordinates": [
+      43.3167,
+      11.3333
+    ],
+    "short_description": "Tuscan stale bread salad soaked in tomato juices, dressed with olive oil, basil and red wine vinegar.",
+    "history": "Panzanella is one of the great cucina povera dishes of Tuscany, originating as a way to use stale, unsalted Tuscan bread (pane sciocco) that would otherwise be wasted. Early versions made before the introduction of tomatoes used onions and herbs. The tomato became central by the 19th century. The dish is associated with summer, when tomatoes are at their peak and heat makes the idea of cooking unbearable. There are lively debates about whether the bread should be soaked or merely moistened, and whether cucumber (controversial) is acceptable.",
+    "ingredients": [
+      {
+        "amount": "300",
+        "unit": "g",
+        "item": "stale Tuscan bread, torn into chunks"
+      },
+      {
+        "amount": "600",
+        "unit": "g",
+        "item": "ripe tomatoes, roughly chopped"
+      },
+      {
+        "amount": "1",
+        "unit": "medium",
+        "item": "red onion, finely sliced"
+      },
+      {
+        "amount": "1",
+        "unit": "small",
+        "item": "cucumber, sliced (optional)"
+      },
+      {
+        "amount": "handful",
+        "unit": null,
+        "item": "fresh basil leaves, torn"
+      },
+      {
+        "amount": "4",
+        "unit": "tbsp",
+        "item": "extra-virgin olive oil"
+      },
+      {
+        "amount": "1.5",
+        "unit": "tbsp",
+        "item": "red wine vinegar"
+      },
+      {
+        "amount": "to taste",
+        "unit": null,
+        "item": "salt and black pepper"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Salt the tomatoes, toss and leave in a colander for 20 minutes to draw out the juices. Reserve the juices."
+      },
+      {
+        "step": 2,
+        "instruction": "Soak bread in the tomato juices and a splash of water for 10 minutes until moistened but not mushy."
+      },
+      {
+        "step": 3,
+        "instruction": "Combine bread, tomatoes, onion and cucumber (if using). Dress with oil and vinegar."
+      },
+      {
+        "step": 4,
+        "instruction": "Season and toss gently. Leave to rest 20 minutes so flavours meld. Add basil just before serving."
+      }
+    ],
+    "prep_time_mins": 30,
+    "cook_time_mins": 0,
+    "serves": 4,
+    "image_url": null,
+    "tags": [
+      "bread",
+      "tomato",
+      "salad",
+      "vegetable",
+      "no-cook",
+      "tuscany"
+    ],
+    "cooking_method": "no-cook"
+  }
+]

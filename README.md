@@ -74,10 +74,22 @@ pytest
 2. Add the full recipe object to `backend/data/recipes.json` following the existing schema.
 3. The pin will appear on the map automatically — no code changes needed.
 
+## Data Sources
+
+Recipe images and supplementary data are sourced from **[TheMealDB](https://www.themealdb.com/api.php)** — a free, open recipe database and JSON API.
+
+- Free API key `"1"` is used for development / educational use.
+- The script `backend/scripts/populate_from_mealdb.py` queries the API and backfills `image_url` (and any other missing fields) into `recipes.json`.
+- Run it any time you add new recipes: `python backend/scripts/populate_from_mealdb.py`
+- For production use, a paid TheMealDB supporter key is recommended (unlocks full dataset access).
+
+> TheMealDB API: https://www.themealdb.com/api.php  
+> License: free at point of access; see [TheMealDB Terms](https://www.themealdb.com/terms_of_use.php).
+
 ## Roadmap
 
 - [ ] UK (Cornwall, Scotland) — proof of concept ✅
 - [ ] Expand to additional countries
 - [ ] Add search / filter by ingredient or tag
 - [ ] User-submitted recipes
-- [ ] Image support for dishes
+- [x] Image support via TheMealDB API
