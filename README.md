@@ -1,6 +1,10 @@
 # Regional Dishes 🗺️
 
-An interactive map for exploring traditional recipes from different regions of the world. Click a pin to discover a dish's history, ingredients and method. Switch to the Connections tab to see how dishes across countries cluster together by shared ingredients and cooking technique.
+An interactive map for exploring traditional recipes from different regions of the world - an expansion of some work my dad had done during COVID lockdown, trying to cook one dish from every region in the USA and UK, and for each country. Linked with my current work, I'm also trying to use clustering techniques to find connections between the dishes. 
+
+Click a pin to discover a dish's history, ingredients and method. Switch to the Connections tab to see how dishes across countries cluster together by shared ingredients and cooking technique.
+
+I want the map ultimately be interactive, so anyone can add in forgotten regional dishes, especially from the UK. 
 
 ## Tech Stack
 
@@ -17,16 +21,15 @@ An interactive map for exploring traditional recipes from different regions of t
 
 ```
 regional-dishes/
-├── backend/
-│   ├── app.py              # The entire Dash application
-│   ├── requirements.txt
-│   ├── HOW_IT_WORKS.md     # Code walkthrough and editing guide
-│   ├── data/
-│   │   ├── recipes.json    # 28 dishes with history, ingredients & steps
-│   │   ├── regions.json    # 16 regions with coordinates
-│   │   └── clusters.json   # ML output: clusters, t-SNE positions, connections
-│   └── ml/
-│       └── cluster_dishes.py   # Clustering pipeline (regenerates clusters.json)
+├── app.py              # The entire Dash application
+├── requirements.txt
+├── HOW_IT_WORKS.md     # Code walkthrough and editing guide
+├── data/
+│   ├── recipes.json    # 28 dishes with history, ingredients & steps
+│   ├── regions.json    # 16 regions with coordinates
+│   └── clusters.json   # ML output: clusters, t-SNE positions, connections
+├── ml/
+│   └── cluster_dishes.py   # Clustering pipeline (regenerates clusters.json)
 └── README.md
 ```
 
@@ -54,7 +57,7 @@ Open `http://127.0.0.1:8050` in your browser.
 
 ## Changing the Number of Clusters
 
-Open `ml/cluster_dishes.py` and change `N_CLUSTERS = 6` to whatever you want, then re-run the script. Restart the app to pick up the new `clusters.json`.
+Open `ml/cluster_dishes.py` and change `N_CLUSTERS = 8` to whatever you want, then re-run the script. Restart the app to pick up the new `clusters.json`.
 
 ## Coverage
 
@@ -69,7 +72,7 @@ Open `ml/cluster_dishes.py` and change `N_CLUSTERS = 6` to whatever you want, th
 - [x] Expand to Italy
 - [x] ML clustering — dish connections by ingredient & cooking method
 - [x] Plotly Dash app (replaced React + FastAPI)
-- [ ] Add a third country
+- [x] Add a third country (USA)
 - [ ] Search / filter by ingredient, tag or cooking method
 - [ ] Image support per dish
 - [ ] User-submitted recipes
