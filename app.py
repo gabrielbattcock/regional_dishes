@@ -39,7 +39,8 @@ for _r in recipes:
 
 # ── Palette ───────────────────────────────────────────────────────────────────
 CLUSTER_COLORS = ["#FF6B6B", "#4ECDC4", "#45B7D1", "#96CEB4", "#FFEAA7", "#DDA0DD"]
-COUNTRY_COLORS = {"UK": "#4ECDC4", "Italy": "#FF6B6B"}
+COUNTRY_COLORS = {"UK": "#4ECDC4", "Italy": "#FF6B6B", "USA": "#E8293F"}
+COUNTRY_FLAGS  = {"UK": "🇬🇧", "Italy": "🇮🇹", "USA": "🇺🇸"}
 BG_DARK  = "#0f0f1a"
 BG_CARD  = "#16213e"
 ACCENT   = "#4ECDC4"
@@ -59,8 +60,9 @@ def build_map() -> go.Figure:
             for rid in region.get("recipe_ids", [])
             if rid in recipe_by_id
         ]
+        flag  = COUNTRY_FLAGS.get(region["country"], "")
         hover = (
-            f"<b>{region['name']}</b><br>"
+            f"<b>{flag} {region['name']}</b><br>"
             f"<span style='color:{MUTED}'>{region['country']}</span><br>"
             f"{''.join(f'<br>• {d}' for d in dish_names)}"
         )
@@ -69,7 +71,7 @@ def build_map() -> go.Figure:
             lat=[lat], lon=[lon],
             mode="markers+text",
             marker=dict(size=16, color=color, opacity=0.92),
-            text=[region["name"]],
+            text=[f"{flag} {region['name']}"],
             textfont=dict(color="white", size=11),
             textposition="top right",
             hovertemplate=hover + "<extra></extra>",
@@ -80,19 +82,20 @@ def build_map() -> go.Figure:
 
     # Invisible legend entries per country
     for country, color in COUNTRY_COLORS.items():
+        flag = COUNTRY_FLAGS.get(country, "")
         fig.add_trace(go.Scattermap(
             lat=[None], lon=[None],
             mode="markers",
             marker=dict(size=10, color=color),
-            name=country,
+            name=f"{flag}  {country}",
             showlegend=True,
         ))
 
     fig.update_layout(
         map=dict(
             style="carto-darkmatter",
-            center=dict(lat=47.0, lon=5.0),
-            zoom=3.5,
+            center=dict(lat=40.0, lon=-30.0),
+            zoom=2,
         ),
         margin=dict(l=0, r=0, t=0, b=0),
         paper_bgcolor="rgba(0,0,0,0)",
@@ -197,7 +200,7 @@ def build_connections() -> go.Figure:
 # ── Recipe offcanvas content ──────────────────────────────────────────────────
 
 def recipe_offcanvas_content(recipe: dict) -> html.Div:
-    """Full recipe card rendered inside the offcanvas."""
+
     meta = []
     if recipe.get("prep_time_mins"):
         meta.append(dbc.Badge(f"Prep {recipe['prep_time_mins']} min", color="secondary", className="me-1 mb-1"))
@@ -284,6 +287,7 @@ def region_picker_content(region: dict) -> html.Div:
 def welcome_hint() -> html.Div:
     uk_count    = sum(1 for r in recipes if r["country"] == "UK")
     italy_count = sum(1 for r in recipes if r["country"] == "Italy")
+    usa_count   = sum(1 for r in recipes if r["country"] == "USA")
     return html.Div([
         html.Div("🗺️", style={"fontSize": "2.8rem", "textAlign": "center", "marginBottom": "14px"}),
         html.H5("Explore Regional Dishes",
@@ -304,6 +308,12 @@ def welcome_hint() -> html.Div:
                 html.P("Italy", style={"textAlign": "center", "color": "#FF6B6B",
                                        "fontSize": "0.85rem", "margin": "4px 0 2px"}),
                 html.P(f"{italy_count} dishes", style={"textAlign": "center", "color": MUTED, "fontSize": "0.8rem"}),
+            ])),
+            dbc.Col(html.Div([
+                html.Div("🇺🇸", style={"fontSize": "1.8rem", "textAlign": "center"}),
+                html.P("USA", style={"textAlign": "center", "color": "#E8293F",
+                                     "fontSize": "0.85rem", "margin": "4px 0 2px"}),
+                html.P(f"{usa_count} dishes", style={"textAlign": "center", "color": MUTED, "fontSize": "0.8rem"}),
             ])),
         ]),
         html.Hr(style={"borderColor": "rgba(255,255,255,0.08)"}),
@@ -348,7 +358,7 @@ app.layout = html.Div([
                 html.H3("🍽️  Regional Dishes Explorer",
                         style={"color": "white", "margin": "0", "fontWeight": "700",
                                "letterSpacing": "0.4px", "fontSize": "1.25rem"}),
-                html.P("Traditional recipes from the UK & Italy",
+                html.P("Traditional recipes from the UK, Italy & USA",
                        style={"color": MUTED, "margin": "0", "fontSize": "0.8rem"}),
             ], width="auto"),
         ], align="center"),

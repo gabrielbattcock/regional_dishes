@@ -1,222 +1,262 @@
 {
   "meta": {
-    "n_dishes": 27,
-    "n_clusters": 6,
+    "n_dishes": 133,
+    "n_clusters": 8,
     "algorithm": "KMeans",
-    "features": "TF-IDF ingredients (0.7) + one-hot cooking method (0.3)",
-    "layout": "t-SNE 2D (normalised to [-1,1])"
+    "features": "TF-IDF canonical (0.55) + TF-IDF subgroup (0.25) + group multi-hot (0.1) + one-hot cooking method (0.1)",
+    "layout": "t-SNE 2D (normalised to [-1,1])",
+    "taxonomy": "ingredient_taxonomy.py"
   },
   "clusters": [
     {
       "id": 0,
-      "label": "Flour \u00b7 Baked \u00b7 Traditional",
-      "dish_ids": [
-        "cornish-pasty",
-        "yorkshire-pudding",
-        "bakewell-tart",
-        "eton-mess",
-        "pizza-margherita",
-        "focaccia-genovese"
+      "label": "Spice & Seasoning: Lemon \u00b7 Apple",
+      "dominant_groups": [
+        "spice & seasoning",
+        "dairy",
+        "sweetener & confectionery"
       ],
-      "size": 6
+      "dish_ids": [
+        "cannoli-siciliani",
+        "smoked-mackerel-pots",
+        "scotch-pie",
+        "bedfordshire-clanger",
+        "bishop-auckland-cheesecake",
+        "newent-apple-cobs",
+        "hasty-batter",
+        "sussex-pond-pudding",
+        "stir-in-pudding",
+        "alabama-pecan-pie",
+        "florida-jezebel-sauce",
+        "indiana-sugar-cream-pie",
+        "maryland-crab-cakes",
+        "virginia-peanut-pie",
+        "washington-apple-pie"
+      ],
+      "size": 15
     },
     {
       "id": 1,
-      "label": "Diced \u00b7 Lamb \u00b7 Onion,",
-      "dish_ids": [
-        "lancashire-hotpot",
-        "welsh-cawl",
-        "scotch-broth",
-        "ragu-bolognese",
-        "risotto-alla-milanese",
-        "ribollita",
-        "osso-buco"
+      "label": "Spice & Seasoning: Pork \u00b7 Sage",
+      "dominant_groups": [
+        "spice & seasoning",
+        "vegetable",
+        "meat"
       ],
-      "size": 7
+      "dish_ids": [
+        "carbonara",
+        "baked-stuffed-mackerel",
+        "bristol-hotpot",
+        "buckinghamshire-dumpling",
+        "melton-mowbray-pork-pie",
+        "norfolk-pudding",
+        "hock-dough-pudding",
+        "alabama-fried-green-tomatoes",
+        "arkansas-biscuits-and-gravy",
+        "delaware-scrapple",
+        "guam-eskebeche",
+        "louisiana-shrimp-creole",
+        "massachusetts-baked-beans",
+        "new-york-eggs-benedict",
+        "north-carolina-livermush",
+        "oregon-johnny-cakes",
+        "vermont-yankee-beans"
+      ],
+      "size": 17
     },
     {
       "id": 2,
-      "label": "Pasta \u00b7 Cream \u00b7 Oats",
-      "dish_ids": [
-        "crannachan",
-        "pesto-genovese",
-        "tiramisu",
-        "panzanella"
+      "label": "Vegetable: Onion \u00b7 Potato",
+      "dominant_groups": [
+        "vegetable",
+        "dairy",
+        "spice & seasoning"
       ],
-      "size": 4
+      "dish_ids": [
+        "keilkannan",
+        "arbroath-smokie-toastie",
+        "rumblethumps",
+        "crappit-heid",
+        "partan-bree",
+        "sgadan-abergwaun",
+        "cregyn-gleison",
+        "glamorgan-sausage",
+        "nyth-cennin",
+        "dulse-champ",
+        "cockle-soup",
+        "irish-stew",
+        "windsor-bean-pudding",
+        "cheshire-onion-pie",
+        "cornish-pasty",
+        "hull-patty",
+        "lancashire-hotpot",
+        "blind-scouse",
+        "pan-hagerty",
+        "cotswold-dumplings",
+        "suffolk-fish-pie",
+        "yorkshire-cabbage-pie",
+        "alaska-salmon-pie",
+        "colorado-denver-omelette",
+        "maine-lobster-stew",
+        "new-hampshire-clam-chowder",
+        "north-dakota-knoepla",
+        "south-dakota-chislic",
+        "west-virginia-chow-chow"
+      ],
+      "size": 29
     },
     {
       "id": 3,
-      "label": "Finely \u00b7 Pasta \u00b7 Oats",
-      "dish_ids": [
-        "haggis",
-        "black-pudding",
-        "cacio-e-pepe",
-        "carbonara"
+      "label": "Dairy: Baking Powder \u00b7 Milk",
+      "dominant_groups": [
+        "dairy",
+        "grain & starch",
+        "sweetener & confectionery"
       ],
-      "size": 4
+      "dish_ids": [
+        "tiramisu",
+        "bere-bread",
+        "herb-pudding",
+        "devon-scones",
+        "dorset-apple-cake",
+        "lenten-pie",
+        "manchester-tart",
+        "staffordshire-oatcakes",
+        "arizona-frybread-taco",
+        "california-fish-tacos",
+        "georgia-peach-cobbler",
+        "mississippi-mud-pie",
+        "puerto-rico-bacalaitos",
+        "rhode-island-clam-cakes",
+        "tennessee-elvis-cake",
+        "wyoming-cowboy-cookies"
+      ],
+      "size": 16
     },
     {
       "id": 4,
-      "label": "Fried \u00b7 Traditional \u00b7 Fish",
-      "dish_ids": [
-        "fish-and-chips",
-        "arancini",
-        "cannoli-siciliani"
+      "label": "Vegetable: Onion \u00b7 Beef",
+      "dominant_groups": [
+        "vegetable",
+        "spice & seasoning",
+        "meat"
       ],
-      "size": 3
+      "dish_ids": [
+        "ragu-bolognese",
+        "arancini",
+        "osso-buco",
+        "pastai-goci",
+        "birmingham-balti",
+        "chesterfield-soup",
+        "hampshire-meatloaf",
+        "lincoln-salad",
+        "hawaii-poke",
+        "iowa-burgo",
+        "minnesota-hot-dish",
+        "nevada-frito-pie",
+        "new-jersey-hot-dog",
+        "new-mexico-green-chili",
+        "ohio-cincinnati-chili",
+        "pennsylvania-stromboli",
+        "samoa-fiafia-eleni",
+        "texas-chili",
+        "wyoming-white-chili"
+      ],
+      "size": 19
     },
     {
       "id": 5,
-      "label": "Grilled \u00b7 Traditional \u00b7 Alcohol",
-      "dish_ids": [
-        "welsh-rarebit",
-        "cumberland-sausage",
-        "bistecca-fiorentina"
+      "label": "Dairy: Onion \u00b7 Cream",
+      "dominant_groups": [
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
       ],
-      "size": 3
+      "dish_ids": [
+        "cacio-e-pepe",
+        "vegetarian-haggis",
+        "chicken-tikka-masala",
+        "cock-a-leekie",
+        "derry-duck",
+        "london-particular",
+        "shropshire-pea-soup",
+        "surrey-pudding",
+        "idaho-funeral-potato",
+        "kansas-cheesy-corn",
+        "kentucky-hot-brown",
+        "montana-hash-brown-casserole",
+        "south-carolina-shrimp-grits",
+        "tennessee-hot-chicken",
+        "utah-funeral-potatoes",
+        "wisconsin-brats-chowder"
+      ],
+      "size": 16
+    },
+    {
+      "id": 6,
+      "label": "Vegetable: Yeast \u00b7 Garlic",
+      "dominant_groups": [
+        "vegetable",
+        "spice & seasoning",
+        "grain & starch"
+      ],
+      "dish_ids": [
+        "pizza-margherita",
+        "risotto-alla-milanese",
+        "ribollita",
+        "bistecca-fiorentina",
+        "pesto-genovese",
+        "focaccia-genovese",
+        "panzanella",
+        "cambridge-sauce",
+        "apple-hearthbread",
+        "illinois-deep-dish-pizza",
+        "michigan-red-top-pizza",
+        "oklahoma-fried-okra"
+      ],
+      "size": 12
+    },
+    {
+      "id": 7,
+      "label": "Dairy: Milk \u00b7 Cinnamon",
+      "dominant_groups": [
+        "dairy",
+        "sweetener & confectionery",
+        "egg"
+      ],
+      "dish_ids": [
+        "ecclefechan-cake",
+        "dundee-cake",
+        "bara-brith",
+        "herefordshire-curd-pie",
+        "somerset-apple-pie",
+        "coventry-god-cakes",
+        "connecticut-election-cake",
+        "missouri-gooey-butter-cake",
+        "nebraska-runza"
+      ],
+      "size": 9
     }
   ],
   "dishes": [
-    {
-      "id": "cornish-pasty",
-      "name": "Cornish Pasty",
-      "country": "UK",
-      "region": "cornwall",
-      "cooking_method": "baked",
-      "cluster": 0,
-      "tsne_x": 0.58106,
-      "tsne_y": 0.18481
-    },
-    {
-      "id": "haggis",
-      "name": "Haggis",
-      "country": "UK",
-      "region": "scotland",
-      "cooking_method": "boiled",
-      "cluster": 3,
-      "tsne_x": 0.10226,
-      "tsne_y": -1.0
-    },
-    {
-      "id": "yorkshire-pudding",
-      "name": "Yorkshire Pudding",
-      "country": "UK",
-      "region": "yorkshire",
-      "cooking_method": "baked",
-      "cluster": 0,
-      "tsne_x": 0.87895,
-      "tsne_y": 0.36753
-    },
-    {
-      "id": "welsh-rarebit",
-      "name": "Welsh Rarebit",
-      "country": "UK",
-      "region": "wales",
-      "cooking_method": "grilled",
-      "cluster": 5,
-      "tsne_x": -0.68195,
-      "tsne_y": 0.51151
-    },
-    {
-      "id": "lancashire-hotpot",
-      "name": "Lancashire Hotpot",
-      "country": "UK",
-      "region": "lancashire",
-      "cooking_method": "braised",
-      "cluster": 1,
-      "tsne_x": 0.3537,
-      "tsne_y": -0.09278
-    },
-    {
-      "id": "welsh-cawl",
-      "name": "Welsh Cawl",
-      "country": "UK",
-      "region": "wales",
-      "cooking_method": "simmered",
-      "cluster": 1,
-      "tsne_x": -0.30529,
-      "tsne_y": -0.37841
-    },
-    {
-      "id": "cumberland-sausage",
-      "name": "Cumberland Sausage",
-      "country": "UK",
-      "region": "cumbria",
-      "cooking_method": "grilled",
-      "cluster": 5,
-      "tsne_x": -0.60954,
-      "tsne_y": 0.37703
-    },
-    {
-      "id": "bakewell-tart",
-      "name": "Bakewell Tart",
-      "country": "UK",
-      "region": "derbyshire",
-      "cooking_method": "baked",
-      "cluster": 0,
-      "tsne_x": 0.59997,
-      "tsne_y": 0.32895
-    },
-    {
-      "id": "fish-and-chips",
-      "name": "Fish and Chips",
-      "country": "UK",
-      "region": "yorkshire",
-      "cooking_method": "deep-fried",
-      "cluster": 4,
-      "tsne_x": -1.0,
-      "tsne_y": -0.475
-    },
-    {
-      "id": "scotch-broth",
-      "name": "Scotch Broth",
-      "country": "UK",
-      "region": "scotland",
-      "cooking_method": "simmered",
-      "cluster": 1,
-      "tsne_x": -0.23207,
-      "tsne_y": -0.27903
-    },
-    {
-      "id": "eton-mess",
-      "name": "Eton Mess",
-      "country": "UK",
-      "region": "berkshire",
-      "cooking_method": "baked",
-      "cluster": 0,
-      "tsne_x": 0.64332,
-      "tsne_y": 0.5156
-    },
-    {
-      "id": "black-pudding",
-      "name": "Black Pudding",
-      "country": "UK",
-      "region": "lancashire",
-      "cooking_method": "boiled",
-      "cluster": 3,
-      "tsne_x": 0.06684,
-      "tsne_y": -0.88053
-    },
-    {
-      "id": "crannachan",
-      "name": "Cranachan",
-      "country": "UK",
-      "region": "scotland",
-      "cooking_method": "no-cook",
-      "cluster": 2,
-      "tsne_x": 0.34563,
-      "tsne_y": 0.91816
-    },
     {
       "id": "pizza-margherita",
       "name": "Pizza Margherita",
       "country": "Italy",
       "region": "campania",
       "cooking_method": "baked",
-      "cluster": 0,
-      "tsne_x": 1.0,
-      "tsne_y": 0.18095
+      "ingredient_groups": [
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning",
+        "leavening"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.83542,
+      "tsne_y": -0.03144
     },
     {
       "id": "ragu-bolognese",
@@ -224,9 +264,17 @@
       "country": "Italy",
       "region": "emilia-romagna",
       "cooking_method": "braised",
-      "cluster": 1,
-      "tsne_x": 0.31601,
-      "tsne_y": -0.37052
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "alcohol"
+      ],
+      "cluster": 4,
+      "tsne_x": 0.86804,
+      "tsne_y": 0.35988
     },
     {
       "id": "risotto-alla-milanese",
@@ -234,9 +282,18 @@
       "country": "Italy",
       "region": "lombardy",
       "cooking_method": "simmered",
-      "cluster": 1,
-      "tsne_x": -0.60607,
-      "tsne_y": -0.41175
+      "ingredient_groups": [
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "alcohol",
+        "liquid & base"
+      ],
+      "cluster": 6,
+      "tsne_x": -0.16505,
+      "tsne_y": -1.0
     },
     {
       "id": "arancini",
@@ -244,9 +301,18 @@
       "country": "Italy",
       "region": "sicily",
       "cooking_method": "deep-fried",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "liquid & base"
+      ],
       "cluster": 4,
-      "tsne_x": -0.81207,
-      "tsne_y": -0.50861
+      "tsne_x": -0.2076,
+      "tsne_y": -0.9726
     },
     {
       "id": "ribollita",
@@ -254,9 +320,16 @@
       "country": "Italy",
       "region": "tuscany",
       "cooking_method": "simmered",
-      "cluster": 1,
-      "tsne_x": -0.44705,
-      "tsne_y": -0.23035
+      "ingredient_groups": [
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "legume",
+        "liquid & base"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.65382,
+      "tsne_y": 0.21663
     },
     {
       "id": "cacio-e-pepe",
@@ -264,9 +337,14 @@
       "country": "Italy",
       "region": "lazio",
       "cooking_method": "boiled",
-      "cluster": 3,
-      "tsne_x": 0.46084,
-      "tsne_y": -0.87508
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": 0.98799,
+      "tsne_y": 0.20242
     },
     {
       "id": "bistecca-fiorentina",
@@ -274,9 +352,16 @@
       "country": "Italy",
       "region": "tuscany",
       "cooking_method": "grilled",
-      "cluster": 5,
-      "tsne_x": -0.52017,
-      "tsne_y": 0.51718
+      "ingredient_groups": [
+        "fat & oil",
+        "vegetable",
+        "fruit",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.72864,
+      "tsne_y": 0.03472
     },
     {
       "id": "pesto-genovese",
@@ -284,9 +369,18 @@
       "country": "Italy",
       "region": "liguria",
       "cooking_method": "no-cook",
-      "cluster": 2,
-      "tsne_x": 0.12217,
-      "tsne_y": 0.74406
+      "ingredient_groups": [
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "nut & seed",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.9593,
+      "tsne_y": 0.13721
     },
     {
       "id": "osso-buco",
@@ -294,9 +388,17 @@
       "country": "Italy",
       "region": "lombardy",
       "cooking_method": "braised",
-      "cluster": 1,
-      "tsne_x": 0.27377,
-      "tsne_y": -0.23809
+      "ingredient_groups": [
+        "meat",
+        "vegetable",
+        "fruit",
+        "herb",
+        "alcohol",
+        "liquid & base"
+      ],
+      "cluster": 4,
+      "tsne_x": 0.82677,
+      "tsne_y": 0.38573
     },
     {
       "id": "tiramisu",
@@ -304,9 +406,17 @@
       "country": "Italy",
       "region": "veneto",
       "cooking_method": "no-cook",
-      "cluster": 2,
-      "tsne_x": 0.22668,
-      "tsne_y": 1.0
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "sweetener & confectionery",
+        "alcohol",
+        "liquid & base"
+      ],
+      "cluster": 3,
+      "tsne_x": -0.13689,
+      "tsne_y": 0.89882
     },
     {
       "id": "cannoli-siciliani",
@@ -314,9 +424,18 @@
       "country": "Italy",
       "region": "sicily",
       "cooking_method": "deep-fried",
-      "cluster": 4,
-      "tsne_x": -0.91465,
-      "tsne_y": -0.62822
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "alcohol"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.18002,
+      "tsne_y": 0.8332
     },
     {
       "id": "carbonara",
@@ -324,9 +443,16 @@
       "country": "Italy",
       "region": "lazio",
       "cooking_method": "boiled",
-      "cluster": 3,
-      "tsne_x": 0.4056,
-      "tsne_y": -0.76525
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": 1.0,
+      "tsne_y": 0.24518
     },
     {
       "id": "focaccia-genovese",
@@ -334,9 +460,17 @@
       "country": "Italy",
       "region": "liguria",
       "cooking_method": "baked",
-      "cluster": 0,
-      "tsne_x": 0.87021,
-      "tsne_y": 0.16537
+      "ingredient_groups": [
+        "fat & oil",
+        "grain & starch",
+        "herb",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.76565,
+      "tsne_y": -0.05057
     },
     {
       "id": "panzanella",
@@ -344,296 +478,3891 @@
       "country": "Italy",
       "region": "tuscany",
       "cooking_method": "no-cook",
+      "ingredient_groups": [
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.61331,
+      "tsne_y": 0.1867
+    },
+    {
+      "id": "keilkannan",
+      "name": "Keilkannan",
+      "country": "UK",
+      "region": "aberdeenshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
       "cluster": 2,
-      "tsne_x": 0.05533,
-      "tsne_y": 0.86374
+      "tsne_x": -0.1845,
+      "tsne_y": -0.13097
+    },
+    {
+      "id": "arbroath-smokie-toastie",
+      "name": "Arbroath Smokie Toastie",
+      "country": "UK",
+      "region": "angus",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.46522,
+      "tsne_y": -0.17877
+    },
+    {
+      "id": "vegetarian-haggis",
+      "name": "Vegetarian Haggis",
+      "country": "UK",
+      "region": "ayrshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.33236,
+      "tsne_y": -0.57423
+    },
+    {
+      "id": "rumblethumps",
+      "name": "Rumblethumps",
+      "country": "UK",
+      "region": "scottish-borders",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.16317,
+      "tsne_y": -0.08827
+    },
+    {
+      "id": "ecclefechan-cake",
+      "name": "Ecclefechan Cake",
+      "country": "UK",
+      "region": "dumfries-galloway",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "fruit",
+        "nut & seed",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.41874,
+      "tsne_y": 0.82749
+    },
+    {
+      "id": "dundee-cake",
+      "name": "Dundee Cake",
+      "country": "UK",
+      "region": "dundee",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "fruit",
+        "nut & seed",
+        "sweetener & confectionery",
+        "alcohol"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.3852,
+      "tsne_y": 0.94473
+    },
+    {
+      "id": "smoked-mackerel-pots",
+      "name": "Smoked Mackerel Pots",
+      "country": "UK",
+      "region": "fife",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "dairy",
+        "herb",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.46848,
+      "tsne_y": 0.18388
+    },
+    {
+      "id": "chicken-tikka-masala",
+      "name": "Chicken Tikka Masala",
+      "country": "UK",
+      "region": "glasgow",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "fruit",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.91987,
+      "tsne_y": -0.24439
+    },
+    {
+      "id": "crappit-heid",
+      "name": "Crappit Heid",
+      "country": "UK",
+      "region": "hebrides",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.27475,
+      "tsne_y": -0.49926
+    },
+    {
+      "id": "partan-bree",
+      "name": "Partan Bree",
+      "country": "UK",
+      "region": "highlands",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "dairy",
+        "fat & oil",
+        "vegetable",
+        "fruit",
+        "herb",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.04216,
+      "tsne_y": 0.19877
+    },
+    {
+      "id": "scotch-pie",
+      "name": "Scotch Pie",
+      "country": "UK",
+      "region": "lanarkshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "egg",
+        "fat & oil",
+        "grain & starch",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.44769,
+      "tsne_y": 0.10807
+    },
+    {
+      "id": "cock-a-leekie",
+      "name": "Cock-a-Leekie",
+      "country": "UK",
+      "region": "lothian",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "vegetable",
+        "fruit",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": 0.01499,
+      "tsne_y": 0.27687
+    },
+    {
+      "id": "bere-bread",
+      "name": "Bere Bread",
+      "country": "UK",
+      "region": "orkney",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "spice & seasoning",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": 0.12041,
+      "tsne_y": 0.74912
+    },
+    {
+      "id": "bara-brith",
+      "name": "Bara Brith",
+      "country": "UK",
+      "region": "clwyd",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "egg",
+        "grain & starch",
+        "sweetener & confectionery",
+        "liquid & base"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.37971,
+      "tsne_y": 1.0
+    },
+    {
+      "id": "sgadan-abergwaun",
+      "name": "Sgadan Abergwaun",
+      "country": "UK",
+      "region": "dyfed",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "vegetable",
+        "fruit",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.01382,
+      "tsne_y": -0.52173
+    },
+    {
+      "id": "baked-stuffed-mackerel",
+      "name": "Baked Stuffed Mackerel",
+      "country": "UK",
+      "region": "gwent",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.47654,
+      "tsne_y": 0.25201
+    },
+    {
+      "id": "cregyn-gleison",
+      "name": "Cregyn Gleison",
+      "country": "UK",
+      "region": "gwynedd",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "fruit",
+        "herb",
+        "spice & seasoning",
+        "alcohol"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.66656,
+      "tsne_y": -0.01557
+    },
+    {
+      "id": "pastai-goci",
+      "name": "Pastai Goci",
+      "country": "UK",
+      "region": "south-glamorgan",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "vegetable",
+        "liquid & base"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.5761,
+      "tsne_y": -0.75082
+    },
+    {
+      "id": "glamorgan-sausage",
+      "name": "Glamorgan Sausage",
+      "country": "UK",
+      "region": "mid-glamorgan",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.44675,
+      "tsne_y": -0.46367
+    },
+    {
+      "id": "nyth-cennin",
+      "name": "Nyth Cennin",
+      "country": "UK",
+      "region": "powys",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.24746,
+      "tsne_y": -0.27388
+    },
+    {
+      "id": "dulse-champ",
+      "name": "Dulse Champ",
+      "country": "UK",
+      "region": "antrim",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.1602,
+      "tsne_y": -0.27673
+    },
+    {
+      "id": "cockle-soup",
+      "name": "Cockle Soup",
+      "country": "UK",
+      "region": "down",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "herb"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.04873,
+      "tsne_y": -0.15675
+    },
+    {
+      "id": "derry-duck",
+      "name": "Derry Duck with Londonderry Potatoes",
+      "country": "UK",
+      "region": "derry",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 5,
+      "tsne_x": 0.19713,
+      "tsne_y": -0.78773
+    },
+    {
+      "id": "irish-stew",
+      "name": "Irish Stew",
+      "country": "UK",
+      "region": "tyrone",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.26928,
+      "tsne_y": 0.08504
+    },
+    {
+      "id": "bedfordshire-clanger",
+      "name": "Bedfordshire Clanger",
+      "country": "UK",
+      "region": "bedfordshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "fruit",
+        "herb",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.68121,
+      "tsne_y": 0.56668
+    },
+    {
+      "id": "windsor-bean-pudding",
+      "name": "Windsor Bean Pudding",
+      "country": "UK",
+      "region": "berkshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.37325,
+      "tsne_y": -0.27292
+    },
+    {
+      "id": "birmingham-balti",
+      "name": "Birmingham Balti",
+      "country": "UK",
+      "region": "birmingham",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "herb",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.96628,
+      "tsne_y": -0.25461
+    },
+    {
+      "id": "bristol-hotpot",
+      "name": "Bristol Hotpot",
+      "country": "UK",
+      "region": "bristol",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "vegetable",
+        "fruit",
+        "herb",
+        "liquid & base"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.10228,
+      "tsne_y": -0.65651
+    },
+    {
+      "id": "buckinghamshire-dumpling",
+      "name": "Buckinghamshire Dumpling",
+      "country": "UK",
+      "region": "buckinghamshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "fat & oil",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.27214,
+      "tsne_y": 0.06147
+    },
+    {
+      "id": "cambridge-sauce",
+      "name": "Cambridge Sauce",
+      "country": "UK",
+      "region": "cambridgeshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "egg",
+        "fat & oil",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.438,
+      "tsne_y": -0.55227
+    },
+    {
+      "id": "cheshire-onion-pie",
+      "name": "Cheshire Onion Pie",
+      "country": "UK",
+      "region": "cheshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.25016,
+      "tsne_y": -0.53385
+    },
+    {
+      "id": "cornish-pasty",
+      "name": "Cornish Pasty",
+      "country": "UK",
+      "region": "cornwall",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "egg",
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.46675,
+      "tsne_y": 0.05094
+    },
+    {
+      "id": "herb-pudding",
+      "name": "Herb Pudding",
+      "country": "UK",
+      "region": "cumbria",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "egg",
+        "grain & starch",
+        "vegetable"
+      ],
+      "cluster": 3,
+      "tsne_x": -0.31074,
+      "tsne_y": -0.16399
+    },
+    {
+      "id": "chesterfield-soup",
+      "name": "Chesterfield Oxtail Soup",
+      "country": "UK",
+      "region": "derbyshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "vegetable",
+        "herb",
+        "spice & seasoning",
+        "alcohol",
+        "liquid & base"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.16094,
+      "tsne_y": -0.69285
+    },
+    {
+      "id": "devon-scones",
+      "name": "Devon Scones",
+      "country": "UK",
+      "region": "devon",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": -0.26849,
+      "tsne_y": 0.56798
+    },
+    {
+      "id": "dorset-apple-cake",
+      "name": "Dorset Apple Cake",
+      "country": "UK",
+      "region": "dorset",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "fruit",
+        "nut & seed",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": -0.25686,
+      "tsne_y": 0.68603
+    },
+    {
+      "id": "bishop-auckland-cheesecake",
+      "name": "Bishop Auckland Cheesecake",
+      "country": "UK",
+      "region": "durham",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "vegetable",
+        "fruit",
+        "sweetener & confectionery",
+        "alcohol"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.53403,
+      "tsne_y": 0.69128
+    },
+    {
+      "id": "newent-apple-cobs",
+      "name": "Newent Apple Cobs",
+      "country": "UK",
+      "region": "gloucestershire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "fruit",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.57611,
+      "tsne_y": 0.64824
+    },
+    {
+      "id": "hampshire-meatloaf",
+      "name": "Hampshire Meatloaf",
+      "country": "UK",
+      "region": "hampshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "egg",
+        "vegetable",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.49945,
+      "tsne_y": -0.67758
+    },
+    {
+      "id": "herefordshire-curd-pie",
+      "name": "Herefordshire Curd Pie",
+      "country": "UK",
+      "region": "herefordshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "fruit",
+        "sweetener & confectionery",
+        "alcohol"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.43363,
+      "tsne_y": 0.70753
+    },
+    {
+      "id": "hasty-batter",
+      "name": "Hasty Batter",
+      "country": "UK",
+      "region": "hertfordshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "fruit",
+        "herb",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.43991,
+      "tsne_y": 0.58275
+    },
+    {
+      "id": "hull-patty",
+      "name": "Hull Patty",
+      "country": "UK",
+      "region": "humberside",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning",
+        "leavening"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.01793,
+      "tsne_y": -0.29463
+    },
+    {
+      "id": "lenten-pie",
+      "name": "Lenten Pie",
+      "country": "UK",
+      "region": "kent",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "fat & oil",
+        "grain & starch",
+        "fruit",
+        "herb",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": -0.37918,
+      "tsne_y": 0.57287
+    },
+    {
+      "id": "lancashire-hotpot",
+      "name": "Lancashire Hotpot",
+      "country": "UK",
+      "region": "lancashire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.25309,
+      "tsne_y": 0.13112
+    },
+    {
+      "id": "melton-mowbray-pork-pie",
+      "name": "Melton Mowbray Pork Pie",
+      "country": "UK",
+      "region": "leicestershire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "egg",
+        "fat & oil",
+        "grain & starch",
+        "herb",
+        "spice & seasoning",
+        "liquid & base",
+        "other"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.35634,
+      "tsne_y": 0.13044
+    },
+    {
+      "id": "lincoln-salad",
+      "name": "Lincoln Salad",
+      "country": "UK",
+      "region": "lincolnshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "grain & starch",
+        "vegetable"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.2727,
+      "tsne_y": -0.9185
+    },
+    {
+      "id": "london-particular",
+      "name": "London Particular",
+      "country": "UK",
+      "region": "london",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.34919,
+      "tsne_y": -0.67343
+    },
+    {
+      "id": "manchester-tart",
+      "name": "Manchester Tart",
+      "country": "UK",
+      "region": "manchester",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 3,
+      "tsne_x": -0.03498,
+      "tsne_y": 0.6486
+    },
+    {
+      "id": "blind-scouse",
+      "name": "Blind Scouse",
+      "country": "UK",
+      "region": "merseyside",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "vegetable",
+        "legume",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.24422,
+      "tsne_y": -0.34905
+    },
+    {
+      "id": "norfolk-pudding",
+      "name": "Norfolk Pudding",
+      "country": "UK",
+      "region": "norfolk",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "fat & oil",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.72897,
+      "tsne_y": 0.11985
+    },
+    {
+      "id": "hock-dough-pudding",
+      "name": "Hock and Dough Pudding",
+      "country": "UK",
+      "region": "northamptonshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "fat & oil",
+        "grain & starch",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.64367,
+      "tsne_y": 0.26419
+    },
+    {
+      "id": "pan-hagerty",
+      "name": "Pan Hagerty",
+      "country": "UK",
+      "region": "northumberland",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.03129,
+      "tsne_y": -0.46789
+    },
+    {
+      "id": "cotswold-dumplings",
+      "name": "Cotswold Dumplings",
+      "country": "UK",
+      "region": "oxfordshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.5135,
+      "tsne_y": -0.15013
+    },
+    {
+      "id": "shropshire-pea-soup",
+      "name": "Shropshire Pea Soup",
+      "country": "UK",
+      "region": "shropshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "vegetable",
+        "herb",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.40913,
+      "tsne_y": -0.6536
+    },
+    {
+      "id": "somerset-apple-pie",
+      "name": "Somerset Apple Pie",
+      "country": "UK",
+      "region": "somerset",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "fruit",
+        "sweetener & confectionery",
+        "alcohol"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.24233,
+      "tsne_y": 0.75249
+    },
+    {
+      "id": "staffordshire-oatcakes",
+      "name": "Staffordshire Oatcakes",
+      "country": "UK",
+      "region": "staffordshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": 0.66045,
+      "tsne_y": -0.12583
+    },
+    {
+      "id": "suffolk-fish-pie",
+      "name": "Suffolk Fish Pie",
+      "country": "UK",
+      "region": "suffolk",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.06912,
+      "tsne_y": -0.21649
+    },
+    {
+      "id": "surrey-pudding",
+      "name": "Surrey Pudding",
+      "country": "UK",
+      "region": "surrey",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.72087,
+      "tsne_y": 0.07309
+    },
+    {
+      "id": "sussex-pond-pudding",
+      "name": "Sussex Pond Pudding",
+      "country": "UK",
+      "region": "sussex",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.55606,
+      "tsne_y": 0.40239
+    },
+    {
+      "id": "coventry-god-cakes",
+      "name": "Coventry God Cakes",
+      "country": "UK",
+      "region": "warwickshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "alcohol"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.53941,
+      "tsne_y": 0.78579
+    },
+    {
+      "id": "apple-hearthbread",
+      "name": "Apple Hearthbread",
+      "country": "UK",
+      "region": "west-midlands",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.72168,
+      "tsne_y": -0.10177
+    },
+    {
+      "id": "stir-in-pudding",
+      "name": "Stir-in Pudding",
+      "country": "UK",
+      "region": "wiltshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.72045,
+      "tsne_y": 0.34298
+    },
+    {
+      "id": "yorkshire-cabbage-pie",
+      "name": "Yorkshire Cabbage Pie",
+      "country": "UK",
+      "region": "yorkshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "vegetable"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.29546,
+      "tsne_y": -0.24092
+    },
+    {
+      "id": "alabama-pecan-pie",
+      "name": "Alabama Pecan Pie",
+      "country": "USA",
+      "region": "alabama",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.74741,
+      "tsne_y": 0.86217
+    },
+    {
+      "id": "alabama-fried-green-tomatoes",
+      "name": "Alabama Fried Green Tomatoes",
+      "country": "USA",
+      "region": "alabama",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": 0.51538,
+      "tsne_y": -0.344
+    },
+    {
+      "id": "alaska-salmon-pie",
+      "name": "Alaska Salmon Pie",
+      "country": "USA",
+      "region": "alaska",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "dairy",
+        "egg",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.09128,
+      "tsne_y": -0.42931
+    },
+    {
+      "id": "arizona-frybread-taco",
+      "name": "Navajo Frybread Taco",
+      "country": "USA",
+      "region": "arizona",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "grain & starch",
+        "spice & seasoning",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": 0.48487,
+      "tsne_y": -0.1622
+    },
+    {
+      "id": "arkansas-biscuits-and-gravy",
+      "name": "Arkansas Biscuits and Gravy",
+      "country": "USA",
+      "region": "arkansas",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.69445,
+      "tsne_y": 0.28287
+    },
+    {
+      "id": "california-fish-tacos",
+      "name": "California Baja Fish Tacos",
+      "country": "USA",
+      "region": "california",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "dairy",
+        "grain & starch",
+        "vegetable",
+        "fruit",
+        "alcohol",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": 0.28998,
+      "tsne_y": -0.21003
+    },
+    {
+      "id": "colorado-denver-omelette",
+      "name": "Colorado Denver Omelette",
+      "country": "USA",
+      "region": "colorado",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.52034,
+      "tsne_y": -0.38972
+    },
+    {
+      "id": "connecticut-election-cake",
+      "name": "Connecticut Election Cake",
+      "country": "USA",
+      "region": "connecticut",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "alcohol",
+        "leavening"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.36761,
+      "tsne_y": 0.87032
+    },
+    {
+      "id": "delaware-scrapple",
+      "name": "Delaware Scrapple",
+      "country": "USA",
+      "region": "delaware",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "grain & starch",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.26219,
+      "tsne_y": 0.25473
+    },
+    {
+      "id": "florida-jezebel-sauce",
+      "name": "Florida Jezebel Sauce",
+      "country": "USA",
+      "region": "florida",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": 0.07624,
+      "tsne_y": -0.57141
+    },
+    {
+      "id": "georgia-peach-cobbler",
+      "name": "Georgia Peach Cobbler",
+      "country": "USA",
+      "region": "georgia",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": -0.26344,
+      "tsne_y": 0.61461
+    },
+    {
+      "id": "guam-eskebeche",
+      "name": "Guam Eskebeche",
+      "country": "USA",
+      "region": "guam",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": 0.31897,
+      "tsne_y": -0.49468
+    },
+    {
+      "id": "hawaii-poke",
+      "name": "Hawaii Poke",
+      "country": "USA",
+      "region": "hawaii",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "grain & starch",
+        "vegetable",
+        "nut & seed",
+        "spice & seasoning"
+      ],
+      "cluster": 4,
+      "tsne_x": 0.19286,
+      "tsne_y": -0.33827
+    },
+    {
+      "id": "idaho-funeral-potato",
+      "name": "Idaho Funeral Potatoes",
+      "country": "USA",
+      "region": "idaho",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.67645,
+      "tsne_y": -0.39548
+    },
+    {
+      "id": "illinois-deep-dish-pizza",
+      "name": "Chicago Deep Dish Pizza",
+      "country": "USA",
+      "region": "illinois",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "leavening"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.84322,
+      "tsne_y": -0.1266
+    },
+    {
+      "id": "indiana-sugar-cream-pie",
+      "name": "Indiana Sugar Cream Pie",
+      "country": "USA",
+      "region": "indiana",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.75379,
+      "tsne_y": 0.75255
+    },
+    {
+      "id": "iowa-burgo",
+      "name": "Iowa Burgo",
+      "country": "USA",
+      "region": "iowa",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 4,
+      "tsne_x": 0.52215,
+      "tsne_y": -0.49557
+    },
+    {
+      "id": "kansas-cheesy-corn",
+      "name": "Kansas Cheesy Corn Casserole",
+      "country": "USA",
+      "region": "kansas",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.66039,
+      "tsne_y": -0.20021
+    },
+    {
+      "id": "kentucky-hot-brown",
+      "name": "Kentucky Hot Brown",
+      "country": "USA",
+      "region": "kentucky",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.01198,
+      "tsne_y": -0.09123
+    },
+    {
+      "id": "louisiana-shrimp-creole",
+      "name": "Louisiana Shrimp Creole",
+      "country": "USA",
+      "region": "louisiana",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": 0.02204,
+      "tsne_y": 0.15449
+    },
+    {
+      "id": "maine-lobster-stew",
+      "name": "Maine Lobster Stew",
+      "country": "USA",
+      "region": "maine",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.13706,
+      "tsne_y": 0.33302
+    },
+    {
+      "id": "maryland-crab-cakes",
+      "name": "Maryland Crab Cakes",
+      "country": "USA",
+      "region": "maryland",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "egg",
+        "grain & starch",
+        "spice & seasoning"
+      ],
+      "cluster": 0,
+      "tsne_x": 0.41788,
+      "tsne_y": -0.42257
+    },
+    {
+      "id": "massachusetts-baked-beans",
+      "name": "Boston Baked Beans",
+      "country": "USA",
+      "region": "massachusetts",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "vegetable",
+        "legume",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 1,
+      "tsne_x": 0.31719,
+      "tsne_y": -0.80436
+    },
+    {
+      "id": "michigan-red-top-pizza",
+      "name": "Michigan Red Top Pizza",
+      "country": "USA",
+      "region": "michigan",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "leavening"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.81166,
+      "tsne_y": -0.16641
+    },
+    {
+      "id": "minnesota-hot-dish",
+      "name": "Minnesota Hot Dish",
+      "country": "USA",
+      "region": "minnesota",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.35791,
+      "tsne_y": -0.72594
+    },
+    {
+      "id": "mississippi-mud-pie",
+      "name": "Mississippi Mud Pie",
+      "country": "USA",
+      "region": "mississippi",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 3,
+      "tsne_x": -0.05869,
+      "tsne_y": 0.80456
+    },
+    {
+      "id": "missouri-gooey-butter-cake",
+      "name": "St Louis Gooey Butter Cake",
+      "country": "USA",
+      "region": "missouri",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.122,
+      "tsne_y": 0.63042
+    },
+    {
+      "id": "montana-hash-brown-casserole",
+      "name": "Montana Hash Brown Casserole",
+      "country": "USA",
+      "region": "montana",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.60058,
+      "tsne_y": -0.40272
+    },
+    {
+      "id": "nebraska-runza",
+      "name": "Nebraska Runza",
+      "country": "USA",
+      "region": "nebraska",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 7,
+      "tsne_x": -0.12059,
+      "tsne_y": 0.57789
+    },
+    {
+      "id": "nevada-frito-pie",
+      "name": "Nevada Frito Pie",
+      "country": "USA",
+      "region": "nevada",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.96438,
+      "tsne_y": -0.46556
+    },
+    {
+      "id": "new-hampshire-clam-chowder",
+      "name": "New Hampshire Clam Chowder",
+      "country": "USA",
+      "region": "new-hampshire",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "seafood",
+        "dairy",
+        "vegetable",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.07407,
+      "tsne_y": 0.26644
+    },
+    {
+      "id": "new-jersey-hot-dog",
+      "name": "New Jersey Hot Dog with Diner Salad",
+      "country": "USA",
+      "region": "new-jersey",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 4,
+      "tsne_x": 0.50332,
+      "tsne_y": 0.20134
+    },
+    {
+      "id": "new-mexico-green-chili",
+      "name": "New Mexico Green Chili",
+      "country": "USA",
+      "region": "new-mexico",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.85259,
+      "tsne_y": -0.68835
+    },
+    {
+      "id": "new-york-eggs-benedict",
+      "name": "New York Eggs Benedict",
+      "country": "USA",
+      "region": "new-york",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "egg",
+        "fruit",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.10908,
+      "tsne_y": 0.00911
+    },
+    {
+      "id": "north-carolina-livermush",
+      "name": "North Carolina Livermush",
+      "country": "USA",
+      "region": "north-carolina",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "grain & starch",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.28064,
+      "tsne_y": 0.21449
+    },
+    {
+      "id": "north-dakota-knoepla",
+      "name": "North Dakota Knoepla Soup",
+      "country": "USA",
+      "region": "north-dakota",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "liquid & base",
+        "leavening"
+      ],
+      "cluster": 2,
+      "tsne_x": -0.04195,
+      "tsne_y": -0.34477
+    },
+    {
+      "id": "ohio-cincinnati-chili",
+      "name": "Ohio Cincinnati Chili",
+      "country": "USA",
+      "region": "ohio",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 4,
+      "tsne_x": -1.0,
+      "tsne_y": -0.43859
+    },
+    {
+      "id": "oklahoma-fried-okra",
+      "name": "Oklahoma Fried Okra with Cowboy Caviar",
+      "country": "USA",
+      "region": "oklahoma",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "fruit",
+        "herb",
+        "spice & seasoning"
+      ],
+      "cluster": 6,
+      "tsne_x": 0.56343,
+      "tsne_y": -0.31148
+    },
+    {
+      "id": "oregon-johnny-cakes",
+      "name": "Oregon Johnny Cakes",
+      "country": "USA",
+      "region": "oregon",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "grain & starch",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 1,
+      "tsne_x": -0.4893,
+      "tsne_y": 0.34558
+    },
+    {
+      "id": "pennsylvania-stromboli",
+      "name": "Pennsylvania Stromboli",
+      "country": "USA",
+      "region": "pennsylvania",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "egg",
+        "vegetable",
+        "herb"
+      ],
+      "cluster": 4,
+      "tsne_x": 0.03859,
+      "tsne_y": -0.02338
+    },
+    {
+      "id": "puerto-rico-bacalaitos",
+      "name": "Puerto Rico Bacalaitos",
+      "country": "USA",
+      "region": "puerto-rico",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "grain & starch",
+        "vegetable",
+        "herb",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": 0.32664,
+      "tsne_y": -0.16692
+    },
+    {
+      "id": "rhode-island-clam-cakes",
+      "name": "Rhode Island Clam Cakes",
+      "country": "USA",
+      "region": "rhode-island",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "egg",
+        "grain & starch",
+        "spice & seasoning",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": 0.37222,
+      "tsne_y": -0.12097
+    },
+    {
+      "id": "samoa-fiafia-eleni",
+      "name": "American Samoa Fiafia Eleni",
+      "country": "USA",
+      "region": "samoa",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "seafood",
+        "dairy",
+        "vegetable",
+        "fruit",
+        "spice & seasoning"
+      ],
+      "cluster": 4,
+      "tsne_x": 0.20004,
+      "tsne_y": -0.26336
+    },
+    {
+      "id": "south-carolina-shrimp-grits",
+      "name": "South Carolina Shrimp and Grits",
+      "country": "USA",
+      "region": "south-carolina",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "seafood",
+        "dairy",
+        "vegetable",
+        "fruit",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.06128,
+      "tsne_y": 0.06599
+    },
+    {
+      "id": "south-dakota-chislic",
+      "name": "South Dakota Chislic",
+      "country": "USA",
+      "region": "south-dakota",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.32987,
+      "tsne_y": -0.00289
+    },
+    {
+      "id": "tennessee-hot-chicken",
+      "name": "Nashville Hot Chicken",
+      "country": "USA",
+      "region": "tennessee",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "fat & oil",
+        "grain & starch",
+        "vegetable",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 5,
+      "tsne_x": 0.39554,
+      "tsne_y": -0.02578
+    },
+    {
+      "id": "tennessee-elvis-cake",
+      "name": "Tennessee Elvis Cake",
+      "country": "USA",
+      "region": "tennessee",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": 0.05082,
+      "tsne_y": 0.74752
+    },
+    {
+      "id": "texas-chili",
+      "name": "Texas Bowl of Red",
+      "country": "USA",
+      "region": "texas",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "vegetable",
+        "herb",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.79486,
+      "tsne_y": -0.71927
+    },
+    {
+      "id": "utah-funeral-potatoes",
+      "name": "Utah Funeral Potatoes",
+      "country": "USA",
+      "region": "utah",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.67645,
+      "tsne_y": -0.39548
+    },
+    {
+      "id": "vermont-yankee-beans",
+      "name": "Vermont Yankee Beans",
+      "country": "USA",
+      "region": "vermont",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "vegetable",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 1,
+      "tsne_x": 0.27018,
+      "tsne_y": -0.79742
+    },
+    {
+      "id": "virginia-peanut-pie",
+      "name": "Virginia Peanut Pie",
+      "country": "USA",
+      "region": "virginia",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.75842,
+      "tsne_y": 0.81745
+    },
+    {
+      "id": "washington-apple-pie",
+      "name": "Washington Apple Pie",
+      "country": "USA",
+      "region": "washington-state",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "fruit",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 0,
+      "tsne_x": -0.63916,
+      "tsne_y": 0.63431
+    },
+    {
+      "id": "west-virginia-chow-chow",
+      "name": "West Virginia Chow Chow",
+      "country": "USA",
+      "region": "west-virginia",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "vegetable",
+        "spice & seasoning",
+        "sweetener & confectionery"
+      ],
+      "cluster": 2,
+      "tsne_x": 0.07653,
+      "tsne_y": 0.11695
+    },
+    {
+      "id": "wisconsin-brats-chowder",
+      "name": "Wisconsin Brats and Beer Chowder",
+      "country": "USA",
+      "region": "wisconsin",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "spice & seasoning",
+        "alcohol",
+        "liquid & base"
+      ],
+      "cluster": 5,
+      "tsne_x": -0.68561,
+      "tsne_y": -0.48589
+    },
+    {
+      "id": "wyoming-white-chili",
+      "name": "Wyoming White Chili",
+      "country": "USA",
+      "region": "wyoming",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "meat",
+        "dairy",
+        "vegetable",
+        "legume",
+        "herb",
+        "spice & seasoning",
+        "liquid & base"
+      ],
+      "cluster": 4,
+      "tsne_x": -0.81038,
+      "tsne_y": -0.6562
+    },
+    {
+      "id": "wyoming-cowboy-cookies",
+      "name": "Wyoming Cowboy Cookies",
+      "country": "USA",
+      "region": "wyoming",
+      "cooking_method": "unknown",
+      "ingredient_groups": [
+        "dairy",
+        "egg",
+        "grain & starch",
+        "spice & seasoning",
+        "sweetener & confectionery",
+        "leavening"
+      ],
+      "cluster": 3,
+      "tsne_x": 0.00265,
+      "tsne_y": 0.77461
     }
   ],
   "connections": [
     {
+      "source": "idaho-funeral-potato",
+      "target": "utah-funeral-potatoes",
+      "similarity": 1.0
+    },
+    {
+      "source": "idaho-funeral-potato",
+      "target": "montana-hash-brown-casserole",
+      "similarity": 0.7379
+    },
+    {
+      "source": "montana-hash-brown-casserole",
+      "target": "utah-funeral-potatoes",
+      "similarity": 0.7379
+    },
+    {
       "source": "cacio-e-pepe",
       "target": "carbonara",
-      "similarity": 0.5017
+      "similarity": 0.631
     },
     {
-      "source": "welsh-cawl",
-      "target": "scotch-broth",
-      "similarity": 0.4302
+      "source": "devon-scones",
+      "target": "georgia-peach-cobbler",
+      "similarity": 0.5294
     },
     {
-      "source": "haggis",
-      "target": "black-pudding",
-      "similarity": 0.3395
+      "source": "keilkannan",
+      "target": "rumblethumps",
+      "similarity": 0.5119
+    },
+    {
+      "source": "alabama-pecan-pie",
+      "target": "virginia-peanut-pie",
+      "similarity": 0.5076
+    },
+    {
+      "source": "delaware-scrapple",
+      "target": "north-carolina-livermush",
+      "similarity": 0.5006
+    },
+    {
+      "source": "missouri-gooey-butter-cake",
+      "target": "nebraska-runza",
+      "similarity": 0.4902
+    },
+    {
+      "source": "tennessee-elvis-cake",
+      "target": "wyoming-cowboy-cookies",
+      "similarity": 0.4849
+    },
+    {
+      "source": "bishop-auckland-cheesecake",
+      "target": "newent-apple-cobs",
+      "similarity": 0.4493
+    },
+    {
+      "source": "devon-scones",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.4364
+    },
+    {
+      "source": "nevada-frito-pie",
+      "target": "ohio-cincinnati-chili",
+      "similarity": 0.4334
+    },
+    {
+      "source": "hull-patty",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.4283
+    },
+    {
+      "source": "newent-apple-cobs",
+      "target": "washington-apple-pie",
+      "similarity": 0.4278
+    },
+    {
+      "source": "mississippi-mud-pie",
+      "target": "wyoming-cowboy-cookies",
+      "similarity": 0.4212
+    },
+    {
+      "source": "massachusetts-baked-beans",
+      "target": "vermont-yankee-beans",
+      "similarity": 0.4204
+    },
+    {
+      "source": "dorset-apple-cake",
+      "target": "georgia-peach-cobbler",
+      "similarity": 0.4198
+    },
+    {
+      "source": "missouri-gooey-butter-cake",
+      "target": "tennessee-elvis-cake",
+      "similarity": 0.4165
+    },
+    {
+      "source": "focaccia-genovese",
+      "target": "apple-hearthbread",
+      "similarity": 0.4051
+    },
+    {
+      "source": "hull-patty",
+      "target": "georgia-peach-cobbler",
+      "similarity": 0.4019
+    },
+    {
+      "source": "bere-bread",
+      "target": "tennessee-elvis-cake",
+      "similarity": 0.3978
+    },
+    {
+      "source": "puerto-rico-bacalaitos",
+      "target": "rhode-island-clam-cakes",
+      "similarity": 0.397
+    },
+    {
+      "source": "devon-scones",
+      "target": "dorset-apple-cake",
+      "similarity": 0.3969
+    },
+    {
+      "source": "california-fish-tacos",
+      "target": "puerto-rico-bacalaitos",
+      "similarity": 0.396
+    },
+    {
+      "source": "staffordshire-oatcakes",
+      "target": "apple-hearthbread",
+      "similarity": 0.3942
+    },
+    {
+      "source": "devon-scones",
+      "target": "hull-patty",
+      "similarity": 0.3892
+    },
+    {
+      "source": "indiana-sugar-cream-pie",
+      "target": "virginia-peanut-pie",
+      "similarity": 0.3861
+    },
+    {
+      "source": "colorado-denver-omelette",
+      "target": "montana-hash-brown-casserole",
+      "similarity": 0.3846
+    },
+    {
+      "source": "norfolk-pudding",
+      "target": "surrey-pudding",
+      "similarity": 0.3833
+    },
+    {
+      "source": "connecticut-election-cake",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.3783
+    },
+    {
+      "source": "dorset-apple-cake",
+      "target": "somerset-apple-pie",
+      "similarity": 0.3773
+    },
+    {
+      "source": "hasty-batter",
+      "target": "lenten-pie",
+      "similarity": 0.3655
+    },
+    {
+      "source": "nyth-cennin",
+      "target": "yorkshire-cabbage-pie",
+      "similarity": 0.3654
+    },
+    {
+      "source": "lenten-pie",
+      "target": "devon-scones",
+      "similarity": 0.364
+    },
+    {
+      "source": "illinois-deep-dish-pizza",
+      "target": "michigan-red-top-pizza",
+      "similarity": 0.3632
+    },
+    {
+      "source": "arizona-frybread-taco",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.3613
+    },
+    {
+      "source": "chicken-tikka-masala",
+      "target": "birmingham-balti",
+      "similarity": 0.3583
+    },
+    {
+      "source": "mississippi-mud-pie",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.3497
+    },
+    {
+      "source": "glamorgan-sausage",
+      "target": "maryland-crab-cakes",
+      "similarity": 0.3386
+    },
+    {
+      "source": "somerset-apple-pie",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.3386
     },
     {
       "source": "pizza-margherita",
       "target": "focaccia-genovese",
-      "similarity": 0.3248
+      "similarity": 0.3379
     },
     {
-      "source": "ragu-bolognese",
-      "target": "osso-buco",
-      "similarity": 0.2861
+      "source": "north-dakota-knoepla",
+      "target": "devon-scones",
+      "similarity": 0.3369
     },
     {
-      "source": "lancashire-hotpot",
-      "target": "osso-buco",
-      "similarity": 0.26
+      "source": "arizona-frybread-taco",
+      "target": "rhode-island-clam-cakes",
+      "similarity": 0.3368
     },
     {
-      "source": "cornish-pasty",
-      "target": "bakewell-tart",
-      "similarity": 0.253
+      "source": "rhode-island-clam-cakes",
+      "target": "devon-scones",
+      "similarity": 0.3366
     },
     {
-      "source": "welsh-cawl",
-      "target": "ribollita",
-      "similarity": 0.2363
+      "source": "dorset-apple-cake",
+      "target": "rhode-island-clam-cakes",
+      "similarity": 0.3358
     },
     {
-      "source": "cornish-pasty",
-      "target": "lancashire-hotpot",
-      "similarity": 0.2356
+      "source": "hock-dough-pudding",
+      "target": "arkansas-biscuits-and-gravy",
+      "similarity": 0.3346
     },
     {
-      "source": "scotch-broth",
-      "target": "ribollita",
-      "similarity": 0.2293
+      "source": "keilkannan",
+      "target": "yorkshire-cabbage-pie",
+      "similarity": 0.332
     },
     {
-      "source": "welsh-rarebit",
-      "target": "cumberland-sausage",
-      "similarity": 0.2183
+      "source": "dundee-cake",
+      "target": "connecticut-election-cake",
+      "similarity": 0.3311
     },
     {
-      "source": "cornish-pasty",
-      "target": "focaccia-genovese",
-      "similarity": 0.217
-    },
-    {
-      "source": "arancini",
-      "target": "cannoli-siciliani",
-      "similarity": 0.2158
-    },
-    {
-      "source": "welsh-rarebit",
-      "target": "bistecca-fiorentina",
-      "similarity": 0.215
-    },
-    {
-      "source": "ragu-bolognese",
-      "target": "carbonara",
-      "similarity": 0.2137
-    },
-    {
-      "source": "yorkshire-pudding",
-      "target": "focaccia-genovese",
-      "similarity": 0.2122
-    },
-    {
-      "source": "cumberland-sausage",
-      "target": "bistecca-fiorentina",
-      "similarity": 0.2111
-    },
-    {
-      "source": "black-pudding",
-      "target": "carbonara",
-      "similarity": 0.2097
-    },
-    {
-      "source": "yorkshire-pudding",
-      "target": "pizza-margherita",
-      "similarity": 0.2091
-    },
-    {
-      "source": "lancashire-hotpot",
-      "target": "ragu-bolognese",
-      "similarity": 0.2091
-    },
-    {
-      "source": "cornish-pasty",
-      "target": "yorkshire-pudding",
-      "similarity": 0.2074
-    },
-    {
-      "source": "risotto-alla-milanese",
-      "target": "arancini",
-      "similarity": 0.2064
-    },
-    {
-      "source": "crannachan",
-      "target": "tiramisu",
-      "similarity": 0.2036
-    },
-    {
-      "source": "haggis",
-      "target": "cacio-e-pepe",
-      "similarity": 0.1988
-    },
-    {
-      "source": "bakewell-tart",
-      "target": "eton-mess",
-      "similarity": 0.1966
-    },
-    {
-      "source": "pesto-genovese",
-      "target": "panzanella",
-      "similarity": 0.1966
-    },
-    {
-      "source": "risotto-alla-milanese",
-      "target": "ribollita",
-      "similarity": 0.1965
-    },
-    {
-      "source": "fish-and-chips",
-      "target": "arancini",
-      "similarity": 0.1961
-    },
-    {
-      "source": "yorkshire-pudding",
-      "target": "bakewell-tart",
-      "similarity": 0.1919
-    },
-    {
-      "source": "pizza-margherita",
-      "target": "cornish-pasty",
-      "similarity": 0.1918
-    },
-    {
-      "source": "welsh-cawl",
-      "target": "risotto-alla-milanese",
-      "similarity": 0.1897
-    },
-    {
-      "source": "haggis",
-      "target": "carbonara",
-      "similarity": 0.1893
-    },
-    {
-      "source": "fish-and-chips",
-      "target": "cannoli-siciliani",
-      "similarity": 0.1869
-    },
-    {
-      "source": "scotch-broth",
-      "target": "risotto-alla-milanese",
-      "similarity": 0.1847
-    },
-    {
-      "source": "eton-mess",
-      "target": "focaccia-genovese",
-      "similarity": 0.1816
-    },
-    {
-      "source": "lancashire-hotpot",
-      "target": "welsh-cawl",
-      "similarity": 0.1798
-    },
-    {
-      "source": "bakewell-tart",
-      "target": "focaccia-genovese",
-      "similarity": 0.1779
-    },
-    {
-      "source": "eton-mess",
-      "target": "cornish-pasty",
-      "similarity": 0.1775
-    },
-    {
-      "source": "pizza-margherita",
-      "target": "bakewell-tart",
-      "similarity": 0.1767
-    },
-    {
-      "source": "black-pudding",
-      "target": "cacio-e-pepe",
-      "similarity": 0.1739
-    },
-    {
-      "source": "tiramisu",
-      "target": "panzanella",
-      "similarity": 0.1686
-    },
-    {
-      "source": "eton-mess",
-      "target": "yorkshire-pudding",
-      "similarity": 0.1662
-    },
-    {
-      "source": "crannachan",
-      "target": "eton-mess",
-      "similarity": 0.1603
-    },
-    {
-      "source": "crannachan",
+      "source": "cacio-e-pepe",
       "target": "pesto-genovese",
-      "similarity": 0.159
+      "similarity": 0.3295
     },
     {
-      "source": "scotch-broth",
+      "source": "ecclefechan-cake",
+      "target": "connecticut-election-cake",
+      "similarity": 0.3288
+    },
+    {
+      "source": "newent-apple-cobs",
+      "target": "hasty-batter",
+      "similarity": 0.3288
+    },
+    {
+      "source": "staffordshire-oatcakes",
+      "target": "arizona-frybread-taco",
+      "similarity": 0.3268
+    },
+    {
+      "source": "wyoming-cowboy-cookies",
+      "target": "devon-scones",
+      "similarity": 0.3262
+    },
+    {
+      "source": "bishop-auckland-cheesecake",
+      "target": "herefordshire-curd-pie",
+      "similarity": 0.3217
+    },
+    {
+      "source": "new-mexico-green-chili",
+      "target": "wyoming-white-chili",
+      "similarity": 0.3207
+    },
+    {
+      "source": "scotch-pie",
+      "target": "cornish-pasty",
+      "similarity": 0.3203
+    },
+    {
+      "source": "dundee-cake",
+      "target": "bara-brith",
+      "similarity": 0.3173
+    },
+    {
+      "source": "georgia-peach-cobbler",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.3157
+    },
+    {
+      "source": "herefordshire-curd-pie",
+      "target": "somerset-apple-pie",
+      "similarity": 0.3138
+    },
+    {
+      "source": "glamorgan-sausage",
+      "target": "alabama-fried-green-tomatoes",
+      "similarity": 0.3137
+    },
+    {
+      "source": "indiana-sugar-cream-pie",
+      "target": "washington-apple-pie",
+      "similarity": 0.313
+    },
+    {
+      "source": "nyth-cennin",
+      "target": "dulse-champ",
+      "similarity": 0.312
+    },
+    {
+      "source": "london-particular",
+      "target": "minnesota-hot-dish",
+      "similarity": 0.3119
+    },
+    {
+      "source": "alabama-fried-green-tomatoes",
+      "target": "oklahoma-fried-okra",
+      "similarity": 0.3119
+    },
+    {
+      "source": "bere-bread",
+      "target": "wyoming-cowboy-cookies",
+      "similarity": 0.3114
+    },
+    {
+      "source": "scotch-pie",
+      "target": "melton-mowbray-pork-pie",
+      "similarity": 0.3099
+    },
+    {
+      "source": "louisiana-shrimp-creole",
+      "target": "west-virginia-chow-chow",
+      "similarity": 0.3097
+    },
+    {
+      "source": "hasty-batter",
+      "target": "devon-scones",
+      "similarity": 0.3096
+    },
+    {
+      "source": "tennessee-elvis-cake",
+      "target": "devon-scones",
+      "similarity": 0.309
+    },
+    {
+      "source": "apple-hearthbread",
+      "target": "illinois-deep-dish-pizza",
+      "similarity": 0.3089
+    },
+    {
+      "source": "hull-patty",
+      "target": "rhode-island-clam-cakes",
+      "similarity": 0.3086
+    },
+    {
+      "source": "smoked-mackerel-pots",
+      "target": "scotch-pie",
+      "similarity": 0.3082
+    },
+    {
+      "source": "hasty-batter",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.3032
+    },
+    {
+      "source": "melton-mowbray-pork-pie",
+      "target": "north-carolina-livermush",
+      "similarity": 0.303
+    },
+    {
+      "source": "lenten-pie",
+      "target": "georgia-peach-cobbler",
+      "similarity": 0.3025
+    },
+    {
+      "source": "sgadan-abergwaun",
+      "target": "pan-hagerty",
+      "similarity": 0.3021
+    },
+    {
+      "source": "focaccia-genovese",
+      "target": "illinois-deep-dish-pizza",
+      "similarity": 0.3011
+    },
+    {
+      "source": "pan-hagerty",
+      "target": "alaska-salmon-pie",
+      "similarity": 0.3001
+    },
+    {
+      "source": "arbroath-smokie-toastie",
+      "target": "nyth-cennin",
+      "similarity": 0.2999
+    },
+    {
+      "source": "arbroath-smokie-toastie",
+      "target": "cotswold-dumplings",
+      "similarity": 0.2993
+    },
+    {
+      "source": "staffordshire-oatcakes",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.2989
+    },
+    {
+      "source": "stir-in-pudding",
+      "target": "arkansas-biscuits-and-gravy",
+      "similarity": 0.2981
+    },
+    {
+      "source": "pan-hagerty",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.2979
+    },
+    {
+      "source": "apple-hearthbread",
+      "target": "michigan-red-top-pizza",
+      "similarity": 0.2976
+    },
+    {
+      "source": "ecclefechan-cake",
+      "target": "hasty-batter",
+      "similarity": 0.2975
+    },
+    {
+      "source": "norfolk-pudding",
+      "target": "sussex-pond-pudding",
+      "similarity": 0.2973
+    },
+    {
+      "source": "irish-stew",
       "target": "lancashire-hotpot",
-      "similarity": 0.1589
+      "similarity": 0.297
     },
     {
-      "source": "pesto-genovese",
-      "target": "tiramisu",
-      "similarity": 0.158
+      "source": "nyth-cennin",
+      "target": "blind-scouse",
+      "similarity": 0.2969
     },
     {
-      "source": "fish-and-chips",
-      "target": "yorkshire-pudding",
-      "similarity": 0.1569
+      "source": "ragu-bolognese",
+      "target": "osso-buco",
+      "similarity": 0.2967
     },
     {
-      "source": "pesto-genovese",
-      "target": "focaccia-genovese",
-      "similarity": 0.1554
+      "source": "london-particular",
+      "target": "shropshire-pea-soup",
+      "similarity": 0.296
     },
     {
-      "source": "crannachan",
-      "target": "panzanella",
-      "similarity": 0.1552
+      "source": "colorado-denver-omelette",
+      "target": "west-virginia-chow-chow",
+      "similarity": 0.296
+    },
+    {
+      "source": "louisiana-shrimp-creole",
+      "target": "south-carolina-shrimp-grits",
+      "similarity": 0.2959
+    },
+    {
+      "source": "texas-chili",
+      "target": "wyoming-white-chili",
+      "similarity": 0.2952
+    },
+    {
+      "source": "new-mexico-green-chili",
+      "target": "texas-chili",
+      "similarity": 0.2951
+    },
+    {
+      "source": "newent-apple-cobs",
+      "target": "sussex-pond-pudding",
+      "similarity": 0.294
+    },
+    {
+      "source": "sussex-pond-pudding",
+      "target": "hasty-batter",
+      "similarity": 0.2938
+    },
+    {
+      "source": "rumblethumps",
+      "target": "dulse-champ",
+      "similarity": 0.2936
+    },
+    {
+      "source": "bishop-auckland-cheesecake",
+      "target": "hasty-batter",
+      "similarity": 0.2932
+    },
+    {
+      "source": "alabama-fried-green-tomatoes",
+      "target": "delaware-scrapple",
+      "similarity": 0.2931
+    },
+    {
+      "source": "pastai-goci",
+      "target": "newent-apple-cobs",
+      "similarity": 0.2924
+    },
+    {
+      "source": "rumblethumps",
+      "target": "south-carolina-shrimp-grits",
+      "similarity": 0.2906
+    },
+    {
+      "source": "arizona-frybread-taco",
+      "target": "apple-hearthbread",
+      "similarity": 0.2903
+    },
+    {
+      "source": "focaccia-genovese",
+      "target": "michigan-red-top-pizza",
+      "similarity": 0.2899
+    },
+    {
+      "source": "herefordshire-curd-pie",
+      "target": "connecticut-election-cake",
+      "similarity": 0.2889
+    },
+    {
+      "source": "alaska-salmon-pie",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.2869
+    },
+    {
+      "source": "melton-mowbray-pork-pie",
+      "target": "hock-dough-pudding",
+      "similarity": 0.2864
+    },
+    {
+      "source": "surrey-pudding",
+      "target": "sussex-pond-pudding",
+      "similarity": 0.2864
+    },
+    {
+      "source": "california-fish-tacos",
+      "target": "arizona-frybread-taco",
+      "similarity": 0.2854
+    },
+    {
+      "source": "staffordshire-oatcakes",
+      "target": "nebraska-runza",
+      "similarity": 0.285
+    },
+    {
+      "source": "herefordshire-curd-pie",
+      "target": "sussex-pond-pudding",
+      "similarity": 0.2837
+    },
+    {
+      "source": "smoked-mackerel-pots",
+      "target": "baked-stuffed-mackerel",
+      "similarity": 0.2836
+    },
+    {
+      "source": "dulse-champ",
+      "target": "hull-patty",
+      "similarity": 0.2836
+    },
+    {
+      "source": "hock-dough-pudding",
+      "target": "sussex-pond-pudding",
+      "similarity": 0.2831
+    },
+    {
+      "source": "puerto-rico-bacalaitos",
+      "target": "arizona-frybread-taco",
+      "similarity": 0.2831
+    },
+    {
+      "source": "alabama-pecan-pie",
+      "target": "indiana-sugar-cream-pie",
+      "similarity": 0.2815
+    },
+    {
+      "source": "cockle-soup",
+      "target": "suffolk-fish-pie",
+      "similarity": 0.2812
+    },
+    {
+      "source": "puerto-rico-bacalaitos",
+      "target": "hull-patty",
+      "similarity": 0.2805
+    },
+    {
+      "source": "keilkannan",
+      "target": "pan-hagerty",
+      "similarity": 0.2802
+    },
+    {
+      "source": "suffolk-fish-pie",
+      "target": "hull-patty",
+      "similarity": 0.2798
+    },
+    {
+      "source": "windsor-bean-pudding",
+      "target": "yorkshire-cabbage-pie",
+      "similarity": 0.2796
+    },
+    {
+      "source": "partan-bree",
+      "target": "louisiana-shrimp-creole",
+      "similarity": 0.2793
+    },
+    {
+      "source": "pizza-margherita",
+      "target": "illinois-deep-dish-pizza",
+      "similarity": 0.2783
+    },
+    {
+      "source": "alabama-pecan-pie",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.278
+    },
+    {
+      "source": "chicken-tikka-masala",
+      "target": "partan-bree",
+      "similarity": 0.2771
+    },
+    {
+      "source": "blind-scouse",
+      "target": "yorkshire-cabbage-pie",
+      "similarity": 0.2768
+    },
+    {
+      "source": "nebraska-runza",
+      "target": "yorkshire-cabbage-pie",
+      "similarity": 0.2766
+    },
+    {
+      "source": "keilkannan",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.2759
+    },
+    {
+      "source": "melton-mowbray-pork-pie",
+      "target": "arkansas-biscuits-and-gravy",
+      "similarity": 0.2743
+    },
+    {
+      "source": "oregon-johnny-cakes",
+      "target": "sussex-pond-pudding",
+      "similarity": 0.274
+    },
+    {
+      "source": "alabama-fried-green-tomatoes",
+      "target": "colorado-denver-omelette",
+      "similarity": 0.2729
+    },
+    {
+      "source": "nebraska-runza",
+      "target": "connecticut-election-cake",
+      "similarity": 0.272
+    },
+    {
+      "source": "shropshire-pea-soup",
+      "target": "minnesota-hot-dish",
+      "similarity": 0.2704
+    },
+    {
+      "source": "alaska-salmon-pie",
+      "target": "keilkannan",
+      "similarity": 0.2699
+    },
+    {
+      "source": "cock-a-leekie",
+      "target": "new-hampshire-clam-chowder",
+      "similarity": 0.2695
+    },
+    {
+      "source": "louisiana-shrimp-creole",
+      "target": "new-hampshire-clam-chowder",
+      "similarity": 0.2691
+    },
+    {
+      "source": "indiana-sugar-cream-pie",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.2683
+    },
+    {
+      "source": "alabama-pecan-pie",
+      "target": "washington-apple-pie",
+      "similarity": 0.268
+    },
+    {
+      "source": "idaho-funeral-potato",
+      "target": "wisconsin-brats-chowder",
+      "similarity": 0.2663
+    },
+    {
+      "source": "utah-funeral-potatoes",
+      "target": "wisconsin-brats-chowder",
+      "similarity": 0.2663
+    },
+    {
+      "source": "washington-apple-pie",
+      "target": "hasty-batter",
+      "similarity": 0.2656
+    },
+    {
+      "source": "blind-scouse",
+      "target": "pan-hagerty",
+      "similarity": 0.2655
+    },
+    {
+      "source": "pizza-margherita",
+      "target": "michigan-red-top-pizza",
+      "similarity": 0.2649
+    },
+    {
+      "source": "lenten-pie",
+      "target": "hull-patty",
+      "similarity": 0.2646
+    },
+    {
+      "source": "dulse-champ",
+      "target": "pan-hagerty",
+      "similarity": 0.2645
+    },
+    {
+      "source": "pastai-goci",
+      "target": "bishop-auckland-cheesecake",
+      "similarity": 0.2643
+    },
+    {
+      "source": "suffolk-fish-pie",
+      "target": "dulse-champ",
+      "similarity": 0.2642
+    },
+    {
+      "source": "virginia-peanut-pie",
+      "target": "washington-apple-pie",
+      "similarity": 0.2642
+    },
+    {
+      "source": "vegetarian-haggis",
+      "target": "surrey-pudding",
+      "similarity": 0.2637
+    },
+    {
+      "source": "suffolk-fish-pie",
+      "target": "puerto-rico-bacalaitos",
+      "similarity": 0.2637
+    },
+    {
+      "source": "kansas-cheesy-corn",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.2628
+    },
+    {
+      "source": "baked-stuffed-mackerel",
+      "target": "oregon-johnny-cakes",
+      "similarity": 0.2623
+    },
+    {
+      "source": "south-dakota-chislic",
+      "target": "rhode-island-clam-cakes",
+      "similarity": 0.2604
+    },
+    {
+      "source": "hock-dough-pudding",
+      "target": "stir-in-pudding",
+      "similarity": 0.2602
+    },
+    {
+      "source": "california-fish-tacos",
+      "target": "samoa-fiafia-eleni",
+      "similarity": 0.2601
+    },
+    {
+      "source": "california-fish-tacos",
+      "target": "rhode-island-clam-cakes",
+      "similarity": 0.2593
+    },
+    {
+      "source": "rumblethumps",
+      "target": "yorkshire-cabbage-pie",
+      "similarity": 0.2589
+    },
+    {
+      "source": "ecclefechan-cake",
+      "target": "bishop-auckland-cheesecake",
+      "similarity": 0.2586
+    },
+    {
+      "source": "dundee-cake",
+      "target": "dorset-apple-cake",
+      "similarity": 0.2586
+    },
+    {
+      "source": "vegetarian-haggis",
+      "target": "london-particular",
+      "similarity": 0.2584
+    },
+    {
+      "source": "samoa-fiafia-eleni",
+      "target": "suffolk-fish-pie",
+      "similarity": 0.2579
+    },
+    {
+      "source": "montana-hash-brown-casserole",
+      "target": "wisconsin-brats-chowder",
+      "similarity": 0.2574
+    },
+    {
+      "source": "irish-stew",
+      "target": "pan-hagerty",
+      "similarity": 0.2572
+    },
+    {
+      "source": "delaware-scrapple",
+      "target": "melton-mowbray-pork-pie",
+      "similarity": 0.2571
+    },
+    {
+      "source": "bedfordshire-clanger",
+      "target": "washington-apple-pie",
+      "similarity": 0.2569
+    },
+    {
+      "source": "south-dakota-chislic",
+      "target": "tennessee-hot-chicken",
+      "similarity": 0.2549
+    },
+    {
+      "source": "blind-scouse",
+      "target": "dulse-champ",
+      "similarity": 0.2545
+    },
+    {
+      "source": "coventry-god-cakes",
+      "target": "bishop-auckland-cheesecake",
+      "similarity": 0.2543
+    },
+    {
+      "source": "buckinghamshire-dumpling",
+      "target": "rumblethumps",
+      "similarity": 0.2533
+    },
+    {
+      "source": "irish-stew",
+      "target": "south-dakota-chislic",
+      "similarity": 0.2523
+    },
+    {
+      "source": "kansas-cheesy-corn",
+      "target": "alabama-fried-green-tomatoes",
+      "similarity": 0.2522
+    },
+    {
+      "source": "buckinghamshire-dumpling",
+      "target": "melton-mowbray-pork-pie",
+      "similarity": 0.252
     },
     {
       "source": "ribollita",
       "target": "panzanella",
-      "similarity": 0.1542
+      "similarity": 0.2518
     },
     {
-      "source": "cumberland-sausage",
-      "target": "black-pudding",
-      "similarity": 0.146
+      "source": "new-york-eggs-benedict",
+      "target": "south-carolina-shrimp-grits",
+      "similarity": 0.2517
+    },
+    {
+      "source": "cockle-soup",
+      "target": "devon-scones",
+      "similarity": 0.2508
+    },
+    {
+      "source": "tennessee-hot-chicken",
+      "target": "rhode-island-clam-cakes",
+      "similarity": 0.2502
+    },
+    {
+      "source": "mississippi-mud-pie",
+      "target": "tennessee-elvis-cake",
+      "similarity": 0.2501
+    },
+    {
+      "source": "vegetarian-haggis",
+      "target": "shropshire-pea-soup",
+      "similarity": 0.2498
+    },
+    {
+      "source": "vegetarian-haggis",
+      "target": "crappit-heid",
+      "similarity": 0.2497
+    },
+    {
+      "source": "somerset-apple-pie",
+      "target": "georgia-peach-cobbler",
+      "similarity": 0.2491
+    },
+    {
+      "source": "risotto-alla-milanese",
+      "target": "arancini",
+      "similarity": 0.2488
+    },
+    {
+      "source": "new-hampshire-clam-chowder",
+      "target": "hasty-batter",
+      "similarity": 0.2487
+    },
+    {
+      "source": "pizza-margherita",
+      "target": "apple-hearthbread",
+      "similarity": 0.2484
+    },
+    {
+      "source": "glamorgan-sausage",
+      "target": "iowa-burgo",
+      "similarity": 0.2484
+    },
+    {
+      "source": "manchester-tart",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.2468
+    },
+    {
+      "source": "cock-a-leekie",
+      "target": "louisiana-shrimp-creole",
+      "similarity": 0.2445
+    },
+    {
+      "source": "glamorgan-sausage",
+      "target": "cotswold-dumplings",
+      "similarity": 0.244
+    },
+    {
+      "source": "cockle-soup",
+      "target": "arkansas-biscuits-and-gravy",
+      "similarity": 0.2433
+    },
+    {
+      "source": "crappit-heid",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.2419
+    },
+    {
+      "source": "cornish-pasty",
+      "target": "blind-scouse",
+      "similarity": 0.2417
+    },
+    {
+      "source": "buckinghamshire-dumpling",
+      "target": "hock-dough-pudding",
+      "similarity": 0.2415
+    },
+    {
+      "source": "cornish-pasty",
+      "target": "pan-hagerty",
+      "similarity": 0.2415
+    },
+    {
+      "source": "colorado-denver-omelette",
+      "target": "nebraska-runza",
+      "similarity": 0.2415
+    },
+    {
+      "source": "new-york-eggs-benedict",
+      "target": "rumblethumps",
+      "similarity": 0.2408
+    },
+    {
+      "source": "pesto-genovese",
+      "target": "carbonara",
+      "similarity": 0.2407
+    },
+    {
+      "source": "crappit-heid",
+      "target": "suffolk-fish-pie",
+      "similarity": 0.2394
+    },
+    {
+      "source": "bara-brith",
+      "target": "connecticut-election-cake",
+      "similarity": 0.2393
+    },
+    {
+      "source": "dundee-cake",
+      "target": "hasty-batter",
+      "similarity": 0.2391
+    },
+    {
+      "source": "crappit-heid",
+      "target": "staffordshire-oatcakes",
+      "similarity": 0.2388
+    },
+    {
+      "source": "coventry-god-cakes",
+      "target": "lenten-pie",
+      "similarity": 0.2388
+    },
+    {
+      "source": "stir-in-pudding",
+      "target": "tennessee-elvis-cake",
+      "similarity": 0.2388
+    },
+    {
+      "source": "scotch-pie",
+      "target": "lancashire-hotpot",
+      "similarity": 0.2387
+    },
+    {
+      "source": "cockle-soup",
+      "target": "kentucky-hot-brown",
+      "similarity": 0.2386
+    },
+    {
+      "source": "virginia-peanut-pie",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.2382
+    },
+    {
+      "source": "stir-in-pudding",
+      "target": "sussex-pond-pudding",
+      "similarity": 0.238
+    },
+    {
+      "source": "idaho-funeral-potato",
+      "target": "kansas-cheesy-corn",
+      "similarity": 0.2366
+    },
+    {
+      "source": "kansas-cheesy-corn",
+      "target": "utah-funeral-potatoes",
+      "similarity": 0.2366
+    },
+    {
+      "source": "baked-stuffed-mackerel",
+      "target": "glamorgan-sausage",
+      "similarity": 0.236
+    },
+    {
+      "source": "chicken-tikka-masala",
+      "target": "west-virginia-chow-chow",
+      "similarity": 0.2358
+    },
+    {
+      "source": "north-carolina-livermush",
+      "target": "hock-dough-pudding",
+      "similarity": 0.2357
+    },
+    {
+      "source": "delaware-scrapple",
+      "target": "hock-dough-pudding",
+      "similarity": 0.2355
+    },
+    {
+      "source": "chicken-tikka-masala",
+      "target": "louisiana-shrimp-creole",
+      "similarity": 0.2351
+    },
+    {
+      "source": "smoked-mackerel-pots",
+      "target": "new-hampshire-clam-chowder",
+      "similarity": 0.2347
+    },
+    {
+      "source": "bara-brith",
+      "target": "lenten-pie",
+      "similarity": 0.2346
+    },
+    {
+      "source": "partan-bree",
+      "target": "cock-a-leekie",
+      "similarity": 0.2343
+    },
+    {
+      "source": "herb-pudding",
+      "target": "yorkshire-cabbage-pie",
+      "similarity": 0.2343
+    },
+    {
+      "source": "shropshire-pea-soup",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.2336
+    },
+    {
+      "source": "partan-bree",
+      "target": "new-hampshire-clam-chowder",
+      "similarity": 0.2331
+    },
+    {
+      "source": "kentucky-hot-brown",
+      "target": "rumblethumps",
+      "similarity": 0.2331
+    },
+    {
+      "source": "samoa-fiafia-eleni",
+      "target": "puerto-rico-bacalaitos",
+      "similarity": 0.233
+    },
+    {
+      "source": "cornish-pasty",
+      "target": "yorkshire-cabbage-pie",
+      "similarity": 0.2329
+    },
+    {
+      "source": "ragu-bolognese",
+      "target": "carbonara",
+      "similarity": 0.2322
+    },
+    {
+      "source": "tennessee-hot-chicken",
+      "target": "arkansas-biscuits-and-gravy",
+      "similarity": 0.232
+    },
+    {
+      "source": "norfolk-pudding",
+      "target": "hock-dough-pudding",
+      "similarity": 0.2315
+    },
+    {
+      "source": "pesto-genovese",
+      "target": "pizza-margherita",
+      "similarity": 0.2302
+    },
+    {
+      "source": "alaska-salmon-pie",
+      "target": "kansas-cheesy-corn",
+      "similarity": 0.2282
+    },
+    {
+      "source": "oregon-johnny-cakes",
+      "target": "kansas-cheesy-corn",
+      "similarity": 0.2276
+    },
+    {
+      "source": "cannoli-siciliani",
+      "target": "somerset-apple-pie",
+      "similarity": 0.2259
+    },
+    {
+      "source": "derry-duck",
+      "target": "vermont-yankee-beans",
+      "similarity": 0.2257
+    },
+    {
+      "source": "maine-lobster-stew",
+      "target": "new-hampshire-clam-chowder",
+      "similarity": 0.2252
+    },
+    {
+      "source": "ecclefechan-cake",
+      "target": "newent-apple-cobs",
+      "similarity": 0.2246
+    },
+    {
+      "source": "bedfordshire-clanger",
+      "target": "cotswold-dumplings",
+      "similarity": 0.2236
+    },
+    {
+      "source": "sgadan-abergwaun",
+      "target": "hull-patty",
+      "similarity": 0.2232
+    },
+    {
+      "source": "hampshire-meatloaf",
+      "target": "shropshire-pea-soup",
+      "similarity": 0.2232
+    },
+    {
+      "source": "south-carolina-shrimp-grits",
+      "target": "wisconsin-brats-chowder",
+      "similarity": 0.2231
+    },
+    {
+      "source": "arbroath-smokie-toastie",
+      "target": "windsor-bean-pudding",
+      "similarity": 0.2228
+    },
+    {
+      "source": "lancashire-hotpot",
+      "target": "south-dakota-chislic",
+      "similarity": 0.2228
+    },
+    {
+      "source": "north-carolina-livermush",
+      "target": "arkansas-biscuits-and-gravy",
+      "similarity": 0.2225
+    },
+    {
+      "source": "windsor-bean-pudding",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.2224
+    },
+    {
+      "source": "irish-stew",
+      "target": "new-hampshire-clam-chowder",
+      "similarity": 0.2221
+    },
+    {
+      "source": "ragu-bolognese",
+      "target": "cacio-e-pepe",
+      "similarity": 0.2213
+    },
+    {
+      "source": "bedfordshire-clanger",
+      "target": "newent-apple-cobs",
+      "similarity": 0.2211
+    },
+    {
+      "source": "massachusetts-baked-beans",
+      "target": "blind-scouse",
+      "similarity": 0.2209
+    },
+    {
+      "source": "cotswold-dumplings",
+      "target": "kansas-cheesy-corn",
+      "similarity": 0.2204
+    },
+    {
+      "source": "west-virginia-chow-chow",
+      "target": "keilkannan",
+      "similarity": 0.2202
+    },
+    {
+      "source": "oregon-johnny-cakes",
+      "target": "alabama-fried-green-tomatoes",
+      "similarity": 0.2194
+    },
+    {
+      "source": "baked-stuffed-mackerel",
+      "target": "cregyn-gleison",
+      "similarity": 0.2193
+    },
+    {
+      "source": "cregyn-gleison",
+      "target": "surrey-pudding",
+      "similarity": 0.2193
+    },
+    {
+      "source": "windsor-bean-pudding",
+      "target": "shropshire-pea-soup",
+      "similarity": 0.2192
+    },
+    {
+      "source": "lancashire-hotpot",
+      "target": "new-hampshire-clam-chowder",
+      "similarity": 0.2189
+    },
+    {
+      "source": "london-particular",
+      "target": "montana-hash-brown-casserole",
+      "similarity": 0.2189
+    },
+    {
+      "source": "guam-eskebeche",
+      "target": "glamorgan-sausage",
+      "similarity": 0.2183
+    },
+    {
+      "source": "bedfordshire-clanger",
+      "target": "north-carolina-livermush",
+      "similarity": 0.2182
+    },
+    {
+      "source": "panzanella",
+      "target": "pizza-margherita",
+      "similarity": 0.2154
+    },
+    {
+      "source": "kentucky-hot-brown",
+      "target": "suffolk-fish-pie",
+      "similarity": 0.2145
+    },
+    {
+      "source": "cambridge-sauce",
+      "target": "glamorgan-sausage",
+      "similarity": 0.2136
     },
     {
       "source": "bistecca-fiorentina",
       "target": "focaccia-genovese",
-      "similarity": 0.145
+      "similarity": 0.2134
     },
     {
-      "source": "cacio-e-pepe",
-      "target": "pesto-genovese",
-      "similarity": 0.1449
+      "source": "coventry-god-cakes",
+      "target": "herefordshire-curd-pie",
+      "similarity": 0.2128
     },
     {
-      "source": "haggis",
-      "target": "cumberland-sausage",
-      "similarity": 0.1416
+      "source": "massachusetts-baked-beans",
+      "target": "delaware-scrapple",
+      "similarity": 0.2128
     },
     {
-      "source": "ragu-bolognese",
-      "target": "risotto-alla-milanese",
-      "similarity": 0.1405
+      "source": "kentucky-hot-brown",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.2123
+    },
+    {
+      "source": "manchester-tart",
+      "target": "wyoming-cowboy-cookies",
+      "similarity": 0.2122
+    },
+    {
+      "source": "iowa-burgo",
+      "target": "texas-chili",
+      "similarity": 0.211
+    },
+    {
+      "source": "oklahoma-fried-okra",
+      "target": "delaware-scrapple",
+      "similarity": 0.2106
+    },
+    {
+      "source": "sgadan-abergwaun",
+      "target": "bristol-hotpot",
+      "similarity": 0.2105
+    },
+    {
+      "source": "bristol-hotpot",
+      "target": "partan-bree",
+      "similarity": 0.2104
+    },
+    {
+      "source": "sgadan-abergwaun",
+      "target": "florida-jezebel-sauce",
+      "similarity": 0.2103
+    },
+    {
+      "source": "cregyn-gleison",
+      "target": "kansas-cheesy-corn",
+      "similarity": 0.2103
+    },
+    {
+      "source": "minnesota-hot-dish",
+      "target": "vegetarian-haggis",
+      "similarity": 0.2102
+    },
+    {
+      "source": "minnesota-hot-dish",
+      "target": "texas-chili",
+      "similarity": 0.2097
+    },
+    {
+      "source": "oklahoma-fried-okra",
+      "target": "illinois-deep-dish-pizza",
+      "similarity": 0.209
+    },
+    {
+      "source": "maryland-crab-cakes",
+      "target": "rhode-island-clam-cakes",
+      "similarity": 0.2088
+    },
+    {
+      "source": "cannoli-siciliani",
+      "target": "mississippi-mud-pie",
+      "similarity": 0.2087
+    },
+    {
+      "source": "bere-bread",
+      "target": "arkansas-biscuits-and-gravy",
+      "similarity": 0.2086
+    },
+    {
+      "source": "hampshire-meatloaf",
+      "target": "north-dakota-knoepla",
+      "similarity": 0.208
+    },
+    {
+      "source": "pastai-goci",
+      "target": "hampshire-meatloaf",
+      "similarity": 0.2075
+    },
+    {
+      "source": "cregyn-gleison",
+      "target": "cotswold-dumplings",
+      "similarity": 0.2072
+    },
+    {
+      "source": "massachusetts-baked-beans",
+      "target": "north-carolina-livermush",
+      "similarity": 0.207
+    },
+    {
+      "source": "guam-eskebeche",
+      "target": "west-virginia-chow-chow",
+      "similarity": 0.2066
+    },
+    {
+      "source": "guam-eskebeche",
+      "target": "south-dakota-chislic",
+      "similarity": 0.2064
+    },
+    {
+      "source": "bristol-hotpot",
+      "target": "chesterfield-soup",
+      "similarity": 0.2061
+    },
+    {
+      "source": "wyoming-white-chili",
+      "target": "wisconsin-brats-chowder",
+      "similarity": 0.206
+    },
+    {
+      "source": "arbroath-smokie-toastie",
+      "target": "alabama-fried-green-tomatoes",
+      "similarity": 0.2059
+    },
+    {
+      "source": "cheshire-onion-pie",
+      "target": "guam-eskebeche",
+      "similarity": 0.2059
+    },
+    {
+      "source": "coventry-god-cakes",
+      "target": "dundee-cake",
+      "similarity": 0.2056
+    },
+    {
+      "source": "bere-bread",
+      "target": "arizona-frybread-taco",
+      "similarity": 0.2054
+    },
+    {
+      "source": "new-york-eggs-benedict",
+      "target": "kentucky-hot-brown",
+      "similarity": 0.2048
+    },
+    {
+      "source": "buckinghamshire-dumpling",
+      "target": "north-carolina-livermush",
+      "similarity": 0.2046
+    },
+    {
+      "source": "manchester-tart",
+      "target": "alaska-salmon-pie",
+      "similarity": 0.2025
+    },
+    {
+      "source": "norfolk-pudding",
+      "target": "arkansas-biscuits-and-gravy",
+      "similarity": 0.2023
+    },
+    {
+      "source": "nevada-frito-pie",
+      "target": "texas-chili",
+      "similarity": 0.202
+    },
+    {
+      "source": "pastai-goci",
+      "target": "samoa-fiafia-eleni",
+      "similarity": 0.2007
+    },
+    {
+      "source": "maryland-crab-cakes",
+      "target": "alabama-fried-green-tomatoes",
+      "similarity": 0.2005
+    },
+    {
+      "source": "pesto-genovese",
+      "target": "focaccia-genovese",
+      "similarity": 0.1998
+    },
+    {
+      "source": "cock-a-leekie",
+      "target": "lancashire-hotpot",
+      "similarity": 0.1994
+    },
+    {
+      "source": "iowa-burgo",
+      "target": "louisiana-shrimp-creole",
+      "similarity": 0.1989
+    },
+    {
+      "source": "tennessee-hot-chicken",
+      "target": "puerto-rico-bacalaitos",
+      "similarity": 0.1987
+    },
+    {
+      "source": "smoked-mackerel-pots",
+      "target": "hasty-batter",
+      "similarity": 0.1986
+    },
+    {
+      "source": "ribollita",
+      "target": "wyoming-white-chili",
+      "similarity": 0.1984
+    },
+    {
+      "source": "cheshire-onion-pie",
+      "target": "sgadan-abergwaun",
+      "similarity": 0.1977
+    },
+    {
+      "source": "cheshire-onion-pie",
+      "target": "iowa-burgo",
+      "similarity": 0.1975
+    },
+    {
+      "source": "bristol-hotpot",
+      "target": "lancashire-hotpot",
+      "similarity": 0.1974
+    },
+    {
+      "source": "birmingham-balti",
+      "target": "ohio-cincinnati-chili",
+      "similarity": 0.1973
+    },
+    {
+      "source": "maine-lobster-stew",
+      "target": "mississippi-mud-pie",
+      "similarity": 0.197
+    },
+    {
+      "source": "risotto-alla-milanese",
+      "target": "osso-buco",
+      "similarity": 0.1954
+    },
+    {
+      "source": "ohio-cincinnati-chili",
+      "target": "louisiana-shrimp-creole",
+      "similarity": 0.1952
+    },
+    {
+      "source": "ohio-cincinnati-chili",
+      "target": "chicken-tikka-masala",
+      "similarity": 0.1948
+    },
+    {
+      "source": "maine-lobster-stew",
+      "target": "cockle-soup",
+      "similarity": 0.1944
+    },
+    {
+      "source": "cheshire-onion-pie",
+      "target": "nyth-cennin",
+      "similarity": 0.1939
+    },
+    {
+      "source": "maine-lobster-stew",
+      "target": "crappit-heid",
+      "similarity": 0.1909
+    },
+    {
+      "source": "vermont-yankee-beans",
+      "target": "north-carolina-livermush",
+      "similarity": 0.1908
+    },
+    {
+      "source": "vermont-yankee-beans",
+      "target": "guam-eskebeche",
+      "similarity": 0.1907
+    },
+    {
+      "source": "oklahoma-fried-okra",
+      "target": "west-virginia-chow-chow",
+      "similarity": 0.1902
+    },
+    {
+      "source": "cannoli-siciliani",
+      "target": "missouri-gooey-butter-cake",
+      "similarity": 0.1899
+    },
+    {
+      "source": "bara-brith",
+      "target": "coventry-god-cakes",
+      "similarity": 0.1896
+    },
+    {
+      "source": "arancini",
+      "target": "lincoln-salad",
+      "similarity": 0.1885
+    },
+    {
+      "source": "chesterfield-soup",
+      "target": "partan-bree",
+      "similarity": 0.1869
+    },
+    {
+      "source": "new-york-eggs-benedict",
+      "target": "north-carolina-livermush",
+      "similarity": 0.1857
+    },
+    {
+      "source": "new-mexico-green-chili",
+      "target": "bristol-hotpot",
+      "similarity": 0.1854
+    },
+    {
+      "source": "panzanella",
+      "target": "new-jersey-hot-dog",
+      "similarity": 0.1853
+    },
+    {
+      "source": "new-mexico-green-chili",
+      "target": "melton-mowbray-pork-pie",
+      "similarity": 0.1852
+    },
+    {
+      "source": "manchester-tart",
+      "target": "tennessee-elvis-cake",
+      "similarity": 0.1843
+    },
+    {
+      "source": "hawaii-poke",
+      "target": "samoa-fiafia-eleni",
+      "similarity": 0.1837
+    },
+    {
+      "source": "tiramisu",
+      "target": "cannoli-siciliani",
+      "similarity": 0.1835
+    },
+    {
+      "source": "new-jersey-hot-dog",
+      "target": "west-virginia-chow-chow",
+      "similarity": 0.1832
+    },
+    {
+      "source": "chesterfield-soup",
+      "target": "hampshire-meatloaf",
+      "similarity": 0.1822
+    },
+    {
+      "source": "nevada-frito-pie",
+      "target": "louisiana-shrimp-creole",
+      "similarity": 0.182
+    },
+    {
+      "source": "chesterfield-soup",
+      "target": "cregyn-gleison",
+      "similarity": 0.1812
+    },
+    {
+      "source": "birmingham-balti",
+      "target": "nevada-frito-pie",
+      "similarity": 0.181
     },
     {
       "source": "bistecca-fiorentina",
-      "target": "pesto-genovese",
-      "similarity": 0.1394
+      "target": "partan-bree",
+      "similarity": 0.1797
+    },
+    {
+      "source": "panzanella",
+      "target": "cambridge-sauce",
+      "similarity": 0.1797
+    },
+    {
+      "source": "bistecca-fiorentina",
+      "target": "oklahoma-fried-okra",
+      "similarity": 0.1796
+    },
+    {
+      "source": "maryland-crab-cakes",
+      "target": "guam-eskebeche",
+      "similarity": 0.1795
     },
     {
       "source": "osso-buco",
-      "target": "risotto-alla-milanese",
-      "similarity": 0.1307
+      "target": "chesterfield-soup",
+      "similarity": 0.178
+    },
+    {
+      "source": "risotto-alla-milanese",
+      "target": "pesto-genovese",
+      "similarity": 0.1777
+    },
+    {
+      "source": "florida-jezebel-sauce",
+      "target": "glamorgan-sausage",
+      "similarity": 0.1753
+    },
+    {
+      "source": "cambridge-sauce",
+      "target": "partan-bree",
+      "similarity": 0.1745
+    },
+    {
+      "source": "osso-buco",
+      "target": "bristol-hotpot",
+      "similarity": 0.1732
+    },
+    {
+      "source": "carbonara",
+      "target": "new-york-eggs-benedict",
+      "similarity": 0.1732
+    },
+    {
+      "source": "herb-pudding",
+      "target": "keilkannan",
+      "similarity": 0.1729
+    },
+    {
+      "source": "cambridge-sauce",
+      "target": "maryland-crab-cakes",
+      "similarity": 0.1727
+    },
+    {
+      "source": "risotto-alla-milanese",
+      "target": "pizza-margherita",
+      "similarity": 0.1719
+    },
+    {
+      "source": "new-jersey-hot-dog",
+      "target": "nevada-frito-pie",
+      "similarity": 0.1713
+    },
+    {
+      "source": "ragu-bolognese",
+      "target": "kentucky-hot-brown",
+      "similarity": 0.1711
+    },
+    {
+      "source": "lincoln-salad",
+      "target": "minnesota-hot-dish",
+      "similarity": 0.1697
+    },
+    {
+      "source": "arancini",
+      "target": "cotswold-dumplings",
+      "similarity": 0.1685
+    },
+    {
+      "source": "lincoln-salad",
+      "target": "new-jersey-hot-dog",
+      "similarity": 0.1657
+    },
+    {
+      "source": "arancini",
+      "target": "cannoli-siciliani",
+      "similarity": 0.1651
+    },
+    {
+      "source": "ribollita",
+      "target": "partan-bree",
+      "similarity": 0.1627
+    },
+    {
+      "source": "birmingham-balti",
+      "target": "lancashire-hotpot",
+      "similarity": 0.1622
+    },
+    {
+      "source": "ribollita",
+      "target": "blind-scouse",
+      "similarity": 0.1621
+    },
+    {
+      "source": "tiramisu",
+      "target": "mississippi-mud-pie",
+      "similarity": 0.1609
+    },
+    {
+      "source": "bistecca-fiorentina",
+      "target": "panzanella",
+      "similarity": 0.16
+    },
+    {
+      "source": "herb-pudding",
+      "target": "nebraska-runza",
+      "similarity": 0.1587
+    },
+    {
+      "source": "derry-duck",
+      "target": "idaho-funeral-potato",
+      "similarity": 0.1548
+    },
+    {
+      "source": "derry-duck",
+      "target": "utah-funeral-potatoes",
+      "similarity": 0.1548
+    },
+    {
+      "source": "derry-duck",
+      "target": "montana-hash-brown-casserole",
+      "similarity": 0.1536
+    },
+    {
+      "source": "florida-jezebel-sauce",
+      "target": "somerset-apple-pie",
+      "similarity": 0.1476
+    },
+    {
+      "source": "pennsylvania-stromboli",
+      "target": "kentucky-hot-brown",
+      "similarity": 0.1476
+    },
+    {
+      "source": "herb-pudding",
+      "target": "vegetarian-haggis",
+      "similarity": 0.1473
+    },
+    {
+      "source": "florida-jezebel-sauce",
+      "target": "stir-in-pudding",
+      "similarity": 0.1449
+    },
+    {
+      "source": "hawaii-poke",
+      "target": "pastai-goci",
+      "similarity": 0.1446
+    },
+    {
+      "source": "pennsylvania-stromboli",
+      "target": "glamorgan-sausage",
+      "similarity": 0.1386
+    },
+    {
+      "source": "lincoln-salad",
+      "target": "cornish-pasty",
+      "similarity": 0.1385
+    },
+    {
+      "source": "hawaii-poke",
+      "target": "derry-duck",
+      "similarity": 0.1382
+    },
+    {
+      "source": "pennsylvania-stromboli",
+      "target": "south-carolina-shrimp-grits",
+      "similarity": 0.1373
+    },
+    {
+      "source": "pennsylvania-stromboli",
+      "target": "new-york-eggs-benedict",
+      "similarity": 0.1356
+    },
+    {
+      "source": "tiramisu",
+      "target": "bara-brith",
+      "similarity": 0.1238
     }
   ]
 }

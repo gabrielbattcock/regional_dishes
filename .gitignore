@@ -17,11 +17,6 @@ ENV/
 .env
 *.env
 
-# Node / React
-node_modules/
-dist/
-.vite/
-*.local
 
 # OS
 .DS_Store

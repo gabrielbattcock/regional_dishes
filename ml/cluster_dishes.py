@@ -2,22 +2,41 @@
 Dish Clustering Pipeline
 ========================
 Clusters regional dishes using TF-IDF on ingredient text + one-hot encoded
-cooking methods. Outputs clusters.json to backend/data/ with:
+cooking methods and ingredient groups. Outputs clusters.json to data/ with:
   - cluster assignments for each dish
   - t-SNE 2D coordinates for visualisation
   - top dish-to-dish similarity connections (cosine similarity)
   - cluster labels (auto-generated from shared features)
 
+Ingredient normalisation is handled by ingredient_taxonomy.py (same directory),
+which provides a 3-level hierarchy: group → subgroup → canonical.
+The feature document for each dish includes tokens at all three levels so the
+model can cluster on fine detail (canonical) AND coarse character (group).
+
 Usage:
   python cluster_dishes.py
-  (run from the backend/ directory, or update DATA_DIR below)
+  (run from the ml/ directory, or update DATA_DIR below)
 """
 
 import json
-import os
-import re
+import sys
 import numpy as np
 from pathlib import Path
+
+# ── Taxonomy import ──────────────────────────────────────────────────────────
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))   # ensure ml/ is on the path
+try:
+    from ingredient_taxonomy import (
+        normalize as tax_normalize,
+        featurize as tax_featurize,
+        HIERARCHY,
+    )
+except ImportError as e:
+    raise SystemExit(
+        f"Cannot import ingredient_taxonomy: {e}\n"
+        "Make sure ingredient_taxonomy.py is in the same directory."
+    )
 
 # ── Dependencies ────────────────────────────────────────────────────────────
 try:
@@ -34,96 +53,47 @@ except ImportError as e:
     )
 
 # ── Paths ────────────────────────────────────────────────────────────────────
-SCRIPT_DIR = Path(__file__).resolve().parent
-DATA_DIR   = SCRIPT_DIR.parent / "data"
-INPUT_FILE = DATA_DIR / "recipes.json"
+DATA_DIR    = SCRIPT_DIR.parent / "data"
+INPUT_FILE  = DATA_DIR / "recipes.json"
 OUTPUT_FILE = DATA_DIR / "clusters.json"
 
 # ── Config ───────────────────────────────────────────────────────────────────
-N_CLUSTERS = 6          # number of k-means clusters
-TOP_CONNECTIONS = 4     # max similar dishes per dish to store as edges
-SIM_THRESHOLD = 0.12    # minimum cosine similarity to include a connection
-TSNE_PERPLEXITY = 5     # keep low for small datasets (< 30 items)
-RANDOM_STATE = 42
+N_CLUSTERS      = 8      # number of k-means clusters (raised — richer dataset)
+TOP_CONNECTIONS = 4      # max similar dishes per dish to store as edges
+SIM_THRESHOLD   = 0.12   # minimum cosine similarity to include a connection
+TSNE_PERPLEXITY = 10     # raise when dataset grows; kept low for < 50 items
+RANDOM_STATE    = 42
 
-# ── Ingredient normalisation helpers ─────────────────────────────────────────
-INGREDIENT_ALIASES = {
-    # proteins
-    r"\b(skirt beef|beef chuck|beef brisket|beef mince|coarse-ground beef)\b": "beef",
-    r"\b(ground pork|pork mince|coarse-ground pork|pork shoulder|pork back fat|pork belly)\b": "pork",
-    r"\b(lamb neck|lamb shoulder|lamb offal|lamb on the bone)\b": "lamb",
-    r"\b(veal shank|veal shanks)\b": "veal",
-    r"\b(cod|haddock|fish fillet)\b": "white fish",
-    r"\b(sheep.s milk ricotta|ricotta)\b": "ricotta",
-    r"\b(fior di latte|buffalo mozzarella|mozzarella)\b": "mozzarella",
-    r"\b(parmigiano.reggiano|parmigiano|parmesan)\b": "parmesan",
-    r"\b(pecorino romano|pecorino sardo|pecorino)\b": "pecorino",
-    r"\b(mascarpone cheese|mascarpone)\b": "mascarpone",
-    r"\b(guanciale|pancetta|bacon)\b": "cured pork",
-    # carbs
-    r"\b(strong plain flour|plain flour|type.00.flour|strong bread flour|bread flour)\b": "flour",
-    r"\b(floury potatoes|maris piper potatoes|potato|potatoes)\b": "potato",
-    r"\b(arborio rice|carnaroli rice|arborio|carnaroli)\b": "risotto rice",
-    r"\b(pearl barley|pinhead oatmeal|oatmeal|oats)\b": "oats or barley",
-    r"\b(savoiardi|ladyfinger biscuits)\b": "sponge biscuits",
-    r"\b(tonnarelli|spaghetti|tagliatelle|trofie|trenette|pasta)\b": "pasta",
-    r"\b(stale tuscan bread|stale bread|tuscan bread)\b": "stale bread",
-    # dairy/fat
-    r"\b(double cream|whipping cream)\b": "cream",
-    r"\b(unsalted butter|butter|lard or shortening|lard or butter|lard)\b": "butter or lard",
-    r"\b(whole milk)\b": "milk",
-    r"\b(extra.virgin olive oil|extra.virgin ligurian olive oil|olive oil)\b": "olive oil",
-    r"\b(beef dripping|sunflower oil|vegetable oil|suet)\b": "cooking fat",
-    # vegetables
-    r"\b(onions?|red onion)\b": "onion",
-    r"\b(leeks?)\b": "leek",
-    r"\b(carrots?)\b": "carrot",
-    r"\b(celery stalks?|celery)\b": "celery",
-    r"\b(turnips?|swede)\b": "root vegetable",
-    r"\b(parsnips?)\b": "parsnip",
-    r"\b(cavolo nero|black kale|kale)\b": "dark leafy greens",
-    r"\b(san marzano tomatoes|tinned tomatoes|tomatoes?|tomato paste)\b": "tomato",
-    r"\b(garlic cloves?|garlic)\b": "garlic",
-    r"\b(fresh raspberries|raspberries?)\b": "raspberry",
-    r"\b(fresh strawberries|strawberries?)\b": "strawberry",
-    # flavourings
-    r"\b(scotch whisky|whisky|marsala wine|dry white wine|dark ale|stout|beer)\b": "alcohol",
-    r"\b(espresso|strong espresso)\b": "coffee",
-    r"\b(saffron threads?|saffron)\b": "saffron",
-    r"\b(ground black pepper|black pepper|black peppercorns?|coarsely ground black pepper)\b": "black pepper",
-    r"\b(english mustard|mustard)\b": "mustard",
-    r"\b(worcestershire sauce)\b": "worcestershire",
-    r"\b(caster sugar|icing sugar|cane sugar)\b": "sugar",
-    r"\b(eggs?|egg yolks?|egg whites?)\b": "egg",
-    r"\b(fresh basil leaves?|basil)\b": "basil",
-    r"\b(fresh parsley|flat.leaf parsley|parsley)\b": "parsley",
-    r"\b(ground almonds|flaked almonds|almond extract|pine nuts)\b": "nuts or almonds",
-    r"\b(raspberry jam)\b": "jam",
-    r"\b(cannellini beans)\b": "beans",
-    r"\b(frozen peas)\b": "peas",
-    r"\b(heather honey|honey)\b": "honey",
-    r"\b(candied orange peel)\b": "candied fruit",
-    r"\b(dark chocolate chips)\b": "chocolate",
-    r"\b(sheep.s stomach|hog casings|natural hog casings|artificial casing)\b": "casing",
-}
+# Weighting of the three feature blocks:
+W_CANONICAL  = 0.55   # fine-grained TF-IDF over canonical ingredient tokens
+W_SUBGROUP   = 0.25   # medium-resolution subgroup presence tokens
+W_GROUP      = 0.10   # coarse group presence (one-hot per hierarchy group)
+W_METHOD     = 0.10   # one-hot cooking method
 
 COOKING_METHODS = [
     "baked", "braised", "boiled", "deep-fried", "grilled",
-    "simmered", "no-cook"
+    "simmered", "no-cook",
 ]
 
-# ── Cluster label hints (used for human-readable names) ──────────────────────
+# All top-level groups in the hierarchy (used for one-hot group features)
+ALL_GROUPS = list(HIERARCHY.keys())
+
+# ── Cluster label hints (updated to taxonomy canonical names) ─────────────────
 CLUSTER_THEME_MAP = {
-    frozenset(["beef", "potato", "flour"]): "Hearty meat & pastry",
-    frozenset(["lamb", "onion", "carrot"]): "Slow-cooked lamb broths",
-    frozenset(["pasta", "cheese", "egg"]): "Roman pasta classics",
-    frozenset(["pasta", "tomato", "beef"]): "Meaty pasta sauces",
-    frozenset(["cream", "sugar", "egg"]): "Rich cream desserts",
-    frozenset(["flour", "olive oil", "tomato"]): "Baked doughs & breads",
-    frozenset(["ricotta", "flour", "alcohol"]): "Sicilian sweets",
-    frozenset(["pork", "oats or barley", "black pepper"]): "Cured & spiced meats",
-    frozenset(["risotto rice", "parmesan", "saffron"]): "Northern Italian rice",
+    frozenset(["beef", "potato", "flour"]):            "Hearty meat & pastry",
+    frozenset(["lamb", "onion", "carrot"]):            "Slow-cooked lamb broths",
+    frozenset(["pasta", "egg", "cured pork"]):         "Roman pasta classics",
+    frozenset(["pasta", "tomato", "beef"]):            "Meaty pasta sauces",
+    frozenset(["cream", "sugar", "egg"]):              "Rich cream desserts",
+    frozenset(["flour", "olive oil", "tomato"]):       "Baked doughs & breads",
+    frozenset(["ricotta", "flour", "whisky"]):         "Sicilian sweets",
+    frozenset(["pork", "oats", "black pepper"]):       "Cured & spiced meats",
+    frozenset(["risotto rice", "parmesan", "saffron"]):"Northern Italian rice",
     frozenset(["stale bread", "tomato", "olive oil"]): "Tuscan bread dishes",
+    frozenset(["potato", "leek", "butter"]):           "British comfort food",
+    frozenset(["oats", "barley", "lamb"]):             "Scottish & Northern broths",
+    frozenset(["flour", "butter", "sugar"]):           "Baked goods & puddings",
+    frozenset(["white fish", "potato", "cream"]):      "Fish & seafood dishes",
 }
 
 # ── Load data ────────────────────────────────────────────────────────────────
@@ -135,56 +105,107 @@ def load_recipes(path: Path) -> list[dict]:
 
 # ── Feature engineering ──────────────────────────────────────────────────────
 
-def normalise_ingredient(raw: str) -> str:
-    """Lower-case and apply alias substitutions to a single ingredient string."""
-    text = raw.lower()
-    for pattern, replacement in INGREDIENT_ALIASES.items():
-        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
-    return text
+def recipe_to_ingredient_lines(recipe: dict) -> list[str]:
+    """Extract raw ingredient item strings from a recipe."""
+    return [ing["item"] for ing in recipe.get("ingredients", [])]
 
 
-def recipe_to_ingredient_doc(recipe: dict) -> str:
-    """Return a space-joined string of normalised ingredient tokens for TF-IDF."""
-    items = [ing["item"] for ing in recipe.get("ingredients", [])]
-    normalised = [normalise_ingredient(item) for item in items]
-    # also add tags as weak signals
+def recipe_to_canonical_doc(recipe: dict) -> str:
+    """
+    Return a space-joined string of canonical ingredient tokens for TF-IDF.
+    Uses ingredient_taxonomy.normalize() — much richer than the old alias dict.
+    Unrecognised ingredients are included as-is (lowercased) so no signal is lost.
+    Also appends any recipe tags as extra tokens.
+    """
+    lines = recipe_to_ingredient_lines(recipe)
+    tokens = []
+    for line in lines:
+        canon = tax_normalize(line)
+        tokens.append(canon if canon is not None else line.lower())
     tags = recipe.get("tags", [])
-    return " ".join(normalised + tags)
+    return " ".join(tokens + tags)
+
+
+def recipe_to_subgroup_doc(recipe: dict) -> str:
+    """
+    Space-joined string of subgroup tokens (one per recognised ingredient).
+    Tokens are repeated proportionally to ingredient count via Counter.
+    """
+    lines = recipe_to_ingredient_lines(recipe)
+    counts = tax_featurize(lines, "subgroup")
+    # repeat each subgroup token by its count so TF-IDF sees frequency
+    return " ".join(
+        token.replace(" ", "_").replace("&", "and")
+        for token, cnt in counts.items()
+        for _ in range(cnt)
+    )
+
+
+def recipe_group_flags(recipe: dict) -> list[str]:
+    """
+    Return the list of top-level hierarchy groups present in this recipe.
+    Used for one-hot group presence features.
+    """
+    lines = recipe_to_ingredient_lines(recipe)
+    group_counts = tax_featurize(lines, "group")
+    return [g for g in ALL_GROUPS if g in group_counts]
 
 
 def build_feature_matrix(recipes: list[dict]):
     """
-    Combine:
-      1. TF-IDF of normalised ingredient documents  (weighted 0.7)
-      2. One-hot encoded cooking method              (weighted 0.3)
-    Returns a dense numpy array and the vectorizers.
+    Combine four weighted feature blocks:
+      1. TF-IDF of canonical ingredient tokens          (W_CANONICAL)
+      2. TF-IDF of subgroup tokens                      (W_SUBGROUP)
+      3. Multi-hot group presence (one column per group) (W_GROUP)
+      4. One-hot cooking method                          (W_METHOD)
+
+    All blocks are L2-normalised before weighting so weights are comparable.
+    Returns the combined L2-normalised sparse matrix.
     """
-    docs = [recipe_to_ingredient_doc(r) for r in recipes]
-    methods = [[r.get("cooking_method", "unknown")] for r in recipes]
+    canonical_docs  = [recipe_to_canonical_doc(r)  for r in recipes]
+    subgroup_docs   = [recipe_to_subgroup_doc(r)   for r in recipes]
+    methods         = [[r.get("cooking_method", "unknown")] for r in recipes]
 
-    # TF-IDF
-    tfidf = TfidfVectorizer(
-        min_df=1,
-        ngram_range=(1, 2),
-        sublinear_tf=True,
-    )
-    X_tfidf = tfidf.fit_transform(docs)  # sparse (n_dishes, n_terms)
+    # ── Block 1: canonical TF-IDF ────────────────────────────────────────────
+    tfidf_canon = TfidfVectorizer(min_df=1, ngram_range=(1, 2), sublinear_tf=True)
+    X_canon = tfidf_canon.fit_transform(canonical_docs)   # sparse
 
-    # One-hot cooking method
+    # ── Block 2: subgroup TF-IDF ─────────────────────────────────────────────
+    tfidf_sub = TfidfVectorizer(min_df=1, ngram_range=(1, 1), sublinear_tf=True)
+    X_sub = tfidf_sub.fit_transform(subgroup_docs)         # sparse
+
+    # ── Block 3: group multi-hot ─────────────────────────────────────────────
+    # Build a binary matrix: rows = recipes, cols = ALL_GROUPS
+    group_matrix = np.zeros((len(recipes), len(ALL_GROUPS)), dtype=np.float32)
+    for i, recipe in enumerate(recipes):
+        present = set(recipe_group_flags(recipe))
+        for j, grp in enumerate(ALL_GROUPS):
+            if grp in present:
+                group_matrix[i, j] = 1.0
+    X_group = sp.csr_matrix(group_matrix)
+
+    # ── Block 4: cooking method one-hot ──────────────────────────────────────
     ohe = OneHotEncoder(
         categories=[COOKING_METHODS + ["unknown"]],
         sparse_output=True,
         handle_unknown="ignore",
     )
-    X_method = ohe.fit_transform(methods)  # sparse (n_dishes, n_methods)
+    X_method = ohe.fit_transform(methods)
 
-    # Weight and hstack
-    X_combined = sp.hstack([X_tfidf * 0.70, X_method * 0.30])
+    # ── L2-normalise each block independently, then weight and combine ────────
+    def safe_norm(X):
+        return normalize(X, norm="l2")
 
-    # L2 normalise rows for cosine similarity
+    X_combined = sp.hstack([
+        safe_norm(X_canon)  * W_CANONICAL,
+        safe_norm(X_sub)    * W_SUBGROUP,
+        safe_norm(X_group)  * W_GROUP,
+        safe_norm(X_method) * W_METHOD,
+    ])
+
+    # Final L2 normalise rows for cosine similarity
     X_norm = normalize(X_combined, norm="l2")
-
-    return X_norm, tfidf, ohe
+    return X_norm, tfidf_canon, tfidf_sub, ohe
 
 
 # ── Clustering ───────────────────────────────────────────────────────────────
@@ -252,40 +273,44 @@ def build_connections(X, recipe_ids: list[str], top_k: int, threshold: float):
 
 def infer_cluster_label(cluster_id: int, members: list[dict]) -> str:
     """
-    Derive a readable cluster label from the most common normalised ingredients
-    across the dishes in the cluster.
+    Derive a readable cluster label using the taxonomy hierarchy.
+
+    Strategy:
+      1. Aggregate canonical counts across all recipes in the cluster.
+      2. Check CLUSTER_THEME_MAP for a ≥2-keyword match.
+      3. If no match, fall back to the dominant group name + top 2 canonicals.
     """
-    all_terms: list[str] = []
+    from collections import Counter
+
+    canonical_counts: Counter = Counter()
+    group_counts: Counter = Counter()
+
     for r in members:
-        doc = recipe_to_ingredient_doc(r)
-        all_terms.extend(doc.split())
+        lines = recipe_to_ingredient_lines(r)
+        canonical_counts.update(tax_featurize(lines, "canonical"))
+        group_counts.update(tax_featurize(lines, "group"))
 
-    # Count term frequency
-    freq: dict[str, int] = {}
-    for t in all_terms:
-        freq[t] = freq.get(t, 0) + 1
+    # Exclude near-universal seasonings from label generation
+    LABEL_STOPWORDS = {"salt", "black pepper", "olive oil", "butter", "egg",
+                       "flour", "water", "sugar", "stock"}
 
-    # Remove very generic tokens
-    STOPWORDS = {
-        "to", "taste", "salt", "water", "and", "or", "for", "the",
-        "black", "pepper", "oil", "sauce", "ground", "fresh", "dried",
-        "large", "medium", "small", "white", "red",
-    }
-    top = sorted(
-        [(k, v) for k, v in freq.items() if k not in STOPWORDS and len(k) > 3],
-        key=lambda x: x[1], reverse=True,
-    )[:5]
-    keywords = [t[0] for t in top]
+    top_canonicals = [
+        k for k, _ in canonical_counts.most_common(10)
+        if k not in LABEL_STOPWORDS
+    ][:5]
 
-    # Check theme map
-    keyword_set = frozenset(keywords[:3])
+    keyword_set = frozenset(top_canonicals[:3])
     for theme_keys, label in CLUSTER_THEME_MAP.items():
         if len(theme_keys & keyword_set) >= 2:
             return label
 
-    # Fallback: join top 3 keywords
-    if keywords:
-        return " · ".join(keywords[:3]).title()
+    # Fallback: dominant group + top 2 distinctive canonicals
+    dominant_group = group_counts.most_common(1)[0][0].title() if group_counts else ""
+    top2 = " · ".join(top_canonicals[:2]).title()
+    if dominant_group and top2:
+        return f"{dominant_group}: {top2}"
+    if top2:
+        return top2
     return f"Cluster {cluster_id + 1}"
 
 
@@ -300,8 +325,8 @@ def main():
     # Adjust t-SNE perplexity to be < n
     perplexity = min(TSNE_PERPLEXITY, n - 1)
 
-    print("Building feature matrix …")
-    X, tfidf, ohe = build_feature_matrix(recipes)
+    print("Building feature matrix (canonical + subgroup + group + method) …")
+    X, tfidf_canon, tfidf_sub, ohe = build_feature_matrix(recipes)
 
     print(f"Running k-means with {N_CLUSTERS} clusters …")
     labels, km = run_kmeans(X, N_CLUSTERS)
@@ -321,9 +346,17 @@ def main():
 
     cluster_meta = {}
     for cid, members in cluster_members.items():
+        # Compute dominant ingredient groups for the cluster
+        from collections import Counter
+        grp_counts: Counter = Counter()
+        for r in members:
+            grp_counts.update(tax_featurize(recipe_to_ingredient_lines(r), "group"))
+        top_groups = [g for g, _ in grp_counts.most_common(3)]
+
         cluster_meta[cid] = {
             "id": cid,
             "label": infer_cluster_label(cid, members),
+            "dominant_groups": top_groups,
             "dish_ids": [r["id"] for r in members],
             "size": len(members),
         }
@@ -331,12 +364,15 @@ def main():
     # ── Assemble per-dish output ──────────────────────────────────────────────
     dishes_out = []
     for i, recipe in enumerate(recipes):
+        # Attach taxonomy group flags to each dish for frontend use
+        group_flags = recipe_group_flags(recipe)
         dishes_out.append({
             "id": recipe["id"],
             "name": recipe["name"],
             "country": recipe["country"],
             "region": recipe["region"],
             "cooking_method": recipe.get("cooking_method", "unknown"),
+            "ingredient_groups": group_flags,
             "cluster": int(labels[i]),
             "tsne_x": round(coords_2d[i][0], 5),
             "tsne_y": round(coords_2d[i][1], 5),
@@ -347,8 +383,14 @@ def main():
             "n_dishes": n,
             "n_clusters": N_CLUSTERS,
             "algorithm": "KMeans",
-            "features": "TF-IDF ingredients (0.7) + one-hot cooking method (0.3)",
+            "features": (
+                f"TF-IDF canonical ({W_CANONICAL}) + "
+                f"TF-IDF subgroup ({W_SUBGROUP}) + "
+                f"group multi-hot ({W_GROUP}) + "
+                f"one-hot cooking method ({W_METHOD})"
+            ),
             "layout": "t-SNE 2D (normalised to [-1,1])",
+            "taxonomy": "ingredient_taxonomy.py",
         },
         "clusters": [cluster_meta[i] for i in range(N_CLUSTERS)],
         "dishes": dishes_out,
@@ -366,7 +408,8 @@ def main():
     for cid in range(N_CLUSTERS):
         meta = cluster_meta[cid]
         names = [r["name"] for r in cluster_members[cid]]
-        print(f"  [{cid}] {meta['label']} ({meta['size']} dishes)")
+        groups_str = ", ".join(meta["dominant_groups"])
+        print(f"  [{cid}] {meta['label']} ({meta['size']} dishes)  [{groups_str}]")
         for name in names:
             print(f"       • {name}")
 
