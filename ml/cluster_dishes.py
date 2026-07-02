@@ -70,9 +70,50 @@ W_SUBGROUP   = 0.25   # medium-resolution subgroup presence tokens
 W_GROUP      = 0.10   # coarse group presence (one-hot per hierarchy group)
 W_METHOD     = 0.10   # one-hot cooking method
 
+
+  
 COOKING_METHODS = [
-    "baked", "braised", "boiled", "deep-fried", "grilled",
-    "simmered", "no-cook",
+    "air-fried",
+    "baked",
+    "barbecued",
+    "blanched",
+    "boiled",
+    "braised",
+    "broiled",
+    "char-grilled",
+    "deep-fried",
+    "fried",
+    "dry-fried",
+    "flash-fried",
+    "grilled",
+    "griddled",
+    "microwaved",
+    "no-cook",
+    "pan-fried",
+    "poached",
+    "pressure-cooked",
+    "roasted",
+    "rotisserie",
+    "sauteed",
+    "seared",
+    "shallow-fried",
+    "simmered",
+    "slow-cooked",
+    "smoked",
+    "steam-baked",
+    "steamed",
+    "stewed",
+    "stir-fried",
+    "toasted",
+    "wood-fired",
+    "wok-fried",
+      
+    # Combined methods often found in recipes
+    "bake-fried",
+    "grilled-roasted",
+    "braised-roasted",
+    "smoke-roasted",
+    "steam-cooked"
 ]
 
 # All top-level groups in the hierarchy (used for one-hot group features)
