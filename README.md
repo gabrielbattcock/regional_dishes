@@ -49,7 +49,7 @@ regional-dishes/
 - [x] UK proof of concept
 - [x] Expand to Italy
 - [x] ML clustering — dish connections by ingredient & cooking method
-- [x] Plotly Dash app (replaced React + FastAPI)
+- [x] Plotly Dash app 
 - [x] Add a third country (USA)
 - [ ] Search / filter by ingredient, tag or cooking method
 - [ ] Image support per dish
