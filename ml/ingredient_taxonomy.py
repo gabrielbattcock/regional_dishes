@@ -9,6 +9,7 @@ Two layers, kept deliberately separate:
 
 1. ALIASES        regex  -> canonical    (collapses synonyms, cuts, spellings)
 2. HIERARCHY      group  -> subgroup -> [canonical]   (the taxonomy)
+3. COOKING_METHODS
 
 From the hierarchy we derive CANONICAL_TO_NODE (canonical -> (subgroup, group)),
 so a single recipe ingredient can be featurised at three resolutions:
@@ -423,6 +424,57 @@ FAT_LIKE   = {"butter", "olive oil", "vegetable oil", "lard", "suet", "beef drip
 STARCH_LIKE = {"flour", "self-raising flour", "wholemeal flour", "polenta", "semolina",
                "risotto rice", "rice", "pasta", "gnocchi", "couscous", "bread", "stale bread",
                "breadcrumbs", "oats", "barley", "potato"}
+
+# ---------------------------------------------------------------------------
+# 3. COOKING METHOD 
+# ---------------------------------------------------------------------------
+
+
+
+COOKING_METHODS = [
+    "air-fried",
+    "baked",
+    "barbecued",
+    "blanched",
+    "boiled",
+    "braised",
+    "broiled",
+    "char-grilled",
+    "deep-fried",
+    "fried",
+    "dry-fried",
+    "flash-fried",
+    "grilled",
+    "griddled",
+    "microwaved",
+    "no-cook",
+    "pan-fried",
+    "poached",
+    "pressure-cooked",
+    "roasted",
+    "rotisserie",
+    "sauteed",
+    "seared",
+    "shallow-fried",
+    "simmered",
+    "slow-cooked",
+    "smoked",
+    "steam-baked",
+    "steamed",
+    "stewed",
+    "stir-fried",
+    "toasted",
+    "wood-fired",
+    "wok-fried",
+      
+    # Combined methods often found in recipes
+    "bake-fried",
+    "grilled-roasted",
+    "braised-roasted",
+    "smoke-roasted",
+    "steam-cooked"
+]
+
 
 # ---------------------------------------------------------------------------
 # Derived lookups + compiled patterns
