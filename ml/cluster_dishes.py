@@ -25,7 +25,7 @@ from pathlib import Path
 
 # ── Taxonomy import ──────────────────────────────────────────────────────────
 SCRIPT_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPT_DIR))   # ensure ml/ is on the path
+sys.path.insert(0, str(SCRIPT_DIR))   
 try:
     from ingredient_taxonomy import (
         normalize as tax_normalize,
@@ -59,20 +59,18 @@ INPUT_FILE  = DATA_DIR / "recipes.json"
 OUTPUT_FILE = DATA_DIR / "clusters.json"
 
 # ── Config ───────────────────────────────────────────────────────────────────
-N_CLUSTERS      = 8      # number of k-means clusters (raised — richer dataset)
-TOP_CONNECTIONS = 4      # max similar dishes per dish to store as edges
+N_CLUSTERS      = 8     
+TOP_CONNECTIONS = 4     
 SIM_THRESHOLD   = 0.12   # minimum cosine similarity to include a connection
-TSNE_PERPLEXITY = 10     # raise when dataset grows; kept low for < 50 items
+TSNE_PERPLEXITY = 10     
 RANDOM_STATE    = 42
 
 # Weighting of the three feature blocks:
-W_CANONICAL  = 0.55   # fine-grained TF-IDF over canonical ingredient tokens
-W_SUBGROUP   = 0.25   # medium-resolution subgroup presence tokens
-W_GROUP      = 0.10   # coarse group presence (one-hot per hierarchy group)
-W_METHOD     = 0.10   # one-hot cooking method
+W_CANONICAL  = 0.5   # fine-grained TF-IDF over canonical ingredient tokens
+W_SUBGROUP   = 0.2   
+W_GROUP      = 0.15   
+W_METHOD     = 0.15   
 
-
-# All top-level groups in the hierarchy (used for one-hot group features)
 ALL_GROUPS = list(HIERARCHY.keys())
 
 # ── Cluster label hints (updated to taxonomy canonical names) ─────────────────
